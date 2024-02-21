@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đặt hàng</title>
+    <style>
+      .nd1 {
+        width: 440px;
+      }
+      input {
+        width: 80%;
+        height: 30px;
+      }
+      .country_slt {
+        width: 82%;
+        height: 35px;
+      }
+      /* .button {
+        background-color: ;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="nd1">
+      <h1>Try a free sample</h1>
+      <p>
+        Sign up to get a coupon you can redeem at your nearest Dancing Goat cafe
+        for a sample of the Colombia Carlos Imbachi coffee. We'll also make sure
+        you don't miss out on news introducing the new coffees that we add to
+        our store regularly.
+      </p>
+    </div>
+    <div class="div.table1">
+      <table class="tb1" width="50%">
+        <tr>
+          <th align="left">First name</th>
+          <th align="left">Last name</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="first_name" placeholder="John" />
+          </td>
+          <td><input type="text" name="last_name" placeholder="Smith" /></td>
+        </tr>
+        <!-- end. Hang 1 -->
+        <tr>
+          <th align="left">Email address</th>
+          <th align="left">Address</th>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="text"
+              name="email_address"
+              placeholder="John@example.com"
+            />
+          </td>
+          <td><input type="text" name="address" placeholder="Silk St" /></td>
+        </tr>
+        <!-- end. Hang 2 -->
+        <tr>
+          <th align="left">City</th>
+          <th align="left">State</th>
+        </tr>
+        <tr>
+          <td><input type="text" name="city" placeholder="London" /></td>
+          <td><input type="text" name="state" /></td>
+        </tr>
+        <!-- end. Hang 3 -->
+        <tr>
+          <th align="left">Zip code</th>
+          <th align="left">Country</th>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="zip_code" placeholder="123456" />
+          </td>
+          <td>
+            <select class="country_slt" name="country">
+              <option value="">United Kingdom</option>
+            </select>
+          </td>
+        </tr>
+        <!-- end. Hang 4 -->
+      </table>
+    </div>
+    <!-- end div.table1 -->
+    <div class="button">
+      <button>SEND ME FREE COFFEE</button>
+    </div>
+  </body>
+</html>
