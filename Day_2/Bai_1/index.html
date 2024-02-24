@@ -5,89 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form đặt hàng</title>
     <style>
-      .nd1 {
-        width: 440px;
+      /* div {
+        border: 1px solid red;
+      } */
+      label {
+        display: block;
       }
       input {
-        width: 80%;
+        width: 85%;
         height: 30px;
       }
+      .btn1 {
+        background-color: blueviolet;
+        color: white;
+        height: 38px;
+      }
+      .div-nd {
+        width: 45%;
+        background-color: #e7e7e7;
+      }
+      .div-nd1 {
+        width: 440px;
+        margin: 0 0 0 16px;
+      }
       .country_slt {
-        width: 82%;
+        width: 87%;
         height: 35px;
       }
-      /* .button {
-        background-color: ;
-      } */
     </style>
   </head>
   <body>
-    <div class="nd1">
-      <h1>Try a free sample</h1>
-      <p>
-        Sign up to get a coupon you can redeem at your nearest Dancing Goat cafe
-        for a sample of the Colombia Carlos Imbachi coffee. We'll also make sure
-        you don't miss out on news introducing the new coffees that we add to
-        our store regularly.
-      </p>
+    <div class="div-nd">
+      <!-- <div class="nd_left"></div> -->
+      <div class="div-nd1">
+        <h1>Try a free sample</h1>
+        <p>
+          Sign up to get a coupon you can redeem at your nearest Dancing Goat
+          cafe for a sample of the Colombia Carlos Imbachi coffee. We'll also
+          make sure you don't miss out on news introducing the new coffees that
+          we add to our store regularly.
+        </p>
+      </div>
+      <form class="form.table1" action="" method="post">
+        <table class="tb1" border="0" width="100%" cellspacing="15">
+          <tr>
+            <th align="left">
+              <label for="idfirstname">First name</label>
+              <input
+                type="text"
+                name="firstname"
+                id="idfirstname"
+                value="John"
+              />
+            </th>
+            <th align="left">
+              <label for="idlastname">Last name</label>
+              <input
+                type="text"
+                name="lastname"
+                id="idlastname"
+                value="Smith"
+              />
+            </th>
+          </tr>
+
+          <tr>
+            <th align="left">
+              <label for="idemail">Email address</label>
+              <input
+                type="email"
+                name="email"
+                id="idemail"
+                value="John@example.com"
+              />
+            </th>
+            <th align="left">
+              <label for="idaddress">Address</label>
+              <input
+                type="text"
+                name="address"
+                id="idaddress"
+                value="Silk St"
+              />
+            </th>
+          </tr>
+          <tr>
+            <th align="left">
+              <label for="idcity">City</label>
+              <input type="text" name="city" id="idcity" value="London" />
+            </th>
+            <th align="left">
+              <label for="idstate">State <span>(optional)</span></label>
+              <input type="text" name="state" id="idstate" />
+            </th>
+          </tr>
+          <!-- end. Hang 4 -->
+          <tr>
+            <th align="left">
+              <label for="idzipcode">ZIP code</label>
+              <input type="text" name="zipcode" id="idzipcode" value="123456" />
+            </th>
+            <th align="left">
+              <label for="idcountry">Country</label>
+              <select class="country_slt" name="country" id="idcountry">
+                <option value="">United Kingdom</option>
+              </select>
+            </th>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button class="btn1" name="btnname">SEND ME FREE COFFEE</button>
+            </td>
+          </tr>
+          <!-- end. Hang 4 -->
+        </table>
+      </form>
+      <!-- end div.table1 -->
     </div>
-    <div class="div.table1">
-      <table class="tb1" width="50%">
-        <tr>
-          <th align="left">First name</th>
-          <th align="left">Last name</th>
-        </tr>
-        <tr>
-          <td>
-            <input type="text" name="first_name" placeholder="John" />
-          </td>
-          <td><input type="text" name="last_name" placeholder="Smith" /></td>
-        </tr>
-        <!-- end. Hang 1 -->
-        <tr>
-          <th align="left">Email address</th>
-          <th align="left">Address</th>
-        </tr>
-        <tr>
-          <td>
-            <input
-              type="text"
-              name="email_address"
-              placeholder="John@example.com"
-            />
-          </td>
-          <td><input type="text" name="address" placeholder="Silk St" /></td>
-        </tr>
-        <!-- end. Hang 2 -->
-        <tr>
-          <th align="left">City</th>
-          <th align="left">State</th>
-        </tr>
-        <tr>
-          <td><input type="text" name="city" placeholder="London" /></td>
-          <td><input type="text" name="state" /></td>
-        </tr>
-        <!-- end. Hang 3 -->
-        <tr>
-          <th align="left">Zip code</th>
-          <th align="left">Country</th>
-        </tr>
-        <tr>
-          <td>
-            <input type="text" name="zip_code" placeholder="123456" />
-          </td>
-          <td>
-            <select class="country_slt" name="country">
-              <option value="">United Kingdom</option>
-            </select>
-          </td>
-        </tr>
-        <!-- end. Hang 4 -->
-      </table>
-    </div>
-    <!-- end div.table1 -->
-    <div class="button">
-      <button>SEND ME FREE COFFEE</button>
-    </div>
+    <!-- end div.nd -->
   </body>
 </html>

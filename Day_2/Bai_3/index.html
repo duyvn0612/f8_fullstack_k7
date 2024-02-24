@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 3</title>
+    <style>
+      .div-form {
+        border: 1px solid red;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Get in touch with us by filling contact form below</h2>
+    <div class="div-form">
+      <form action="" method="post">
+        <table width="50%" border="0">
+          <tr>
+            <td>
+              <input
+                type="text"
+                name="fullname"
+                placeholder="* Enter your full name"
+              />
+            </td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                placeholder="* Enter your email address"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input
+                type="text"
+                name="subject"
+                placeholder="* Enter your subject"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <textarea
+                name="message"
+                id=""
+                cols="50"
+                rows="10"
+                placeholder="* Your message here"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <div>
+          <button name="send" style="float: left">Send message</button>
+          <p>
+            <strong> * Please fill all require from field, thanks! </strong>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
