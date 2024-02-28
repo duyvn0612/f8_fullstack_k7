@@ -1,0 +1,34 @@
+.line-contact-us hr{
+    margin: -10px 0px 0px 0px;
+}
+
+.contact-info{
+    span{
+        color: rgb(158, 158, 158);
+    }
+}
+.grid-contact{
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.tbl-contact-form{
+    margin: 33px 0px 0px -10px;
+}
+
+.tbl-contact-form input{
+    width: 600px;
+    height: 30px;
+}
+
+.tbl-contact-form textarea{
+    width: 600px;
+}
+
+.tbl-contact-form button{
+    background-color: rgb(12, 184, 182);
+    color: rgb(255,255,255);
+    border: none;
+    width: 150px;
+    height: 40px;
+}

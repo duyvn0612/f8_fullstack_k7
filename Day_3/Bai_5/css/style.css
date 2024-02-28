@@ -1,0 +1,27 @@
+.div-all{
+    margin: 0 auto;
+    text-align: center;
+}
+.div-190x50 a{
+    padding: 10px 40px 10px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(132, 152, 203);
+}
+.div-plans-features{
+    margin-top: 50px;
+    height: 35px;
+    
+}
+
+.div-header span{
+    color: rgb(0, 178, 238); 
+}
+
+.nav-plans-features a{
+    margin: 15px 10px;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    background-color: rgb(44, 48, 51);
+}

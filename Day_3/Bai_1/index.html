@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="contact">
+        <div class="line-contact-us">
+          <h2 class="head-contact-us">CONTACT US</h2>
+          <hr align="left" color="orange" size="3" width="50px" />
+        </div>
+
+        <div class="grid-contact">
+          <div class="contact-info">
+            <h3 class="head-contact-info">Contact Info</h3>
+            <div class="icon-contact-info">
+              <table
+                class="tbl-contact-info"
+                border="0"
+                cellspacing="0"
+                cellpadding="5"
+              >
+                <tr>
+                  <td>
+                    <img src="../icon/location32px.png" alt="Image error!" />
+                  </td>
+                  <td>
+                    <p>
+                      <span>123 Awesome Street <br />New York, NY 99999</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../icon/mail32px.png" alt="Image error" /></td>
+                  <td>
+                    <p><span>info@companyname.com</span></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../icon/call32px.png" alt="Image error" /></td>
+                  <td>
+                    <p><span>+1 123 345 6789</span></p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3 class="head-contact-form">
+              Having Any Query! Or Book an appointment
+            </h3>
+            <form
+              action="https://api-gateway.fullstack.edu.vn/action_page.php"
+              method="post"
+            >
+              <table
+                class="tbl-contact-form"
+                border="0"
+                cellspacing="5"
+                cellpadding="5"
+              >
+                <tr>
+                  <td>
+                    <input
+                      type="text"
+                      name="yourname"
+                      id="idyourname"
+                      placeholder="Your Name"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input
+                      type="email"
+                      name="email"
+                      id="idemail"
+                      placeholder="Your Email"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input
+                      type="text"
+                      name="subject"
+                      id="idsubject"
+                      placeholder="Subject"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <textarea
+                      name="message"
+                      id="idmassage"
+                      cols="30"
+                      rows="10"
+                      placeholder="Massage"
+                    ></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td><button type="submit">Send Massage</button></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

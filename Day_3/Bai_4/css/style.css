@@ -1,0 +1,35 @@
+.div-location{
+    width: 589px;
+    height: 35px;
+    border: 3px solid rgb(236, 226, 199);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.nav-location a{
+    padding: 10px 30px 10px 30px;
+    color: rgb(228, 195, 103);
+    text-decoration: none;
+}
+
+a:hover{
+    /* width: 35px; */
+    color: white;
+    background-color: rgb(220, 174, 47);
+}
+.div-address{
+    margin-left: 30px;
+}
+.div-address span{
+    color: rgb(228, 195, 103);
+}
+
+.div-address-maps{
+    margin-top: 40px;
+    width: 95%;
+    background-color: rgb(246, 246, 246);
+    display: grid;
+    grid-template-columns: 30% 70%;
+}

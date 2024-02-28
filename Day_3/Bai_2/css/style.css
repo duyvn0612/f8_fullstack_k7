@@ -1,0 +1,41 @@
+.head-feedback h2{
+    text-align: center;
+    margin: -10px 0px 0px 0px;
+}
+
+h2::after{
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: #0000ff;
+    display: block;
+    position: absolute;
+    left: 47%;
+    margin-top: 10px;
+    
+}
+
+.st-list-feedback{
+    
+    margin-top: 50px;
+}
+
+.div-list-feedback{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* border: 2px solid rebeccapurple; */
+}
+
+.image img{
+    margin-top: 16px;
+    width: 64px;
+    height: 64px;
+    float: left;
+}
+
+.customer{
+    display: grid;
+    grid-template-columns: 20% 65%;
+    /* border: 2px solid red; */
+}
+

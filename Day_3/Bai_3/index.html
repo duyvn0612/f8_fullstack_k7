@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Access Manager</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="div-access-Manager">
+        <form action="" method="post">
+          <table>
+            <tr>
+              <td><label for="id-username">Username: </label></td>
+              <td class="col-left">
+                <input type="text" name="username" id="id-username" />
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="id-pass">Password: </label></td>
+              <td class="col-left">
+                <input type="password" name="pass" id="id-pass" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="id-city">City of <br />Employment: </label>
+              </td>
+              <td class="col-left">
+                <input type="text" name="city" id="id-city" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="id-web">Web server</label></td>
+              <td class="col-left">
+                <select name="Web" id="id-web">
+                  <option value="1">--choose a server--</option>
+                  <option value="3">fpt</option>
+                  <option value="5">tct</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="id-role">Please specify <br />your role</label>
+              </td>
+              <td class="col-left">
+                <label class="lb-role"
+                  ><input
+                    type="radio"
+                    name="role"
+                    id="id-role"
+                    value="1"
+                  />Admin</label
+                >
+                <label class="lb-role"
+                  ><input
+                    type="radio"
+                    name="role"
+                    id="id-role"
+                    value="2"
+                  />Engineer</label
+                >
+                <label class="lb-role"
+                  ><input
+                    type="radio"
+                    name="role"
+                    id="id-role"
+                    value="3"
+                  />Manager</label
+                >
+                <label class="lb-role"
+                  ><input
+                    type="radio"
+                    name="role"
+                    id="id-role"
+                    value="4"
+                  />Guest</label
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="id-sign"
+                  >Single Sign-on <br />the following:
+                </label>
+              </td>
+              <td class="col-left">
+                <label class="lb-sign"
+                  ><input
+                    type="checkbox"
+                    name="sign"
+                    id="id-sign"
+                    value="1"
+                  />Mail</label
+                >
+                <label class="lb-sign"
+                  ><input
+                    type="checkbox"
+                    name="sign"
+                    id="id-sign"
+                    value="2"
+                  />Payroll</label
+                >
+                <label class="lb-sign"
+                  ><input
+                    type="checkbox"
+                    name="sign"
+                    id="id-sign"
+                    value="3"
+                  />Self-service</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="col-left">
+                <button type="submit">Login</button>
+                <button type="reset">Reset</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
