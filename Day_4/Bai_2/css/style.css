@@ -1,0 +1,56 @@
+@font-face {
+    font-family: AlfaSlabOne;
+    src: url(../font/AlfaSlabOne-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../font/BebasNeue-Regular.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.div-main{
+    /* border: 2px solid red; */
+    text-align: center;
+}
+
+.div-main h3{
+    color: rgb(57, 38, 22);
+    font-family: BebasNeue;
+}
+
+.div-main h1{
+    color: rgb(57, 38, 22);
+    font-family: AlfaSlabOne;
+}
+
+.div-main .section-form form table{
+    margin: 0 auto;
+    margin-top: -20px;
+    border-spacing: 15px; /* Thuộc tính này dùng để thiết lập khoảng cách nằm giữa mỗi hai ô liền kề.*/
+}
+
+.div-main .section-form input{
+    height: 30px;
+    width: 200px;
+    padding-left: 15px;
+    font-family: BebasNeue;
+}
+
+.div-main .section-form input::placeholder{
+    color: rgb(61, 61, 61);
+    
+}
+
+.div-main .section-form button{
+    border: rgb(176, 50, 43);
+    border-radius: 5px;
+    height: 36px;
+    width: 208px;
+    color: white;
+    background: rgb(176, 50, 43);
+    font-family: AlfaSlabOne;
+}

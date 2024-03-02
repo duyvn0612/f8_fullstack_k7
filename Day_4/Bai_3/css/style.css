@@ -1,0 +1,94 @@
+.div-main{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nav-product-info button{
+    text-align: center;
+    padding: 0 25px;
+    height: 35px;
+    border: none;
+}
+
+.nav-product-info button:hover{
+    background: rgb(41, 56, 142);
+    color: white;
+}
+
+.div-section{
+    margin-top: 30px;
+    /* border: 2px solid red; */
+}
+
+
+.grid-products{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    /* align-content: center; */
+}
+
+.image-items{
+    /* border: 2px solid red; */
+    position: relative;
+    left: 185px;
+}
+
+.div-item-info{
+    /* border: 2px solid yellow; */
+    /* position: relative; */
+    margin: 0px -346px 0px 0px;
+    padding: 350px 0px 0px 0px;
+}
+
+.image-item{
+    position: absolute;
+    transition-property: opacity, visibility;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    left: 40px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.image-item:first-child {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-items:hover .image-item:first-child{
+    opacity: 0;
+    visibility: hidden;
+}
+.image-items:hover .image-item + .image-item{
+    opacity: 1;
+    visibility: visible;
+}
+
+form{
+    /* border: 2px solid rebeccapurple; */
+    margin: 4px 0px 0px -3px;
+    padding: 180px 0px 0px 0px;
+}
+
+form table{
+    margin: 0 auto;
+}
+
+table .btn{
+    height: 65px;
+    width: 74px;
+    background: rgb(41, 56, 142);
+    border: none;
+}
+
+table .btn-add-item{
+    height: 64px;
+    width: 230px;
+    background: rgb(41, 56, 142);
+    border: none;
+}
+
+
+
+
+

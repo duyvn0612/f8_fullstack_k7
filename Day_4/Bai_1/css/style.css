@@ -1,0 +1,47 @@
+.div-footer{
+    background: rgb(51, 68, 85);
+    border: 2px solid rgb(51, 68, 85);
+    border-radius: 10px;
+    width: 900px;
+    height: 180px;
+}
+
+.div-form-subscribe{
+    margin-left: 20px;
+}
+
+.div-form-subscribe span{
+    color: rgb(229, 162, 1);
+}
+
+.div-form-subscribe h2,p{
+    color: white;
+}
+
+.div-form-subscribe input{
+    background-color:white;
+    width: 200px;
+    height: 25px;
+}
+
+.div-form-subscribe button{
+    width: 180px;
+    height: 31px;
+    background: rgb(248, 219, 53);
+    border: none;
+    /* border: darkgrey; */
+}
+
+.div-footer:hover .div-form-subscribe input{
+    background-color: #ddd;
+}
+
+.div-footer:hover .div-form-subscribe button{
+    background-color:  rgb(229, 162, 1);
+    color: white;
+}
+
+.div-footer:hover .div-form-subscribe input::placeholder{
+    color: rgb(229, 162, 1);
+}
+
