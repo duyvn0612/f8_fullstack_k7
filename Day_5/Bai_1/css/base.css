@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: "Lato", serif;
+    font-family: Lato, sans-serif;
     src: url("../font/Lato-Regular.ttf");
     font-weight: 400;
 }
@@ -29,6 +29,7 @@ html {
     /* HACK */
     font-size: 62.5%;
     line-height: 1.6rem;
+    /* font-family: "Lato", sans-serif; */
     box-sizing: border-box;
 }
 
