@@ -1,0 +1,43 @@
+.color{
+    padding-bottom: 1rem;
+}
+
+.color .answer{
+    display: none;
+    padding-left: 40px;
+    word-wrap: break-word;
+}
+
+.color .question{
+    background: #d85925;
+    color: white;
+    
+    padding: 1px 10px 1px 20px;
+    line-height: 2rem;
+}
+
+.color .question label{
+    display: block;
+    vertical-align: middle;
+}
+
+.color .question label::before{
+    content: "+";
+    padding-right: 10px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 2rem;
+}
+
+.color .question input:checked + label::before{
+    content: "-";
+    font-size: 1.2rem;
+    padding-right: 10px;
+    font-weight: 900;
+    line-height: 2rem;
+}
+
+.color .question:has(input:checked) + .answer{
+    display: flex;
+}
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 1</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/base.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css"
+      rel="stylesheet"
+      type="text/css" -->
+    />
+  </head>
+  <body>
+    <div class="div-form-contact">
+      <div class="grid">
+        <div class="div-contact">
+          <div class="div-title">
+            <h2>Hey there</h2>
+            <p>
+              <span>We'd like to hear from you.</span> Send us your message or
+              just say hi with out <br />contact form or directly via phone, we
+              love to chat.
+            </p>
+          </div>
+          <form class="form-contact" action="#" method="get">
+            <div class="div-field" tabindex="1">
+              <label for="idname"
+                ><i class="fa-solid fa-user first-icon"></i
+              ></label>
+              <input
+                class="inp-text"
+                type="text"
+                name="name"
+                id="idname"
+                placeholder="Your name"
+              />
+              <div class="icon-items">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <p>Enter your name</p>
+            </div>
+            <!-- End .div-field Name -->
+            <div class="div-field" tabindex="2">
+              <label for="idmail"
+                ><i class="fa-regular fa-envelope first-icon"></i
+              ></label>
+              <input
+                class="inp-text"
+                type="email"
+                name="email"
+                id="idmail"
+                placeholder="Youremail@gmail.com"
+              />
+              <div class="icon-items">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <p>Enter your email</p>
+            </div>
+            <!-- End .div-field email -->
+            <div class="div-field" tabindex="3">
+              <label for="idphone"
+                ><i class="fa-solid fa-mobile-screen first-icon"></i
+              ></label>
+              <input
+                class="inp-text"
+                type="number"
+                name="phone"
+                id="idphone"
+                placeholder="+7123 456 789"
+              />
+              <!-- <div class="icon-items">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div> -->
+              <p>Enter your phone</p>
+            </div>
+            <!-- End .div-field phone -->
+            <div class="div-field" tabindex="4">
+              <label for="idsubject"
+                ><i class="fa-solid fa-book first-icon"></i
+              ></label>
+              <select class="inp-text" name="subject" id="idsubject">
+                <option value="1">Subject</option>
+              </select>
+
+              <p>Enter your subject</p>
+            </div>
+            <!-- End .div-field subject -->
+            <div class="div-field" tabindex="5">
+              <label for="idmessage"
+                ><i class="fa-regular fa-message first-icon"></i
+              ></label>
+              <textarea
+                name="message"
+                id="idmessage"
+                cols="70"
+                rows="10"
+              ></textarea>
+              <div class="icon-items">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <p>Enter your subject</p>
+            </div>
+            <div class="div-field checkbox" tabindex="6">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="checkbox"
+                id="idcheckbox"
+                hidden
+              />
+              <i class="fa-solid fa-check"></i>
+              <label class="lbl-checkbox" for="idcheckbox"
+                >Send me a copy of this message</label
+              >
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/f203da0ed3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

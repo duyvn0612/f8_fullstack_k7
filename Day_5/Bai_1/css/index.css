@@ -1,0 +1,139 @@
+.div-contact *{
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.div-contact .div-title h2{
+    font-family: "Lobster";
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.div-title p{
+    color: rgba(0, 0, 0,0.2);
+}
+
+.div-title p span{
+    color: red;
+}
+
+.div-field{
+    border: 0.1rem solid #ddd;
+    position: relative;
+    /* display: inline-block; */
+    display: flex;
+    margin-top: 2rem;
+}
+
+.inp-text{
+    width: 100%;
+    height: 4rem;
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+}
+
+.first-icon{
+    padding: 14px 14px; 
+    background: #ddd;
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+}
+
+.icon-items i{
+    position: absolute;
+    width: 20px;
+    right: 15px;
+    font-size: xx-small;
+    margin-top: 15px;
+    
+    opacity: 0;
+    visibility: hidden;
+}
+.icon-items i:first-child{
+    opacity: 1;
+    visibility: visible;
+}
+
+.div-field:has(input:focus) .icon-items i:first-child{
+    opacity: 0;
+    visibility: hidden;
+}
+.div-field:has(input:focus) .icon-items i:last-child{
+    opacity: 1;
+    visibility: visible;
+}
+
+.div-field p{
+    position: absolute;
+    color: white;
+    font-size: small;
+    padding: 10px 12px;
+    background: rgb(0, 0, 0);
+    display: none;
+    top: -70px;
+    left: 50px;
+}
+.div-field p::after{
+    position: absolute;
+    content: "";
+    border-color: rgb(0, 0, 0) transparent transparent transparent;
+    border-width: 10px 12px;
+    border-style: solid;
+    
+    bottom: -18px;
+    left: 11px;
+}
+
+.div-field:hover p{
+    display: flex;
+}
+.div-field:hover .first-icon{
+    background: black;
+    color: white;
+}
+
+label{
+    color: rgba(0, 0, 0,0.2);
+}
+
+.div-field.checkbox{
+    border: none;
+}
+
+.lbl-checkbox::before{
+    content: "";
+    border: 2px solid #ddd;
+    padding:  0px 9px;
+    margin-right: 10px;
+}
+
+.div-field.checkbox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-check{
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.div-field.checkbox:focus i{
+    opacity: 1;
+    visibility: visible;
+}
+
+.div-field.checkbox button{
+    border: none;
+    padding: 10px 50px;
+    background: rgb(234, 63, 51);
+    color: white;
+}
+
+

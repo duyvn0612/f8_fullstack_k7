@@ -1,3 +1,24 @@
+* {
+    box-sizing: inherit;
+  }
+  
+  html {
+    /* 
+      default browser ==>100% = 16px
+      font-size: 100%; 
+      font-size: 1rem; ==> 1rem = 16px
+    
+      ==> 62.5% = 10px
+        font-size: 62.5%;
+        fonts-size: 1.6rem; ==> 1.6rem = 16px
+       */
+  
+    /* HACK */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+  }
 @font-face {
     font-family: AlfaSlabOne;
     src: url(../font/AlfaSlabOne-Regular.ttf) format('truetype');
@@ -47,9 +68,11 @@
 
 .div-main .section-form button{
     border: rgb(176, 50, 43);
+    padding-left: 15px;
     border-radius: 5px;
-    height: 36px;
-    width: 208px;
+    height: 30px;
+    width: 200px;
+    border: none;
     color: white;
     background: rgb(176, 50, 43);
     font-family: AlfaSlabOne;

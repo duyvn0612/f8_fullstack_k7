@@ -1,0 +1,43 @@
+.section-grid h1, h2, p{
+    text-align: center;
+}
+
+article {
+    /* border: 2px solid red; */
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: #ddd 0px 10px 20px;
+}
+
+article p{
+    color: rgba(0, 0, 0,0.3)
+}
+
+.grid-col-4 .art .div-icon{
+    position: relative;
+    border: 2px solid rgb(242, 169, 59);
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    margin: 0 auto;
+}
+
+.grid-col-4 .art .div-icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    color: rgb(242, 169, 59);
+}
+
+.grid-col-4 .art button{
+    /* display: block; */
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    background: rgb(242, 169, 59);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
