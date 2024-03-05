@@ -38,7 +38,7 @@
                 ><i class="fa-solid fa-user first-icon"></i
               ></label>
               <input
-                class="inp-text"
+                class="inp-text inp-box"
                 type="text"
                 name="name"
                 id="idname"
@@ -56,7 +56,7 @@
                 ><i class="fa-regular fa-envelope first-icon"></i
               ></label>
               <input
-                class="inp-text"
+                class="inp-text inp-box"
                 type="email"
                 name="email"
                 id="idmail"
@@ -74,7 +74,7 @@
                 ><i class="fa-solid fa-mobile-screen first-icon"></i
               ></label>
               <input
-                class="inp-text"
+                class="inp-text inp-box"
                 type="number"
                 name="phone"
                 id="idphone"
@@ -91,7 +91,7 @@
               <label for="idsubject"
                 ><i class="fa-solid fa-book first-icon"></i
               ></label>
-              <select class="inp-text" name="subject" id="idsubject">
+              <select class="inp-text inp-box" name="subject" id="idsubject">
                 <option value="1">Subject</option>
               </select>
 
@@ -103,10 +103,12 @@
                 ><i class="fa-regular fa-message first-icon"></i
               ></label>
               <textarea
+                class="inp-box"
                 name="message"
                 id="idmessage"
-                cols="70"
+                cols="100"
                 rows="10"
+                placeholder="Message"
               ></textarea>
               <div class="icon-items">
                 <i class="fa-solid fa-star"></i>
@@ -120,9 +122,10 @@
                 type="checkbox"
                 name="checkbox"
                 id="idcheckbox"
+                value="1"
                 hidden
               />
-              <i class="fa-solid fa-check"></i>
+              <!-- <i class="fa-solid fa-check"></i> -->
               <label class="lbl-checkbox" for="idcheckbox"
                 >Send me a copy of this message</label
               >

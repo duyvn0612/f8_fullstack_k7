@@ -34,10 +34,16 @@
     padding-left: 1rem;
 }
 
+textarea{
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+}
+
 .first-icon{
     padding: 14px 14px; 
     background: #ddd;
-    height: 4rem;
+    height: 100%;
     width: 4rem;
     text-align: center;
 }
@@ -47,7 +53,7 @@
     width: 20px;
     right: 15px;
     font-size: xx-small;
-    margin-top: 15px;
+    margin-top: 18px;
     
     opacity: 0;
     visibility: hidden;
@@ -57,11 +63,11 @@
     visibility: visible;
 }
 
-.div-field:has(input:focus) .icon-items i:first-child{
+.div-field:has(.inp-box:focus) .icon-items i:first-child{
     opacity: 0;
     visibility: hidden;
 }
-.div-field:has(input:focus) .icon-items i:last-child{
+.div-field:has(.inp-box:focus) .icon-items i:last-child{
     opacity: 1;
     visibility: visible;
 }
@@ -89,8 +95,23 @@
 
 .div-field:hover p{
     display: flex;
+    /* Hiển thị Chú thích Enter your ...*/
 }
+
 .div-field:hover .first-icon{
+    background: black;
+    color: white;
+}
+
+.div-field:hover {
+    border: 2px solid black;
+}
+
+.div-field:has(.inp-box:focus) {
+    border: 2px solid black;
+}
+
+.div-field:has(.inp-box:focus) .first-icon{
     background: black;
     color: white;
 }
@@ -105,35 +126,36 @@ label{
 
 .lbl-checkbox::before{
     content: "";
-    border: 2px solid #ddd;
-    padding:  0px 9px;
+    border: 3px solid #ddd;
+    padding:  0px 10px;
     margin-right: 10px;
 }
 
 .div-field.checkbox{
     position: relative;
-    display: flex;
-    justify-content: space-between;
 }
 
-.fa-check{
+.div-field.checkbox input:checked + label::after{
+    content: '';
+    display: block;
     position: absolute;
-    left: 4px;
-    top: 1px;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.div-field.checkbox:focus i{
-    opacity: 1;
-    visibility: visible;
+    left: 9px;
+    top: -1px;
+    width: 6px;
+    height: 14px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
 }
 
 .div-field.checkbox button{
+    position: absolute;
+    right: 0;
     border: none;
     padding: 10px 50px;
     background: rgb(234, 63, 51);
     color: white;
 }
+
 
 
