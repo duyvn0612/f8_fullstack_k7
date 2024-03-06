@@ -142,8 +142,8 @@ label{
     position: relative;
 }
 
-.div-field.checkbox input:checked + label::after{
-    content: '';
+.div-field.checkbox input:checked + .lbl-checkbox::after{
+    content: "";
     display: block;
     position: absolute;
     left: 9px;

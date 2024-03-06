@@ -9,6 +9,7 @@
 }
 
 .color .question{
+    position: relative;
     background: #d85925;
     color: white;
     
@@ -18,10 +19,34 @@
 
 .color .question label{
     display: block;
-    vertical-align: middle;
+    padding-left: 1.5rem;
 }
 
-.color .question label::before{
+.div-icon i{
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    transform: translate(50%,-50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.div-icon i:first-child{
+    opacity: 1;
+    visibility: visible;
+}
+
+.color .question:has(input:checked) i:first-child{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.color .question i + i{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* .color .question label::before{
     content: "+";
     padding-right: 10px;
     font-size: 1.2rem;
@@ -35,7 +60,7 @@
     padding-right: 10px;
     font-weight: 900;
     line-height: 2rem;
-}
+} */
 
 .color .question:has(input:checked) + .answer{
     display: flex;
