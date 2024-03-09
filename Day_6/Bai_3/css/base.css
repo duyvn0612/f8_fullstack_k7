@@ -8,6 +8,8 @@ body{
     font-family: Roboto, sans-serif;
     box-sizing: border-box;
     background-image: url("http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg");
+    background-position: 50% 100%;
+    background-size: cover;
 }
 
 .grid{
