@@ -54,12 +54,14 @@ a{
 }
 
 .items > li > a{
+    position: relative;
     color: black;
     padding: 13px 25px;
 }
 
 span{
     position: relative;
+    padding: 0px 10px;
 }
 
 span::after{
@@ -78,16 +80,18 @@ span::after{
 .info-items{
     border: 2px;
     position: relative;
-    opacity: 0;
-    visibility: hidden;
+}
+
+.list-items{
+    display: none;
 }
 
 .info-items .list-items{
     position: absolute;
-    box-shadow: #666 0px 5px 10px 3px;
+    box-shadow: rgba(0,0,0,0.3) 0px 0px 10px 0px;
     /* border: 1px solid red; */
     /* background-color: #666; */
-    left: 40px;
+    left: 0px;
     top: 35px;
 }
 
@@ -102,6 +106,7 @@ span::after{
 }
 
 .info-items .list-items li a{
+    color: black;
     padding: 0px 0px 0px 0px;
 }
 
@@ -124,15 +129,6 @@ span::after{
     border-bottom: 1px solid #ddd;
 }
 
-.items > li > a:hover{
-    background-color: #2da5da;
-}
-
-.items > li > a:hover + .info-items{
-    opacity: 1;
-    visibility: visible;
-}
-
 .list-items::before{
     position: absolute;
     content: "";
@@ -144,4 +140,31 @@ span::after{
     top: -19px;
     left: 15px;
     /* box-shadow: #ddd 0px 10px 20px; */
+}
+
+.item-down{
+    position: relative;
+}
+
+.items > li > .item-down:hover + .info-items .list-items {
+    display: block;
+}
+
+.items > li > .item-down:hover::after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 20px 76px;
+    border-style: solid;
+    opacity: 0;
+}
+
+.items > li > .info-items .list-items:hover{
+    display: block;
+}
+
+.items > li > a:hover{
+    background-color: #2da5da;
 }
