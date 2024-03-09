@@ -1,0 +1,21 @@
+*{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+    background-image: url("http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg");
+}
+
+.grid{
+    width: 1200px;
+    height: 100vh; 
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,147 @@
+.nav-menu{
+    border: 2px solid #ddd;
+    font-size: 1.6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-menu  .flex-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0;
+}
+
+.flex-left{
+    display: flex;
+
+}
+
+.nav-menu .flex-container li{
+    display: inline;
+    list-style: none; 
+}
+
+a{
+    text-decoration: none;
+}
+
+/* .flex-left .items{
+    border: 2px solid white;
+}
+
+.flex-right .items{
+    border: 2px solid white;
+} */
+
+.flex-left .items{
+    border-right: 2px solid #ddd;
+    padding: 20px 6px;
+}
+
+.flex-right .items{
+    border-left: 2px solid #ddd;
+    padding: 20px 6px;
+}
+
+.items > li{
+    padding: 0px 0px;
+}
+
+.items > li > a{
+    color: black;
+    padding: 13px 25px;
+}
+
+span{
+    position: relative;
+}
+
+span::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-width: 0px 2px 2px 0px;
+    border-style: solid;
+    border-color: black;
+    /* display: block; */
+    position: absolute;
+    transform: rotate(45deg);
+    right: -20px;
+}
+
+.info-items{
+    border: 2px;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.info-items .list-items{
+    position: absolute;
+    box-shadow: #666 0px 5px 10px 3px;
+    /* border: 1px solid red; */
+    /* background-color: #666; */
+    left: 40px;
+    top: 35px;
+}
+
+.info-items .list-items li{
+    display: block;
+    /* padding: 15px 80px; */
+}
+
+.info-items .list-items li {
+    position: relative;
+    padding: 15px 110px 15px 40px;
+}
+
+.info-items .list-items li a{
+    padding: 0px 0px 0px 0px;
+}
+
+.info-items .list-items li a::before{
+    content: "";
+    width: 5px;
+    height: 12px;
+    border-width: 0px 3px 3px 0px;
+    border-style: solid;
+    border-color: black;
+    /* display: block; */
+    position: absolute;
+    transform: rotate(45deg);
+    top: 15px;
+    left: 20px;
+}
+
+.info-items .list-items li:nth-child(2){
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.items > li > a:hover{
+    background-color: #2da5da;
+}
+
+.items > li > a:hover + .info-items{
+    opacity: 1;
+    visibility: visible;
+}
+
+.list-items::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    top: -19px;
+    left: 15px;
+    /* box-shadow: #ddd 0px 10px 20px; */
+}

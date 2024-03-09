@@ -1,0 +1,47 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* 
+      default browser ==>100% = 16px
+      font-size: 100%; 
+      font-size: 1rem; ==> 1rem = 16px
+    
+      ==> 62.5% = 10px
+        font-size: 62.5%;
+        fonts-size: 1.6rem; ==> 1.6rem = 16px
+    */
+  
+    /* HACK */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+
+}
+
+.grid{
+    width: 1200px;
+    max-width: 70%;
+    margin: 0px auto;
+}
+
+.grid-row{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: 4rem;
+}
+
+.grid-col-4{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 33.33%;
+    word-wrap: break-word;
+    
+}
+
+

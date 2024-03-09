@@ -1,0 +1,246 @@
+.main-login{
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: auto;
+    border: none;
+    border-radius: 20px;
+    /* background:transparent; */
+}
+
+.main-login .icon-right{
+    position: absolute;
+    /* font-size: 1.5rem; */
+    width: 50px;
+    height: 50px;
+    border: none solid white;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff574d;
+    font-size: 25px;
+    top: 50%;
+    left: 40%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 10px 0 rgba(0,0,0,0.3)
+}
+
+.div-login-info{
+    width: 40%;
+    height: auto;
+    background-color: #ff574d;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.div-head {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    flex-basis: 50px;
+}
+
+.div-head .head-icon{
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%);
+}
+
+.div-head .head-icon .icon{
+    font-size: x-large;
+    color: #ff574d;
+    border: 0rem solid white;
+    border-radius: 4px;
+    background-color: white;
+    padding: 3px 8px;
+    margin: 0.5rem 0rem 0rem 0.5rem;
+    float: left;
+}
+
+
+.div-head h1{
+    font-size: xx-large;
+    margin: -0.7rem 0rem 0rem 0rem;
+    padding: 1.5rem 0rem;
+    color: white;
+}
+
+.div-login-info p{
+    font-size: 1rem;
+    /* margin: 0 0; */
+    padding: 0px 20px;
+    text-align: center;
+    color: white;
+    flex-basis: 100px;
+}
+
+.div-login-info .read-more{
+    height: auto;
+    flex-basis: 100px;
+}
+
+.div-login-info .read-more button{
+    color: #ff574d;
+    font-size: 1rem;
+    border: 0 solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 50px;
+    
+}
+
+.div-login-info .list-icon ul{
+    padding: 0 0;
+}
+
+.div-login-info .list-icon ul li{
+    padding: 0px 15px;
+    list-style: none;
+    display: inline-block;
+}
+
+.div-login-info .list-icon ul li > .item{
+    position: relative;
+    border: 0 solid;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.1);
+    padding: 20px 20px;
+}
+
+.div-login-info .list-icon ul li a{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.div-login-form{
+    width: 60%;
+    height: auto;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+    /* height: 200px; */
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 35px 0px;
+}
+
+.div-login-form .field{
+    padding: 13px 0px;
+} 
+
+.div-login-form h2{
+    position: relative;
+    font-size: x-large;
+    padding-bottom: 5px;
+}
+
+.div-login-form h2 span::before{
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    content: "";
+    width: 52px;
+    height: 10px;
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+}
+
+.div-login-form h2 span{
+    color: #ff574d;
+}
+
+.div-login-form .form-data{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-login-form .form-data .field .inp-char{
+    font-size: 1rem;
+    padding-left: 1rem;
+    width: 25rem;
+    height: 3rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px #ddddddb7;
+    color: #717171;
+}
+
+.div-login-form .form-data .field-btn-login button{
+    font-size: 1rem;
+    width: 25rem;
+    height: 3rem;
+    cursor: pointer;
+    background: #ff574d;
+    border: 1px solid #ff574d;
+    border-radius: 5px;
+    color: white;
+}
+
+.div-login-form .form-data .field-checkbox{
+    font-size: 1rem;
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-login-form .form-data .field a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #717171;
+}
+
+.div-login-form .form-data .field-checkbox .div-checkbox{
+    position: relative;
+}
+
+.div-login-form .form-data .field-checkbox .div-checkbox label{
+    padding-left: 30px;
+    color: rgba(0,0,0,0.7);
+}
+
+.div-login-form .form-data .field-checkbox .div-checkbox label::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    top: 3px;
+    left: 2px;
+}
+
+.div-login-form .form-data .field-checkbox .div-checkbox input:checked + label::after{
+    /* :has(input:checked) +  */
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 10px;
+    border-width: 0px 3px 3px 0px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.7);
+    top: 5px;
+    left: 8px;
+    transform: rotate(45deg);
+}

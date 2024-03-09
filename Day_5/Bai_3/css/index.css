@@ -7,10 +7,15 @@ article {
     text-align: center;
     padding: 1.5rem 0;
     box-shadow: #ddd 0px 10px 20px;
+    transition: transform 1s ease-in-out;
 }
 
 article p{
     color: rgba(0, 0, 0,0.3)
+}
+
+article:hover{
+    transform: scale(1.05);
 }
 
 .grid-col-4 .art .div-icon{

@@ -1,0 +1,87 @@
+body{
+    background-color: #ebf5fe;
+}
+
+.art-item{
+    position: relative;
+    border: 2px white solid;
+    padding: 25px 15px;
+    background-color: white;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.art-item:hover{
+    border: 2px red solid;
+    transform: scale(1.05);
+}
+
+.div-icon{
+    position: relative;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border-style: none;
+    
+}
+
+.grid .grid-row:first-child .grid-col-4:nth-child(1) .art-item .div-icon{
+    /* background-color: #e46074; */
+    /* background-image: linear-gradient(to right, red, blue); */
+    background-image: linear-gradient(to right, #e46074,#e37260);
+    box-shadow: 0 0 10px 2px rgba(228, 96, 116, 0.3);
+}
+.grid .grid-row:first-child .grid-col-4:nth-child(2) .art-item .div-icon{
+    /* background-color: #53aaa3; */
+    background-image: linear-gradient(to right, #53aaa3,#62cdc9);
+    box-shadow: 0 0 10px 2px rgba(83, 170, 163, 0.3);
+}
+.grid .grid-row:first-child .grid-col-4:nth-child(3) .art-item .div-icon{
+    /* background-color: #f2a93b; */
+    background-image: linear-gradient(to right, #f2a93b,#ffb83b);
+    box-shadow: 0 0 10px 2px rgba(242, 169, 59, 0.3);
+}
+
+.grid .grid-row:last-child .grid-col-4:nth-child(1) .art-item .div-icon{
+    /* background-color: #4a7bed; */
+    background-image: linear-gradient(to right, #4a7bed,#4f78ff);
+    box-shadow: 0 0 10px 2px rgba(74, 123, 237, 0.3);
+}
+.grid .grid-row:last-child .grid-col-4:nth-child(2) .art-item .div-icon{
+    /* background-color: #7223cb; */
+    background-image: linear-gradient(to right, #7223cb,#8f2bff);
+    box-shadow: 0 0 10px 2px rgba(114, 35, 203, 0.3);
+}
+.grid .grid-row:last-child .grid-col-4:nth-child(3) .art-item .div-icon{
+    /* background-color: #6d8f30; */
+    background-image: linear-gradient(to right, #6d8f30,#a7db49);
+    box-shadow: 0 0 10px 2px rgba(109, 143, 48, 0.3);
+}
+
+.icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5rem;
+    color: white;
+}
+
+.art-item h3{
+    position: absolute;
+    font-size: 2rem;
+    top: 8px;
+    left: 80px;
+}
+
+.art-item p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.art-item a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #4a7bed;
+    margin-bottom: 0px;
+}
