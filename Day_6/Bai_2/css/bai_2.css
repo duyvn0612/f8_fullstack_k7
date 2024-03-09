@@ -25,6 +25,13 @@ body{
     
 }
 
+.stn-main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
 .grid .grid-row:first-child .grid-col-4:nth-child(1) .art-item .div-icon{
     /* background-color: #e46074; */
     /* background-image: linear-gradient(to right, red, blue); */

@@ -18,13 +18,13 @@ html {
     line-height: 1.6rem;
     font-family: Roboto, sans-serif;
     box-sizing: border-box;
-
 }
 
 .grid{
     width: 1200px;
+    /* height: 100vh; */
     max-width: 70%;
-    margin: 0px auto;
+    margin: auto auto;
 }
 
 .grid-row{
@@ -33,7 +33,7 @@ html {
     flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
-    margin-top: 4rem;
+    margin: 4rem 0;
 }
 
 .grid-col-4{
