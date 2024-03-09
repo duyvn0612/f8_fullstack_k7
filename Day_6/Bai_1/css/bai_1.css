@@ -165,6 +165,10 @@ span::after{
     display: block;
 }
 
+.items > li:has(.info-items .list-items:hover) > a{
+    background-color: #2da5da;
+}
+
 .items > li > a:hover{
     background-color: #2da5da;
 }
