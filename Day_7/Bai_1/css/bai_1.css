@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Asap;
+    src: url("../font/Asap-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: Asap;
+    src: url("../font/Asap-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: SFU;
+    src: url("../font/SFUTradeGothicBoldCondensedTwenty.TTF");
+    font-weight: 700;
+}
+
+.banner-project{
+    position: relative;
+    width: auto;
+    height: 100vh;
+    background: url("../background/background.jpg") no-repeat 0 0 / contain scroll;
+    
+}
+
+.banner-info{
+    position: absolute;
+    background: rgba(255,255,255,0.7);
+    width: 40%;
+    bottom: 70%;
+    left: 14%;
+    padding: 15px 20px 30px;
+}
+
+.banner-info h2{
+    color: #bf4240;
+    font-family: Asap;
+    font-weight: 500;
+    font-size: 2.8rem;
+    padding-block: 1.5rem;
+}
+
+.banner-info p{
+    color: #3f3424;
+    font-family: Asap;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.banner-info p:last-of-type{
+    font-size: 1.4rem;
+    line-height: 4rem;
+}
+
+.fa-location-dot{
+    font-size: 1.6rem;
+}
+
+.price-info p{
+    position: absolute;
+    top: 26%;
+    left: 40%;
+    text-transform: uppercase;
+    font-family: SFU;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 20px 20px;
+    background-color: #bf4240;
+    color: white;
+    border: none solid;
+    border-radius: 5px;
+}

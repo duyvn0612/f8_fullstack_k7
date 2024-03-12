@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Roboto, sans-serif;
+    line-height: 1.6rem;
+    
+}
+
+.grid{
+    width: 1200px;
+    display: block;
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -12px;
+    
+}
+
+.col-6{
+    padding-inline: 12px;
+    width: 50%;
+}

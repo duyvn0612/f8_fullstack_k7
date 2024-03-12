@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Asap;
+    src: url("../font/Asap-SemiBold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: Asap;
+    src: url("../font/Asap-Medium.ttf");
+    font-weight: 500;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Asap,sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+}
+
+.grid{
+    width: 1200px;
+    display: block;
+    max-width: 80%;
+    margin-inline: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -12px;
+}
+
+.col-4{
+    padding: 12px;
+    width: 33.33%;
+}
+

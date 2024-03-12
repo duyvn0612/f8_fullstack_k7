@@ -196,6 +196,7 @@
     border: 1px solid #ff574d;
     border-radius: 5px;
     color: white;
+    text-transform: uppercase;
 }
 
 .div-login-form .form-data .field-checkbox{

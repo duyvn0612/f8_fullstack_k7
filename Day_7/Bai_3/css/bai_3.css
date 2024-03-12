@@ -1,0 +1,97 @@
+.real-estate-area h2{
+    position: relative;
+    font-size: large;
+    text-transform: uppercase;
+    padding-block: 2rem;
+}
+
+.real-estate-area h2::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 65%;
+    top: 50%;
+    left: 35%;
+    background-color: #ddd;
+}
+
+.real-estate-area nav{
+    /* display: block; */
+    width: 100%;
+    height: 70px;
+}
+
+.address ul{
+    list-style-type: none;
+}
+
+.address ul li label span{
+    font-size: medium;
+    text-transform: capitalize;
+    /* text-align: center; */
+}
+.address ul li label i{
+    font-size: x-small;
+    text-transform: lowercase;
+    /* text-align: center; */
+}
+
+.address ul li{
+    float: left;
+    display: block;
+    padding-right: 3rem;
+}
+
+.address ul li label{
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #e5e5e5;
+    border-radius: 99px;
+}
+
+.radio-location{
+    visibility: hidden;
+}
+
+.address ul li:has(.radio-location:checked) label{
+    background-color: #af7b37;
+    color: white;
+}
+
+.info-location{
+    aspect-ratio: 16/9;
+    background: url("https://picsum.photos/330/230") no-repeat 0 0 / cover;
+    border-radius: 5px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.content p:first-child{
+    font-family: Asap;
+    font-weight: 600;
+    font-size: large;
+    text-transform: capitalize;
+    color: white;
+    padding: 3rem 2rem;
+}
+
+.content p:last-child{
+    font-family: Asap;
+    font-weight: 500;
+    font-size: small;
+    text-transform: lowercase;
+    color: white;
+    padding: 3rem 2rem;
+}
+
+.content p:last-child span{
+    font-size: medium;
+    color: white;
+}
