@@ -16,27 +16,22 @@
     background: url("../background/vin.jpg") no-repeat 0 70% / cover;
 }
 
-/* .profile-background::after{
-    position: absolute;
-    content: "";
-    width: 17vw;
-    height: 23vh;
-    background: url("../background/logovingr.jpg") no-repeat 0 30% / cover;
-    bottom: 0;
-    left: 9rem;
-} */
+.background-info-group{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.204);
+}
 
 .info-group{
     display: flex;
     position: absolute;
-    left: 15rem;
+    left: 10rem;
     bottom: 0;
-    background-color: #00000035;
 }
 
 .logo-group{
-    width: 24rem;
-    height: 24rem;
+    width: 23rem;
+    height: 22rem;
 }
 
 .info-group .logo-group img{

@@ -37,15 +37,15 @@
 }
 
 .address ul li{
-    float: left;
-    display: block;
+    /* float: left; */
+    display: inline-block;
     padding-right: 3rem;
 }
 
 .address ul li label{
     display: block;
     text-align: center;
-    padding: 5px 10px;
+    padding: 5px 15px;
     background-color: #e5e5e5;
     border-radius: 99px;
 }
