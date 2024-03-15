@@ -1,0 +1,50 @@
+.flex-container h2{
+    font-size: xx-large;
+    text-transform: capitalize;
+    padding-block: 20px;
+}
+
+.flex-container p{
+    font-size: small;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.services h3{
+    font-size: large;
+    text-transform: capitalize;
+    padding-block: 20px;
+    
+}
+
+.services p{
+    color: rgba(0, 0, 0, 0.527);
+    text-align: center;
+}
+
+.services a{
+    display: inline-block;
+    padding: 10px 30px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    background-color: #28378e;
+    font-size: small;
+    margin-top: 20px;
+}
+
+.content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 99;
+}

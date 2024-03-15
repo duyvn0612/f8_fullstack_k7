@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Nunito;
+    src: url("../font/Nunito-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: Nunito;
+    src: url("../font/Nunito-SemiBold.ttf");
+    font-weight: 600;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Nunito,sans-serif;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: medium;
+}

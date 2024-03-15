@@ -67,7 +67,7 @@
 
 .info-profile{
     width: 100vw;
-    height: 5rem;
+    /* height: 5rem; */
     background: white;
     bottom: 0;
     border-bottom: 4px solid #ddd ;

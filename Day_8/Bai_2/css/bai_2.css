@@ -1,0 +1,252 @@
+.main-background{
+    width: 100vw;
+    height: 100vh;
+    background: #7f7f7f;
+    overflow: auto;
+}
+
+.shopping-cart-mini{
+    position: relative;
+    width: 25vw;
+    height: 100vh;
+    background-color: #fff;
+    float: right;
+}
+
+.shopping-cart-mini::after{
+    position: absolute;
+    content: "+";
+    font-size: x-large;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #ec6033;
+    border-radius: 50%;
+    top: 2%;
+    right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    color: white;
+    cursor: pointer;
+}
+
+.shopping-cart-mini h3{
+    position: relative;
+    font-size: x-large;
+    text-transform: capitalize;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.shopping-cart-mini h3::after{
+    content: "4";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: #4765f3;
+    font-size: small;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 24%;
+    left: 47%;
+}
+
+.form-products-price{
+    display: flex;
+    flex-direction: column;
+}
+
+.products-price-container{
+    overflow-y: auto;
+    height: 280px;
+}
+
+.products-price-container::-webkit-scrollbar{
+    width: 6px;
+}
+.products-price-container::-webkit-scrollbar-track{
+    background: white;
+}
+.products-price-container::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 99px;
+}
+
+.product-price{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-price::after{
+    content: "+";
+    font-size: 2.3rem;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.5);
+    transform: rotate(45deg);
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.product-price .background-product{
+    background-color: #fef9ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+
+.product-price .background-product img{
+    width: 80px;
+    height: 80px;
+}
+
+.product-price .info-product-price{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: flex-start;
+    flex: 5;
+}
+
+.info-product-price > p{
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.info-product-price .number-product-price{
+    padding-block: 5px;
+}
+
+.info-product-price .number-product-price label{
+    position: relative;
+    padding: 2px 45px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 99px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.info-product-price .number-product-price label::before{
+    content: "-";
+    font-size: 1.2rem;
+    position: absolute;
+    left: 10%;
+    cursor: pointer;
+}
+.info-product-price .number-product-price label::after{
+    content: "+";
+    font-size: 1.2rem;
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+}
+
+.info-product-price .number-product-price input{
+    visibility: hidden;
+}
+
+.info-product-price .number-product-price p{
+    float: right;
+}
+
+.subtotal-price-add{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.subtotal{
+    overflow: auto;
+}
+
+.subtotal-price-add .subtotal p:first-child{
+    text-transform: capitalize;
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: large;
+    float: left;
+}
+
+.subtotal-price-add .subtotal p:last-child{
+    color: #ec6033;
+    font-weight: 600;
+    font-size: large;
+    float: right;
+}
+
+.subtotal-price-add > p{
+    font-size: small;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: upper;
+}
+
+.subtotal-price-add .btn{
+    height: 50px;
+    text-transform: capitalize;
+    border: 1px solid rgba(0, 0, 0, 0.511);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.511);
+    cursor: pointer;
+}
+
+.subtotal-price-add .btn:first-of-type:hover{
+    background-color: #4060f3;
+    color: white;
+    border: none;
+}
+
+.subtotal-price-add .btn:last-of-type{
+    margin-top: 1rem;
+    background-color: #4060f3;
+    color: white;
+    border: none;
+}
+
+.threshold-free-ship{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    overflow: auto;
+}
+
+.threshold-free-ship .icon{
+    position: relative;
+    float: left;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 1px solid #647ef5;
+    border-radius: 50%;
+}
+
+.icon .fa-truck-fast{
+    position: absolute;
+    color: #4765f3;
+    font-size: x-large;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.threshold-free-ship p{
+    float: right;
+    text-transform: capitalize;
+}
+
+.threshold-free-ship p span{
+    text-transform: lowercase;
+}
+
+

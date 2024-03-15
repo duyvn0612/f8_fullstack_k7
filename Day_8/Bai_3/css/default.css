@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Roboto, sans-serif;
+    line-height: 1.6rem;
+}
+
+.flex-container{
+    width: 1200px;
+    max-width: 70%;
+    display: block;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-inline: -12px;
+}
+
+.col{
+    padding: 12px;
+   
+    width: 33.33%;
+}

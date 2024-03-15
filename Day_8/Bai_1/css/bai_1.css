@@ -1,0 +1,164 @@
+.main-backgound{
+    width: 100vw;
+    height: 100vh;
+    background: url("../background/Family-Therapy-Activities-to-Consider.jpg") no-repeat 0 0 / cover;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu > ul > li > a{
+    display: inline-block;
+    padding: 20px 20px;
+}
+
+
+.menu .pages-name li a{
+    font-family: Manrope;
+    font-weight: 600;
+    font-size: xx-large;
+    
+}
+
+.menu .menu-items .item-drop a{
+    position: relative;
+    text-transform: capitalize;
+}
+
+.menu-items .item-menu:nth-of-type(7){
+    padding-left: 25px;
+}
+
+.menu-items .item-drop span{
+    text-transform: uppercase;
+}
+
+.menu-items .item-drop > a::after{
+    content: "";
+    /* background-color: #fff; */
+    width: 5px;
+    height: 5px;
+    border-width: 0px 3px 3px 0px;
+    border-color: black;
+    border-style: solid;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 5px;
+    top: calc(50% - 5px);
+}
+
+.menu-items .item-drop a:hover{
+    color: rgba(0, 0, 0, 0.515);
+}
+.menu-items .item-drop a:hover::after{
+    border-color: rgba(0, 0, 0, 0.515);
+}
+
+.menu-items .item-drop .products{
+    display: none;
+}
+
+.menu-items .item-drop:hover .products{
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    padding-block: 20px;
+    padding-left: 40px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.menu-items .item-drop .products::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 80%;
+    background-color: #ddd;
+    left: 32%;
+    top: 10%;
+}
+
+.products .products-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.products-left p:first-of-type{
+    padding-bottom: 15px;
+}
+
+.products-left p:last-of-type{
+    padding-block: 5px;
+}
+
+.products-item-left .left-col{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.products-item-left.usage{
+    padding-bottom: 35px;
+}
+
+.left-col ul li{
+    padding-block: 5px;
+}
+
+.left-col-1-item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.left-col-2-item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.products .products-right{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.products-right p{
+    padding-bottom: 15px;
+}
+
+.products-item-right .right-col{
+    display: flex;
+    flex-direction: row;
+}
+
+.right-col-nth{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.right-col ul li{
+    padding-block: 5px;
+}
+
+
