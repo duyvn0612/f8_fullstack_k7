@@ -1,7 +1,7 @@
 .main-backgound{
     width: 100vw;
     height: 100vh;
-    background: url("../background/Family-Therapy-Activities-to-Consider.jpg") no-repeat 0 0 / cover;
+    background: url("../background/family.jpg") no-repeat 0 0 / cover;
 }
 
 .menu{
@@ -61,7 +61,7 @@
     top: calc(50% - 5px);
 }
 
-.menu-items .item-drop a:hover{
+.menu-items .item-menu a:hover{
     color: rgba(0, 0, 0, 0.515);
 }
 .menu-items .item-drop a:hover::after{
