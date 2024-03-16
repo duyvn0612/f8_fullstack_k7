@@ -1,0 +1,151 @@
+.flex-container{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+}
+
+.timeline p{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: small;
+    color: rgba(0, 0, 0, 0.505);
+}
+
+.icon i{
+    font-size: x-small;
+    color: #4aa294;
+    display: inline-block;
+    margin-block: 23px;
+    box-shadow: 0 0 8px 4px #4aa293aa;
+    border-radius: 50%;
+}
+
+.timeline .content h2{
+    font-family: "Space Grotesk";
+    font-weight: 600;
+    font-size: x-large;
+    color: black;
+    text-transform: capitalize;
+    padding-block: 20px;
+}
+
+.timeline .content p{
+    padding-bottom: 20px;
+}
+
+.timeline .content h3{
+    display: inline-block;
+    font-family: "Space Grotesk";
+    font-weight: 600;
+    font-size: small;
+    color: rgba(0, 0, 0, 0.71);
+    text-transform: capitalize;
+    padding-block: 5px;
+    padding-inline: 12px;
+    background-color: #ddd;
+    border-radius: 99px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.year p{
+    padding-block: 20px;
+}
+
+.main-timeline{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.timeline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.content{
+    text-align: right;
+    word-wrap: break-word;
+    flex: 9;
+    order: 1;
+}
+
+.icon{
+    position: relative;
+    text-align: center;
+    flex: 2;
+    order: 2;
+}
+
+.year{
+    text-align: left;
+    flex: 9;
+    order: 3;
+}
+
+.icon::after{
+    position: absolute;
+    content: "";
+    background-color: #dddddd7d;
+    width: 2px;
+    height: 85%;
+    top: 40%;
+    left: 50%;
+}
+
+.timeline:last-of-type .icon::after{
+    visibility: hidden;
+}
+
+.timeline:hover .year{
+    text-align: right;
+    flex: 9;
+    order: 1;
+}
+
+.timeline:hover .content{
+    text-align: left;
+    word-wrap: break-word;
+    flex: 9;
+    order: 3;
+}
+
+.timeline:hover .content h3{
+    background-color: #a26f5a;
+    color: white;
+}
+
+.image-content{
+    position: relative;
+}
+
+.image-content .image-overlay{
+    display: block;
+    position: absolute;
+    left: -25%;
+    top: 10%;
+}
+
+.image-overlay img{
+    position: relative;
+}
+
+.image-overlay .overlay{
+    position: absolute;
+    width: 210px;
+    height: 400px;
+    background-color: #3e59ad;
+    
+}
+
+.image-overlay .overlay p{
+    font-size: x-large;
+    color: rgba(255, 255, 255, 0.41);
+}
+
+
+

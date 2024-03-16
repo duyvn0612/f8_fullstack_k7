@@ -23,10 +23,10 @@
     flex-wrap: wrap;
     width: 100%;
     margin-inline: -12px;
+    margin-top: 48px;
 }
 
 .col{
     padding: 12px;
-   
     width: 33.33%;
 }
