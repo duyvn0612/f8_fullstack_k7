@@ -20,6 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-block: 4rem;
 }
 
 .flex-label{
@@ -61,6 +62,25 @@
     text-transform: capitalize;
     color: rgba(0, 0, 0, 0.592);
     padding-inline: 1.5rem;
+    outline: none;
+    appearance: none;
+}
+
+select option{
+    background-color: white;
+}
+
+.department::after{
+    position: absolute;
+    content: "";
+    top: calc(50% - 6px);
+    right: 25px;
+    width: 6px;
+    height: 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.44);
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
 }
 
 .flex-label select option:first-child{
@@ -80,6 +100,7 @@
     font-size: medium;
     text-transform: capitalize;
     position: absolute;
+    user-select: none;
     top: calc(50% - 8px);
     left: 5%;
     color: rgba(0, 0, 0, 0.592);
@@ -89,22 +110,28 @@
 .message label{
     position: relative;
     width: 100%;
+    height: 100%;
+    border: 2px solid #d5cfed7e;
+    border-radius: 8px;
 }
 
 .message label textarea{
     position: relative;
-    border: 2px solid #d5cfed7e;
+    width: 100%;
+    border: none;
+    /* border: 2px solid #d5cfed7e; */
     outline: none;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     font-size: medium;
     padding-inline: 2rem;
-    padding-block: 3rem;
+    margin-top: 3rem;
 }
 
 .message label span{
     font-size: medium;
     text-transform: capitalize;
     position: absolute;
+    user-select: none;
     top: calc(0% + 16px);
     left: 2.7%;
     color: rgba(0, 0, 0, 0.592);
@@ -127,6 +154,7 @@
     border: none;
     border-radius: 99px;
     font-size: medium;
+    font-weight: 600;
     color: white;
     background-color: #4d77d9;
     cursor: pointer;
@@ -144,9 +172,9 @@
     top: calc(0% + 8px);
 }
 
-.flex-label label input:focus,
-.flex-label label select:focus,
-.message label textarea:focus{
+input:focus,
+select:focus,
+.message label:has(textarea:focus){
     border: 2px solid #d4ceec;
 }
 

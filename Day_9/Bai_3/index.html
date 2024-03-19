@@ -28,12 +28,12 @@
         <div class="flex-container">
           <div class="flex-label fullname">
             <label>
-              <input type="text" name="firstname" required />
+              <input type="text" name="firstname" maxlength="40" required />
               <span>first name <sup>*</sup></span>
             </label>
             <!-- end label first name -->
             <label>
-              <input type="text" name="lastname" required />
+              <input type="text" name="lastname" maxlength="40" required />
               <span>last name <sup>*</sup></span>
             </label>
             <!-- end label last name -->
@@ -41,13 +41,13 @@
           <!-- end .fullname -->
           <div class="flex-label email-department">
             <label>
-              <input type="email" name="email" required />
+              <input type="email" name="email" maxlength="40" required />
               <span>Email <sup>*</sup></span>
             </label>
             <!-- end label email -->
-            <label>
-              <select name="department" required>
-                <option disabled>select a department</option>
+            <label class="department">
+              <select name="department">
+                <option value="" disabled>select a department</option>
                 <option value="2" selected>sales</option>
                 <option value="3">marketing</option>
                 <option value="4">customer support</option>
