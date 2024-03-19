@@ -1,0 +1,133 @@
+/* .law-society{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+} */
+
+.work-item{
+    position: relative;
+    border: 1px solid #ddd;
+    padding-inline: 4rem;
+    background: url("../background/back.jpg") no-repeat 0 0 / cover;
+}
+
+.work-item::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    top: 0;
+    left: 0;
+    border: 1px solid #ddd;
+    transition: transform 0.4s ease-in-out;
+    opacity: 0;
+    z-index: 0;
+}
+
+.work-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #ddd; */
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+    z-index: 0;
+}
+
+.work-item .icon{
+    display: inline-block;
+    position: relative;
+    color: #c67558;
+    font-size: 6rem;
+    padding-block: 4rem;
+    transition: transform 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.work-item h3{
+    position: relative;
+    font-family: spaceGrotes;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    padding-bottom: 1.5rem;
+    bottom: 0;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.work-item .content{
+    position: relative;
+    font-size: small;
+    padding-bottom: 4rem;
+    bottom: 0;
+    transition: all 0.4s ease-in-out;
+    /* transition-delay: 0.2s; */
+    z-index: 1;
+}
+
+.work-item .learn-more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: -1%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.work-item .learn-more a{
+    color: white;
+    text-transform: capitalize;
+    font-size: small;
+    font-weight: 600;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.work-item .learn-more span i{
+    color: white;
+    font-size: medium;
+    display: inline-block;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+
+.work-item .learn-more:hover i{
+    color: black;
+    background-color: white;
+}
+
+.work-item:hover .icon{
+    transform: scale(0);
+}
+
+.work-item:hover h3,
+.work-item:hover .content,
+.work-item:hover a{
+    color: white;
+    bottom: 80px;
+}
+
+.work-item:hover .learn-more{
+    bottom: 30px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.work-item:hover::before{
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.work-item:hover::after{
+    background-color: #c675589c;
+}

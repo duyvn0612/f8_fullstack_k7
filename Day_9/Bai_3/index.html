@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/bai_3.css" />
+    <title>Message</title>
+  </head>
+  <body>
+    <div class="grid">
+      <form class="form-message" action="#" method="get">
+        <div class="title">
+          <h2>drop us <span>a</span> line</h2>
+          <p>
+            Reach out to us from our contact form and we will get back to you
+            shortly
+          </p>
+        </div>
+        <!-- end .title -->
+        <div class="flex-container">
+          <div class="flex-label fullname">
+            <label>
+              <input type="text" name="firstname" required />
+              <span>first name <sup>*</sup></span>
+            </label>
+            <!-- end label first name -->
+            <label>
+              <input type="text" name="lastname" required />
+              <span>last name <sup>*</sup></span>
+            </label>
+            <!-- end label last name -->
+          </div>
+          <!-- end .fullname -->
+          <div class="flex-label email-department">
+            <label>
+              <input type="email" name="email" required />
+              <span>Email <sup>*</sup></span>
+            </label>
+            <!-- end label email -->
+            <label>
+              <select name="department" required>
+                <option disabled>select a department</option>
+                <option value="2" selected>sales</option>
+                <option value="3">marketing</option>
+                <option value="4">customer support</option>
+              </select>
+            </label>
+          </div>
+          <!-- end .email-department -->
+          <div class="flex-label message">
+            <label>
+              <textarea name="message" cols="95" rows="5" required></textarea>
+              <span>Message <sup>*</sup></span>
+            </label>
+          </div>
+          <!-- end .message -->
+          <div class="flex-label button">
+            <label>
+              <button type="submit">Send message</button>
+            </label>
+          </div>
+          <!-- end .button -->
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

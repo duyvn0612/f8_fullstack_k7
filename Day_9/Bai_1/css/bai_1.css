@@ -1,9 +1,9 @@
 .flex-container{
-    width: 80%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 
 .timeline p{
@@ -72,6 +72,7 @@
     word-wrap: break-word;
     flex: 9;
     order: 1;
+    /* transition: ; */
 }
 
 .icon{
@@ -120,32 +121,59 @@
 }
 
 .image-content{
+    margin-top: 20px;
     position: relative;
+    width: 420px;
+    height: 420px;
+    background: url("../img/back.jpg") no-repeat 0 0 / cover;
 }
 
-.image-content .image-overlay{
-    display: block;
+.coverCard{
+    width: 210px;
+    height: 420px;
     position: absolute;
+    background: url("../img/coverCard.jpg") no-repeat 0 0 / cover;
     left: -25%;
-    top: 10%;
+    top: 20%;
+    /* border: 1px solid red; */
+    /* padding: 10px; */
 }
 
-.image-overlay img{
-    position: relative;
-}
-
-.image-overlay .overlay{
+.coverCard-title-transparent{
+    font-family: "Space Grotesk";
     position: absolute;
     width: 210px;
-    height: 400px;
-    background-color: #3e59ad;
-    
+    height: 420px;
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    align-items: end;
+    background: url("../img/coverCard.jpg") no-repeat 0 0 / cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 0px 45px 70px 0px;
 }
 
-.image-overlay .overlay p{
-    font-size: x-large;
-    color: rgba(255, 255, 255, 0.41);
+.overlay{
+    position: absolute;
+    width: 90%;
+    height: 95%;
+    background-color: #455eb2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
-
-
+.coverCard-title{
+    font-size: Inter;
+    position: absolute;
+    font-size: small;
+    color: white;
+    top: 36rem;
+    left: 7rem;
+}
