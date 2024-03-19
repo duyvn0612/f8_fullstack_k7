@@ -14,11 +14,14 @@
 }
 
 .icon i{
+    width: 1.3rem;
+    height: 1.3rem;
     font-size: x-small;
+    background-color: #4aa294;
     color: #4aa294;
     display: inline-block;
     margin-block: 23px;
-    box-shadow: 0 0 8px 4px #4aa293aa;
+    box-shadow: 0 0 0 7px #4aa2936f;
     border-radius: 50%;
 }
 
@@ -130,11 +133,12 @@
 
 .coverCard{
     width: 210px;
-    height: 420px;
+    height: 380px;
     position: absolute;
     background: url("../img/coverCard.jpg") no-repeat 0 0 / cover;
     left: -25%;
-    top: 20%;
+    top: 25%;
+    z-index: 0;
     /* border: 1px solid red; */
     /* padding: 10px; */
 }
@@ -143,8 +147,8 @@
     font-family: "Space Grotesk";
     position: absolute;
     width: 210px;
-    height: 420px;
-    font-size: 5.5rem;
+    height: 380px;
+    font-size: 6rem;
     font-weight: 700;
     line-height: 5.5rem;
     text-align: right;
@@ -157,6 +161,7 @@
     -webkit-background-clip: text;
     color: transparent;
     padding: 0px 45px 70px 0px;
+    z-index: 2;
 }
 
 .overlay{
@@ -167,6 +172,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    z-index: 1;
 }
 
 .coverCard-title{
@@ -174,6 +180,7 @@
     position: absolute;
     font-size: small;
     color: white;
-    top: 36rem;
+    top: 32rem;
     left: 7rem;
+    z-index: 2;
 }
