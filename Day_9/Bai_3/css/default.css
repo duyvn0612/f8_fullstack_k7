@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Roboto, sans-serif;
+    line-height: 1.6rem;
+}
+
+.grid{
+    width: 1200px;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
