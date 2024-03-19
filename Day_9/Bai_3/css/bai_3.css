@@ -129,6 +129,7 @@
     font-size: medium;
     color: white;
     background-color: #4d77d9;
+    cursor: pointer;
 }
 
 .flex-label label input:focus + span,
