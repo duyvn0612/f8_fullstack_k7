@@ -118,6 +118,7 @@
 }
 
 .work-item:hover .learn-more{
+    cursor: pointer;
     bottom: 30px;
     visibility: visible;
     opacity: 1;

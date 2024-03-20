@@ -104,7 +104,7 @@ select option{
     top: calc(50% - 8px);
     left: 5%;
     color: rgba(0, 0, 0, 0.592);
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .message label{
@@ -133,9 +133,9 @@ select option{
     position: absolute;
     user-select: none;
     top: calc(0% + 16px);
-    left: 2.7%;
+    left: 2.5%;
     color: rgba(0, 0, 0, 0.592);
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .button{
