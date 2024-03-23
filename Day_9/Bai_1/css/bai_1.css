@@ -75,7 +75,8 @@
     word-wrap: break-word;
     flex: 9;
     order: 1;
-    /* transition: ; */
+    /* transition-property: order;
+    transition-duration: 0.5s; */
 }
 
 .icon{
@@ -89,6 +90,8 @@
     text-align: left;
     flex: 9;
     order: 3;
+    /* transition-property: order;
+    transition-duration: 0.5s; */
 }
 
 .icon::after{

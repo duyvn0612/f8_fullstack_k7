@@ -1,0 +1,76 @@
+.flex-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #323543;
+}
+
+.envelope{
+    position: relative;
+    width: 18rem;
+    height: 10rem;
+    transition: transform 0.6s ease-in-out;
+    z-index: 2;
+    /* border: 1px red solid; */
+}
+
+.envelope:hover{
+    transform: translateY(5rem);
+}
+
+
+.envelope::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style:solid;
+    border-width: 50px 90px 50px 90px;
+    border-color: transparent transparent #dd564b #dd564b;
+    z-index: 2;
+}
+.envelope::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style:solid;
+    border-width: 50px 90px 50px 90px;
+    border-color: transparent #d75e52 #d75e52 transparent;
+    z-index: 2;
+}
+
+.open{
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style:solid;
+    border-width: 50px 90px 50px 90px;
+    border-color: #cb4f41 transparent transparent transparent;
+    transform-origin: top;
+    transition: transform 0.6s ease-in-out;
+    z-index: 2;
+}
+
+.envelope:hover .open{
+    transform: rotateX(-180deg);
+    transform-origin: top;
+}
+
+.letter{
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 14rem;
+    height: 9rem;
+    background-color: white;
+    z-index: 0;
+}

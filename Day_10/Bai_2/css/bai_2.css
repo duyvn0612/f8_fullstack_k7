@@ -1,0 +1,108 @@
+@keyframes rotate-opacity {
+    from {
+      transform: rotateX(0deg);
+      opacity: 0.09;
+      visibility: visible;
+    }
+    50% {
+      transform: rotateX(-45deg);
+      opacity: 0.1;
+      visibility: visible;
+    }
+    to {
+      transform: rotateX(0deg);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+
+body{
+    background-color: #eeedef;
+}
+
+.menu-bars {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    font-size: 0;
+    
+}
+
+.menu-bars > ul{
+    position: relative;
+    background-color: white;
+}
+
+.menu-bars > ul > li{
+    display:  inline-block;
+    list-style: none;
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 0px 0px 1px 1px;
+    padding: 5px;
+}
+
+.menu-bars > ul > li:first-child{
+    border-left-width: 0px;
+}
+
+.menu-bars > ul > li > .content{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    /* border: 2px black solid; */
+    padding: 25px;
+    
+    background-color: white;
+    overflow-x: scroll;
+    /* transform: rotateX(-90deg); */
+    transform-origin: top;
+    opacity: 0;
+    visibility: hidden;
+    /* transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear; */
+}
+
+.menu-bars > ul > li > label{
+    user-select: none;
+    display:  inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.menu-bars > ul > li > label:hover{
+    background-color: #4397dd;
+}
+
+.menu-bars > ul > li .inpitem:checked + label{
+    background-color: #4397dd;
+}
+
+.menu-bars > ul > li .inpitem:checked + label + .content{
+    /* transform: rotateX(0deg);
+    transform-origin: top; */
+    animation: rotate-opacity 0.8s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+.content h2{
+    width: calc(100% + 100px);
+    color: black;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.content p{
+    color: black;
+    font-size: small;
+}
+
