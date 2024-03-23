@@ -1,0 +1,125 @@
+body{
+    position: relative;
+    width: 2000px;
+    height: 2000px;
+    overflow: hidden;
+}
+
+header{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background-color: white;
+    border-bottom-right-radius: 100%;
+    z-index: 1;
+    transition-duration: 0.4s;
+    transition-property: width, height;
+    transition-timing-function: ease-in-out;
+}
+
+header:has(.burger-menu .btn-bars input:checked){
+    width: 100%;
+    height: 100%;
+}
+
+.burger-menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.burger-menu ul{
+    list-style-type: none;
+    padding-top: 2rem;
+    display: none;
+}
+
+.burger-menu ul li a{
+    font-size: medium;
+    font-weight: 600;
+    padding-block: 8px;
+    padding-left: 50px;
+    padding-right: 90px;
+    color:  #31a8f7;
+    line-height: 5.5rem;
+    text-decoration: none;
+    transition-property: color, background-color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.burger-menu ul li a:focus {
+    color: black;
+    background-color: #ddd;
+}
+
+.burger-menu .btn-bars{
+    padding: 2rem;
+}
+
+.burger-menu .btn-bars label{
+    position: relative;
+    font-size: xxx-large;
+    font-weight: 600;
+    color: rgb(51, 152, 231);
+    text-decoration: none;
+}
+
+.btn-bars label i{
+    user-select: none;
+    position: absolute;
+    transition-property: opacity, transform;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.btn-bars label i:last-child{
+    opacity: 0;
+    visibility: hidden; 
+}
+
+.btn-bars input:checked + label i:first-child{
+    transform: rotate(180deg);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.btn-bars input:checked + label i:last-child{
+    transform: rotate(180deg);
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-bars:has(input:checked) + ul{
+    display: block;
+}
+
+
+/* ----------------------- end nav .burger-menu ---------------------------------- */
+
+.main-burger-menu{
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #31a8f7;
+    color: white;
+    text-align: right;
+}
+
+.main-burger-menu .title h1{
+    font-size: xxx-large;
+    font-weight: 600;
+}
+
+.main-burger-menu .title p{
+    font-size: xx-large;
+    font-weight: 100;
+}
+
+.title{
+    position: absolute;
+    z-index: 0;
+    right: 10%;
+    top: calc(50% - 85px);
+}
