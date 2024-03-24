@@ -73,6 +73,10 @@ header:has(.burger-menu .btn-bars input:checked){
     transition-timing-function: linear;
 }
 
+.btn-bars label:hover{
+    cursor: pointer;
+}
+
 .btn-bars label i:last-child{
     opacity: 0;
     visibility: hidden; 
