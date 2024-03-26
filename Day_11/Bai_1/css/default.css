@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../font/Roboto-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../font/Roboto-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../font/Roboto-Black.ttf");
+    font-weight: 900;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* 
+      default browser ==>100% = 16px
+      font-size: 100%; 
+      font-size: 1rem; ==> 1rem = 16px
+    
+      ==> 62.5% = 10px
+        font-size: 62.5%;
+        fonts-size: 1.6rem; ==> 1.6rem = 16px
+    */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Roboto,sans-serif;
+    font-weight: 500;
+}
+
+.grid{
+    width: 1200px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
