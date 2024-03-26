@@ -40,8 +40,78 @@ html{
     width: 1200px;
     max-width: 80%;
     margin: 0 auto;
+    padding-block: 10rem;
 }
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-inline: -12px;
+}
+
+.col-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.67%;
+    word-wrap: break-word;
+}
+
+.col-3{
+    position: relative;
+    margin-inline: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 25%;
+    word-wrap: break-word;
+}
+
+.col-3::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #fe6a6a;
+    border-radius: 2rem;
+    z-index: 0;
+    transform-origin: top left;
+    transition: transform 0.4s ease-in-out;
+}
+
+.col-4{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 33.33%;
+    word-wrap: break-word;
+}
+
+
 
 ul{
     list-style: none;
+}
+
+p{
+    font-family: Roboto;
+    font-size: large;
+    font-weight: 500;
+    line-height: 4rem;
+}
+
+h2{
+    font-family: Roboto;
+    font-size: 4rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 5rem;
+}
+
+h3{
+    font-family: Roboto;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    line-height: 5rem;
 }
