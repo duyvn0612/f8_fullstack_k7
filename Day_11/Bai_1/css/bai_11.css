@@ -1,0 +1,215 @@
+/* ---------------navbar--------------------------- */
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 6rem auto;
+}
+
+.navbar-container .navbar-menu .menu-items{
+    font-size: 0;
+}
+
+.navbar-container .navbar-menu .menu-items > li{
+    display: inline-block;
+}
+
+.navbar-container .navbar-menu .menu-items > li > a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: initial;
+    margin-inline: 2rem;
+}
+
+.navbar-container .navbar-menu .menu-items > li:first-child a{
+    color: red;
+}
+
+.navbar-container .navbar-menu .menu-items > li:hover a{
+    color: red;
+}
+
+.navbar-container .navbar-search label{
+    position: relative;
+}
+
+.navbar-container .navbar-search label input{
+    position: relative;
+    outline: none;
+    border: none;
+    width: 35rem;
+    height: 4.5rem;
+    font-size: medium;
+    padding-inline: 5rem;
+    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.05);
+    word-break: break-all;
+    z-index: 0;
+}
+
+.navbar-container .navbar-search label input::placeholder{
+    color: black;
+    font-weight: 500;
+    transition: 0.2s ease;
+    opacity: 1;
+    transition-property: opacity;
+}
+.navbar-container .navbar-search label input:focus::placeholder {
+    opacity: 0;
+}
+
+.navbar-container .navbar-search label span:first-of-type{
+    position: absolute;
+    font-size: medium;
+    top: -2px;
+    left: 15px;
+    color: #0000007c;
+    z-index: 1;
+}
+.navbar-container .navbar-search label span:last-of-type{
+    position: absolute;
+    font-size: medium;
+    user-select: none;
+    top: -2px;
+    right: 15px;
+    color: #000000ce;
+    z-index: 1;
+}
+
+.navbar-container .navbar-search label span:last-of-type::after{
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -10px;
+    height: 30px;
+    border: 1px solid #ddd;
+}
+
+.navbar-container .navbar-search label span:last-of-type::before{
+    content: "2";
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: -30px;
+    right: -24px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.69);
+    box-shadow:  0px 0 5px rgb(255, 0, 0);
+}
+/* ---------------navbar--------------------------- */
+/* ---------------title-container--------------------------- */
+.title-container{
+    width: 85%;
+    margin: 9rem auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-container .title{
+    word-wrap: break-word;
+    flex: 1;
+}
+
+.title-container .title p:first-of-type{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: Roboto;
+    font-size: medium;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 99px;
+    color: #f55556;
+    background-color: #fdecec;
+}
+
+.title-container .title h1{
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 7.5rem;
+    line-height: 8rem;
+    margin-block: 25px;
+}
+
+.title-container .title p:last-of-type{
+    font-family: Roboto;
+    font-size: medium;
+    font-weight: 500;
+    line-height: 2.5rem;
+    color: #0000009c;
+}
+
+.title-container .title .btn-order{
+    padding-top: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.title-container .title .btn-order label > button{
+    width: 190px;
+    height: 70px;
+    border: 1px solid #f86061;
+    border-radius: 12px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 2.2rem;
+    background-color: #f86061;
+    cursor: pointer;
+    transition: 0.4s ease;
+    transition-property: background-color, color;
+}
+
+.title-container .title .btn-order label > button:hover{
+    background-color: white;
+    color: #f86061;
+}
+
+.title-container .title .btn-order .order-process > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.title-container .title .btn-order .order-process > a:hover{
+    color: #00000077;
+}
+
+.title-container .title .btn-order .order-process > a img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.23);
+}
+
+.title-container .title-image{
+    flex: 1;
+}
+
+.title-container .title-image img{
+    width: 580px;
+    height: 500px;
+}
+
+/* ---------------title-container--------------------------- */
