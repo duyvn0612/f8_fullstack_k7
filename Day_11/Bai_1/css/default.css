@@ -67,7 +67,7 @@ html{
     word-wrap: break-word;
 }
 
-.col-3::after{
+/* .col-3::after{
     content: "";
     position: absolute;
     inset: 0;
@@ -76,7 +76,7 @@ html{
     z-index: 0;
     transform-origin: top left;
     transition: transform 0.4s ease-in-out;
-}
+} */
 
 .col-4{
     padding-left: 12px;
@@ -85,7 +85,11 @@ html{
     word-wrap: break-word;
 }
 
-
+a{
+    text-decoration: none;
+    font-size: medium;
+    color: #000;
+}
 
 ul{
     list-style: none;
