@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grover</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/bai_1.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbars">
+        <div class="grid grid-xl grid-lg grid-md grid-sm">
+          <div class="row">
+            <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="menu-bars">
+                <div class="logo">
+                  <img src="./img/logo.svg" alt="logo" />
+                </div>
+                <!-- end .logo -->
+                <div class="menu-items">
+                  <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">shop</a></li>
+                  </ul>
+                  <!-- end .menu-items -->
+                  <ul>
+                    <li>
+                      <form
+                        class="form-search-products"
+                        action="#"
+                        method="get"
+                      >
+                        <span
+                          ><i class="fa-solid fa-magnifying-glass"></i
+                        ></span>
+                        <span><i class="fa-solid fa-cart-plus"></i></span>
+                        <input type="text" name="search" placeholder="Search" />
+                      </form>
+                    </li>
+                  </ul>
+                  <!-- end .form-search-products -->
+                </div>
+                <!-- end .menu-items -->
+                <label class="toggler" for="idcheck"
+                  ><i class="fa-solid fa-bars"></i
+                ></label>
+                <input type="checkbox" id="idcheck" hidden />
+              </div>
+              <!-- end .menu-bars -->
+            </div>
+          </div>
+          <!-- end .row -->
+        </div>
+        <!-- .end grid -->
+      </nav>
+      <!-- end .navbars -->
+      <section class="title-header">
+        <div class="grid grid-xl grid-lg grid-md grid-sm">
+          <div class="row row-lg">
+            <div class="col-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <article class="job-description">
+                <p>
+                  More than Faster
+                  <img src="./img/strawberry.svg" alt="strawberry" />
+                </p>
+                <h1>
+                  Groceries delivered in as little as
+                  <span>2 hours</span>
+                </h1>
+                <p>
+                  Grocen atssures fresh grocery every morning to your family
+                  without getting out in this pandemic.
+                </p>
+                <div class="btn-order">
+                  <a href="#1">order now</a>
+                  <a href="#2"
+                    ><img src="./img/button-play.svg" alt="" />order process</a
+                  >
+                </div>
+              </article>
+              <!-- end .job-description -->
+            </div>
+            <!-- end .col-6 -->
+            <div class="col-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
+              <article class="image-title">
+                <img src="./img/delivary.png" alt="delivary" />
+              </article>
+              <!-- end .image-title -->
+            </div>
+            <!-- end .col-6 -->
+          </div>
+          <!-- end .row -->
+        </div>
+        <!-- end .grid -->
+      </section>
+      <!-- end section title-header -->
+    </header>
+
+    <main>
+      <section class="grover-service">
+        <p>What we Serve</p>
+        <h2>Fruit And Vegetable Delivered To Your Home</h2>
+        <div class="grid grid-xl grid-lg grid-md grid-sm">
+          <div class="row row-service-container">
+            <div class="col-3 col-xl-3 col-lg-3 col-md-3 col-sm-12">
+              <div class="service-container">
+                <div class="service-overlay"></div>
+                <article class="free-shipping">
+                  <img src="./img/service-ic1.svg" alt="service-ic1" />
+                  <h3>Free shipping</h3>
+                  <p>Enjoy Order in a hand using the fresness of groceries</p>
+                </article>
+                <!-- end .free-shipping -->
+              </div>
+            </div>
+            <!-- end .col-3 Free shipping -->
+            <div class="col-3 col-xl-3 col-lg-3 col-md-3 col-sm-12">
+              <div class="service-container">
+                <div class="service-overlay"></div>
+                <article class="15-days-returns">
+                  <img src="./img/service-ic2.svg" alt="service-ic2" />
+                  <h3>15 days returns</h3>
+                  <p>
+                    Order in a handy way using the freshness of the groceries.
+                  </p>
+                </article>
+                <!-- end .15-days-returns -->
+              </div>
+            </div>
+            <!-- end .col-3 15 days returns -->
+            <div class="col-3 col-xl-3 col-lg-3 col-md-3 col-sm-12">
+              <div class="service-container">
+                <div class="service-overlay"></div>
+                <article class="secure-checkout">
+                  <img src="./img/service-ic3.svg" alt="service-ic3" />
+                  <h3>Secure checkout</h3>
+                  <p>If you get rotten items - return immediately to us.</p>
+                </article>
+                <!-- end .secure-checkout -->
+              </div>
+            </div>
+            <!-- end .col-3 Secure checkout -->
+          </div>
+          <!-- end .row -->
+        </div>
+        <!-- end .grid -->
+      </section>
+      <!-- end .grover-service -->
+      <section class="company-advantage">
+        <div class="grid grid-xl grid-lg grid-md grid-sm">
+          <div class="row row-1">
+            <div class="col-7 col-xl-7 col-lg-6 col-md-12 col-sm-12">
+              <article class="image-rice-product">
+                <img src="./img/feat.png" alt="feat" />
+              </article>
+              <!-- end article .image-rice-product -->
+            </div>
+            <!-- end .col-7  .image-rice-product-->
+            <div class="col-5 col-xl-5 col-lg-6 col-md-12 col-sm-12">
+              <article class="why-choose-us">
+                <p>why choose us</p>
+                <h2>find favorites and discover new ones</h2>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus
+                  blanditiis praesen voluptatum deleniti.
+                </p>
+                <a href="#3">explore now</a>
+              </article>
+              <!-- end article .why-choose-us -->
+            </div>
+            <!-- end .col-5  .why-choose-us-->
+          </div>
+          <!-- end .row row-1 .melting-cheese -->
+          <div class="row row-2">
+            <div class="col-5 col-xl-5 col-lg-6 col-md-12 col-sm-12">
+              <article class="home-delivery">
+                <p>home delivery</p>
+                <h2>sit at home we will take care your order</h2>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos
+                </p>
+                <a href="#4">explore now</a>
+              </article>
+              <!-- end article .home-delivery -->
+            </div>
+            <!-- end .col-5  .home-delivery-->
+            <div class="col-7 col-xl-7 col-lg-6 col-md-12 col-sm-12">
+              <article class="image-bike-delivery">
+                <img src="./img/feat2.png" alt="feat" />
+              </article>
+              <!-- end article .image-bike-delivery -->
+            </div>
+            <!-- end .col-7  .image-bike-delivery-->
+          </div>
+          <!-- end .row row-2 .home-delivery -->
+        </div>
+      </section>
+      <!-- end .company-advantage -->
+      <section class="app-mobile">
+        <div class="grid grid-xl grid-lg grid-md grid-sm">
+          <div class="row">
+            <div class="col-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
+              <article class="image-mobile">
+                <img src="./img/mobile.svg" alt="#" />
+              </article>
+              <!-- end .image-mobile -->
+            </div>
+            <!-- end .col-5 .app-mobile -->
+            <div class="col-7 col-xl-7 col-lg-7 col-md-12 col-sm-12">
+              <article class="content-mobile">
+                <p>Download our app</p>
+                <h2>get the groceries app order more easily.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut.
+                </p>
+                <div class="btn-app">
+                  <a href="#5"><img src="./img/apple.svg" alt="" />app store</a>
+                  <a href="#6"
+                    ><img src="./img/playstore.svg" alt="" />play store</a
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- end .row .app-mobile -->
+        </div>
+        <!-- end .grid .app-mobile -->
+      </section>
+    </main>
+    <footer>
+      <section class="footer-wrapper">
+        <div class="grid grid-xl grid-lg grid-md grid-sm">
+          <div class="row row-company">
+            <div class="col-3 col-xl-3 col-lg-4 col-md-12 col-sm-12">
+              <article class="intro-company">
+                <img src="./img/logo.svg" alt="logo" />
+                <p>
+                  Fast delivery, which is active all over the world, serves with
+                  many transportation vehicles.
+                </p>
+              </article>
+            </div>
+            <!-- end .col-3 -->
+            <div class="col-3 col-xl-3 col-lg-2 col-md-12 col-sm-12">
+              <article class="info-company">
+                <h3>Company</h3>
+                <ul>
+                  <li><a href="#7">About Us</a></li>
+                  <li><a href="#8">Blog</a></li>
+                  <li><a href="#9">All Products</a></li>
+                  <li><a href="#10">Locations Map</a></li>
+                </ul>
+              </article>
+            </div>
+            <!-- end .col-3 -->
+            <div class="col-3 col-xl-3 col-lg-3 col-md-12 col-sm-12">
+              <article class="service-company">
+                <h3>Services</h3>
+                <ul>
+                  <li><a href="#11">Order tracking</a></li>
+                  <li><a href="#12">Wish List</a></li>
+                  <li><a href="#13">My account</a></li>
+                  <li><a href="#14">Terms & Conditions</a></li>
+                </ul>
+              </article>
+            </div>
+            <!-- end .col-3 -->
+            <div class="col-3 col-xl-3 col-lg-3 col-md-12 col-sm-12">
+              <article class="touch-company">
+                <h3>Get in Touch</h3>
+                <p>
+                  Subscribe to our weekly Newsletter and receive updates via
+                  email.
+                </p>
+              </article>
+            </div>
+            <!-- end .col-3 -->
+          </div>
+          <!-- .end row -->
+        </div>
+      </section>
+      <!-- end .footer-wrapper -->
+      <section class="copyright">
+        <div class="grid grid-xl grid-lg grid-md grid-sm">
+          <div class="row">
+            <div class="col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+              <div class="copyright-container">
+                <p>All Rights Reserved @ BESNIK 2021</p>
+                <ul>
+                  <li><a href="#99">terms & conditions</a></li>
+                  <li><a href="#99">privacy & policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/331f6e8450.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
