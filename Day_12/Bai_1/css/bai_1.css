@@ -243,7 +243,7 @@ ul {
 }
 
 .grover-service h2 {
-  font-size: 40px;
+  font-size: 42px;
   line-height: 55px;
   padding-bottom: 55px;
   margin-inline: 415px;
@@ -389,7 +389,7 @@ ul {
 
 .app-mobile .col-7 .content-mobile h2 {
   text-transform: capitalize;
-  font-size: 40px;
+  font-size: 45px;
   line-height: 50px;
 }
 
@@ -453,6 +453,11 @@ ul {
 .footer-wrapper .row-company .info-company > ul,
 .footer-wrapper .row-company .service-company > ul {
   padding-top: 30px;
+}
+
+.footer-wrapper .row-company .col-3 article:has(ul) h3,
+ul {
+  padding-left: 60px;
 }
 
 .footer-wrapper article ul li {
