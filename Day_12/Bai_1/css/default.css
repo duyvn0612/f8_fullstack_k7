@@ -1,0 +1,128 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../font/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../font/Poppins-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../font/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../font/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html {
+  /* 
+      default browser ==>100% = 16px
+      font-size: 100%; 
+      font-size: 1rem; ==> 1rem = 16px
+    
+      ==> 62.5% = 10px
+        font-size: 62.5%;
+        fonts-size: 1.6rem; ==> 1.6rem = 16px
+    */
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+}
+
+/* Lưới grid gồm 12 cột nhỏ */
+
+.grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -10px;
+}
+
+[class^="col-"] {
+  padding: 0 10px;
+}
+
+.col-1 {
+  flex-basis: calc(100% / 12 * 1);
+  max-width: calc(100% / 12 * 1);
+  /* 12 cột ~  */
+}
+
+.col-2 {
+  flex-basis: calc(100% / 12 * 2);
+  max-width: calc(100% / 12 * 2);
+  /* 6 cột ~  */
+}
+
+.col-3 {
+  flex-basis: calc(100% / 12 * 3);
+  max-width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+  flex-basis: calc(100% / 12 * 4);
+  max-width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+  flex-basis: calc(100% / 12 * 5);
+  max-width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+  flex-basis: calc(100% / 12 * 6);
+  max-width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+  flex-basis: calc(100% / 12 * 7);
+  max-width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+  flex-basis: calc(100% / 12 * 8);
+  max-width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+  flex-basis: calc(100% / 12 * 9);
+  max-width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+  flex-basis: calc(100% / 12 * 10);
+  max-width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+  flex-basis: calc(100% / 12 * 11);
+  max-width: calc(100% / 12 * 11);
+  /* 1 cột ~ 100% */
+}
+
+.col-12 {
+  flex-basis: calc(100% / 12 * 12);
+  max-width: calc(100% / 12 * 12);
+  /* 1 cột ~ 100% */
+}
