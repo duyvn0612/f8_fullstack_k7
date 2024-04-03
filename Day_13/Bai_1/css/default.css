@@ -74,6 +74,7 @@ Khi gọi class ở màn hình nào chỉ hoạt động ở màn hình đó tr�
 .row {
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
   margin: 0 calc(0px - var(--column-space) / 2);
 }
 
@@ -534,6 +535,9 @@ Khi gọi class ở màn hình nào chỉ hoạt động ở màn hình đó tr�
 }
 
 @media screen and (min-width: 1400px) {
+  .landing_vikinger .container {
+    height: 100%;
+  }
   .col-xxl-1 {
     --column-number: 1;
   }
