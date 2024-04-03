@@ -96,13 +96,14 @@
 
 .form-landing {
   position: relative;
+  /* display: flex; */
   height: 100%;
 }
 
-.form-landing .image-rocket {
+/* .form-landing .image-rocket {
   position: absolute;
   left: -20%;
-}
+} */
 
 .form-landing .form-login {
   position: absolute;
@@ -111,10 +112,23 @@
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 2px 0px 20px 1px #66666629;
-  top: 10%;
-  left: -10%;
+  top: 50%;
+  left: 30%;
+  transform: translate(0%, -50%);
   visibility: hidden;
   opacity: 0;
+  transition: 0.6s ease;
+  transition-property: transform, visibility, opacity;
+}
+
+.form-landing .form-login .image-rocket-login {
+  position: absolute;
+  top: -55px;
+  left: -65px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.6s ease;
+  transition-property: transform, visibility, opacity;
 }
 
 .form-landing .form-register {
@@ -124,10 +138,264 @@
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 2px 0px 20px 1px #66666629;
-  top: 1%;
-  right: 0;
+  top: 50%;
+  left: 30%;
+  transform: translate(0%, -50%);
   visibility: hidden;
   opacity: 0;
+  transition: 0.6s ease;
+  transition-property: transform, visibility, opacity;
+}
+
+.form-landing .form-register .image-rocket-register {
+  position: absolute;
+  top: -5px;
+  left: -65px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.6s ease;
+  transition-property: transform, visibility, opacity;
+}
+
+.Container:has(.toggler_vikinger #idlogin:checked) .form-landing .form-login {
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  opacity: 1;
+}
+
+.Container:has(.toggler_vikinger #idlogin:checked)
+  .form-landing
+  .form-login
+  .image-rocket-login {
+  visibility: visible;
+  opacity: 1;
+}
+
+.Container:has(.toggler_vikinger #idresgister:checked)
+  .form-landing
+  .form-register {
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  opacity: 1;
+}
+
+.Container:has(.toggler_vikinger #idresgister:checked)
+  .form-landing
+  .form-register
+  .image-rocket-register {
+  visibility: visible;
+  opacity: 1;
+}
+
+.form-landing form {
+  padding: 64px;
+}
+
+.form-landing .data-input-login h2 {
+  text-align: center;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.705);
+  margin-bottom: 90px;
+}
+
+.form-landing form .data-input label {
+  position: relative;
+  display: block;
+  margin-top: 30px;
+}
+
+.form-landing form .data-input label input {
+  width: 100%;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.422);
+  height: 55px;
+  border-radius: 12px;
+  padding-inline: 18px;
+  font-size: 1.6rem;
+}
+
+.form-landing form .data-input label span {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.348);
+  background-color: #fff;
+  padding: 0 8px;
+  transition-property: top, font-size;
+  transition: 0.4s ease;
+}
+
+.form-landing form .data-input label input:focus {
+  border-color: #5753e4;
+}
+
+.form-landing form .data-input label input:focus + span,
+.form-landing form .data-input label input:valid + span {
+  top: 0;
+  font-size: 1.3rem;
+}
+
+.swapper-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.swapper-items .forgotpass a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.568);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.swapper-items .forgotpass a:hover {
+  color: #23d2e2;
+}
+
+.remember-forgot label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.568);
+}
+
+.remember-forgot label span {
+  font-size: 2.5rem;
+  margin-right: 10px;
+  display: flex;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #dedeea;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.1s ease;
+}
+
+.remember-forgot label span i {
+  color: white;
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+.remember-forgot label:has(input:checked) span {
+  background-color: #23d2e2;
+}
+
+.remember-forgot label:has(input:checked) span i {
+  opacity: 1;
+}
+
+form button {
+  width: 100%;
+  height: 55px;
+  border-radius: 12px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.form-login button {
+  background-color: #5853e4ea;
+}
+
+.form-register button {
+  background-color: #1bc4d4cf;
+}
+
+.form-login button:hover {
+  background-color: #5753e4;
+}
+.form-register button:hover {
+  background-color: #1bc5d4;
+}
+
+.form-login p {
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form-login p::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  width: 65px;
+  height: 1px;
+  background-color: #ddd;
+}
+.form-login p::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: "";
+  width: 65px;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.swapper-social-network {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.swapper-social-network a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2.5rem;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.swapper-social-network a:first-child {
+  background-color: #3763d2;
+}
+.swapper-social-network a:nth-child(2) {
+  background-color: #1abcff;
+}
+.swapper-social-network a:nth-child(3) {
+  background-color: #7b5dfa;
+}
+.swapper-social-network a:last-child {
+  background-color: #fd434f;
+}
+
+.swapper-social-network a:hover {
+  transform: translateY(-5px);
+}
+
+.form-register p {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 600rem;
+}
+
+.form-register p a {
+  font-size: 1.4rem;
+  font-weight: 900rem;
+  text-decoration: none;
+  color: #00c7d9;
 }
 
 /* @media screen and (min-width: 576px) {
@@ -144,3 +412,8 @@
 
 @media screen and (min-width: 1400px) {
 } */
+@media screen and (min-width: 1400px) {
+  .Container {
+    height: 100%;
+  }
+}

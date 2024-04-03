@@ -44,14 +44,19 @@
                     type="radio"
                     name="toggler"
                     value="1"
+                    id="idlogin"
                     hidden
                     checked
                   /><span>Login</span></label
                 >
                 <label
-                  ><input type="radio" name="toggler" value="2" hidden /><span
-                    >Resgister</span
-                  ></label
+                  ><input
+                    type="radio"
+                    name="toggler"
+                    value="2"
+                    id="idresgister"
+                    hidden
+                  /><span>Resgister</span></label
                 >
               </div>
               <!-- end .toggler_vikinger -->
@@ -61,9 +66,99 @@
           <!-- end .col-7 -->
           <div class="col-5">
             <div class="form-landing">
-              <form class="form-login" action="get"></form>
-              <form class="form-register" action="get"></form>
-              <img class="image-rocket" src="./image/rocket.png" alt="rocket" />
+              <form class="form-login" action="get">
+                <img
+                  class="image-rocket-login"
+                  src="./image/rocket.png"
+                  alt="rocket"
+                />
+                <div class="data-input data-input-login">
+                  <h2>Account Login</h2>
+                  <label>
+                    <input type="text" name="username" required />
+                    <span>Username or Email</span>
+                  </label>
+
+                  <label>
+                    <input type="password" name="pass" required />
+                    <span>Password</span>
+                  </label>
+                </div>
+                <div class="swapper-items">
+                  <div class="remember-forgot">
+                    <label>
+                      <span><i class="fa-solid fa-xmark"></i></span>
+                      <input type="checkbox" name="remember" hidden checked />
+                      Remember Me
+                    </label>
+                  </div>
+                  <div class="forgotpass">
+                    <a href="#1">Forgot Password?</a>
+                  </div>
+                </div>
+                <!-- end .swapper-items -->
+                <button type="submit">Login to your Account!</button>
+                <p>Login with your Social Account</p>
+                <div class="swapper-social-network">
+                  <a href="#2">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#2">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#2">
+                    <i class="fa-brands fa-twitch"></i>
+                  </a>
+                  <a href="#2">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+                <!-- end .swapper-social-network -->
+              </form>
+              <form class="form-register" action="get">
+                <img
+                  class="image-rocket-register"
+                  src="./image/rocket.png"
+                  alt="rocket"
+                />
+                <div class="data-input data-input-login">
+                  <h2>Create your Account!</h2>
+                  <label>
+                    <input type="email" name="youremail" required />
+                    <span>Your Email</span>
+                  </label>
+
+                  <label>
+                    <input type="text" name="name" required />
+                    <span>Username</span>
+                  </label>
+                  <label>
+                    <input type="password" name="pass" required />
+                    <span>Password</span>
+                  </label>
+                  <label>
+                    <input type="password" name="rppass" required />
+                    <span>Repeat Password</span>
+                  </label>
+                </div>
+                <!-- end .input data -->
+                <div class="swapper-items">
+                  <div class="remember-forgot">
+                    <label>
+                      <span><i class="fa-solid fa-xmark"></i></span>
+                      <input type="checkbox" name="Send" hidden checked />
+                      Send me news and updates via email
+                    </label>
+                  </div>
+                </div>
+                <!-- end .swapper-items -->
+                <button type="submit">Register Now!</button>
+                <p>
+                  You'll receive a confirmation email in your inbox with a link
+                  to activate your account. If you have any problems,
+                  <a href="#3">contact us!</a>
+                </p>
+              </form>
             </div>
           </div>
           <!-- end .col-5 -->
@@ -72,5 +167,10 @@
       </div>
       <!-- end .container -->
     </section>
+    <script
+      src="https://kit.fontawesome.com/331f6e8450.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.bundle.min.js"></script>
   </body>
 </html>
