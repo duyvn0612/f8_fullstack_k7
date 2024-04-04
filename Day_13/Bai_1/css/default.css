@@ -61,7 +61,7 @@ Khi gọi class ở màn hình nào chỉ hoạt động ở màn hình đó tr�
 }
 
 :root {
-  --container-width: 1200px;
+  --container-width: 1500px;
   --column-space: 20px;
 }
 
@@ -74,7 +74,6 @@ Khi gọi class ở màn hình nào chỉ hoạt động ở màn hình đó tr�
 .row {
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
   margin: 0 calc(0px - var(--column-space) / 2);
 }
 
