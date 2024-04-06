@@ -1,0 +1,310 @@
+/* --------header-------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+.nav-items {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  background-color: #363636ee;
+}
+
+.logo-brand a {
+  display: inline-block;
+  line-height: 2.5rem;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+}
+
+.logo-brand a span {
+  color: orange;
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+}
+
+.switch-toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch-toggler i {
+  font-size: 2rem;
+  color: white;
+}
+
+.switch-toggler:has(#idcheckbar:checked) ~ .nav-menu-toggler {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.nav-menu-toggler {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  background-color: #363636;
+  /* display: none; */
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition-property: clip-path;
+  transition: 0.2s linear;
+}
+
+.nav-menu-toggler .nav-submenu > li {
+  /* display: inline-block; */
+  vertical-align: middle;
+  padding-left: 15px;
+  padding-block: 12px;
+  font-size: 1.7rem;
+}
+
+.nav-menu-toggler .nav-submenu > li a {
+  text-align: center;
+  color: #aaaaaa;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+}
+
+.nav-menu-toggler .nav-submenu > li:hover a {
+  color: orange;
+}
+
+.nav-light-dark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30%;
+}
+
+.nav-light-dark label {
+  position: relative;
+  display: block;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 2px solid orange;
+  border-radius: 50%;
+}
+
+.nav-light-dark label i {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  opacity: 0;
+  visibility: hidden;
+  font-size: 1.7rem;
+  color: orange;
+}
+
+.nav-light-dark label i:first-of-type {
+}
+
+#idcheck + i {
+  opacity: 1;
+  visibility: visible;
+}
+
+#idcheck:checked + i {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#idcheck:checked + i + i {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-book-now a {
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: #363636;
+  border: 2px solid orange;
+  background-color: orange;
+  padding: 0.6rem 0.7rem;
+  border-radius: 99px;
+}
+
+/* --------header-------- */
+
+.main-mumbai {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 7rem;
+  height: 80vh;
+  background: black url("../image/sideimage.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  padding: 5vw 5vw;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.47);
+  z-index: 0;
+  border-radius: 12px;
+}
+.mumbai-city-intro {
+  position: relative;
+  text-align: center;
+  /* padding-bottom: 20px; */
+}
+
+.mumbai-city-intro .distance-item {
+  margin-block: 15px;
+}
+
+.mumbai-city-intro h2 {
+  text-transform: capitalize;
+  font-size: 8vw;
+  line-height: 8vw;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem orange;
+}
+
+.mumbai-city-intro h1 {
+  font-size: 9vw;
+  line-height: 12vw;
+  text-transform: capitalize;
+  color: white;
+}
+
+.mumbai-city-intro p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-transform: capitalize;
+  color: white;
+}
+
+.mumbai-city-intro a {
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  color: #363636;
+  border: 2px solid orange;
+  background-color: orange;
+  padding: 1rem 1rem;
+  border-radius: 99px;
+}
+.main-mumbai .banner-price {
+  position: absolute;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* top: 0;
+  left: 0; */
+  top: 100%;
+  transform: translateY(-28%);
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px 20px;
+  box-shadow: 0px 2px 6px 1px #0000003a;
+}
+
+.main-mumbai .banner-price p {
+  text-transform: capitalize;
+  color: orange;
+  text-align: left;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+
+.main-mumbai .banner-price a {
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  color: #363636;
+  border: 2px solid orange;
+  background-color: orange;
+  padding: 1rem 1rem;
+  border-radius: 99px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.main-mumbai .banner-price a:hover {
+  color: orange;
+  background-color: rgba(255, 166, 0, 0.268);
+}
+
+.nav-book-now a:hover,
+.mumbai-city-intro a:hover {
+  color: white;
+  background-color: rgba(255, 166, 0, 0.268);
+}
+
+@media screen and (min-width: 576px) {
+  .row {
+    gap: 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .switch-toggler {
+    display: none;
+  }
+
+  .logo-brand a {
+    font-size: 2.5rem;
+  }
+  .logo-brand a span {
+    font-size: 2.5rem;
+  }
+
+  .nav-menu-toggler {
+    width: auto;
+    position: relative;
+    clip-path: none;
+    background-color: initial;
+  }
+  .nav-menu-toggler .nav-submenu > li {
+    display: inline-block;
+  }
+
+  .nav-menu-toggler .nav-submenu > li a {
+    color: white;
+  }
+
+  .nav-light-dark {
+    right: 15%;
+  }
+
+  .mumbai-city-intro h2 {
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+  .mumbai-city-intro h1 {
+    font-size: 6vw;
+    line-height: 7vw;
+  }
+
+  .mumbai-city-intro p {
+    font-size: 1.4rem;
+    max-width: 60rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .main-mumbai .banner-price p {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+}
