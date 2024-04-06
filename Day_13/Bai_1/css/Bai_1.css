@@ -108,6 +108,9 @@ button {
   display: none;
 }
 
+/* .Container:has(.toggler-vikinger #idlogin:checked) .form-landing .form-login .first-inp: {
+} */
+
 /* -----------------end section landing-vikinger--------------- */
 
 .form-landing {
