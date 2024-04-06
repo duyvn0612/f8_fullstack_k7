@@ -307,4 +307,28 @@ header {
 }
 
 @media screen and (min-width: 992px) {
+  .nav-menu-toggler .nav-submenu > li a {
+    color: white;
+    font-size: 1.8rem;
+  }
+  .nav-light-dark label {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .nav-light-dark label i {
+    font-size: 2rem;
+  }
+  .nav-book-now a {
+    font-size: 1.7rem;
+    padding: 0.9rem 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .nav-light-dark {
+    right: 20%;
+  }
+  .nav-items {
+    padding: 1.2rem 9rem;
+  }
 }
