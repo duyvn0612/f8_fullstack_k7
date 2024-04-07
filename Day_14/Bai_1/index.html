@@ -22,76 +22,337 @@
   <body>
     <header>
       <nav class="navbar">
-        <div class="container">
-          <div class="nav-items">
-            <div class="switch-toggler">
-              <label>
-                <input type="checkbox" id="idcheckbar" hidden />
-                <i class="fa-solid fa-bars"></i>
-              </label>
-            </div>
-            <div class="logo-brand">
-              <a href="#0"><span>s</span>travel</a>
-            </div>
-            <!-- end .logo-brand -->
-            <div class="nav-menu-toggler">
-              <ul class="nav-submenu">
-                <li><a href="#1">trang chủ</a></li>
-                <li><a href="#2">about</a></li>
-                <li><a href="#3">điểm đến</a></li>
-                <li><a href="#4">dịch vụ</a></li>
-                <li><a href="#5">ảnh</a></li>
-                <li><a href="#6">blogs</a></li>
-              </ul>
-            </div>
-            <!-- end .nav-menu-toggler -->
-            <div class="nav-light-dark">
-              <label>
-                <input type="checkbox" id="idcheck" hidden />
-                <i class="fa-regular fa-moon"></i>
-                <i class="fa-regular fa-sun"></i>
-              </label>
-            </div>
-            <!-- end .nav-light-dark -->
-            <div class="nav-book-now">
-              <a href="#7">đặt ngay</a>
-            </div>
-            <!-- end .nav-book-now -->
+        <div class="nav-items">
+          <div class="switch-toggler">
+            <label>
+              <input type="checkbox" id="idcheckbar" hidden />
+              <i class="fa-solid fa-bars"></i>
+            </label>
           </div>
-          <!-- end .nav-items -->
+          <div class="logo-brand">
+            <a href="#0"><span>s</span>travel</a>
+          </div>
+          <!-- end .logo-brand -->
+          <div class="nav-menu-toggler">
+            <ul class="nav-submenu">
+              <li><a href="#1">trang chủ</a></li>
+              <li><a href="#2">about</a></li>
+              <li><a href="#3">điểm đến</a></li>
+              <li><a href="#4">dịch vụ</a></li>
+              <li><a href="#5">ảnh</a></li>
+              <li><a href="#6">blogs</a></li>
+            </ul>
+          </div>
+          <!-- end .nav-menu-toggler -->
+          <div class="nav-light-dark">
+            <label>
+              <input type="checkbox" id="idcheck" hidden />
+              <i class="fa-regular fa-moon"></i>
+              <i class="fa-regular fa-sun"></i>
+            </label>
+          </div>
+          <!-- end .nav-light-dark -->
+          <div class="nav-book-now">
+            <a href="#7">đặt ngay</a>
+          </div>
+          <!-- end .nav-book-now -->
         </div>
-        <!-- end .container -->
+        <!-- end .nav-items -->
       </nav>
       <!-- end nav .navbar -->
     </header>
     <main>
       <section class="main-mumbai">
         <div class="overlay"></div>
-        <div class="container">
-          <article class="mumbai-city-intro">
-            <div class="distance-item">
-              <h2>mumbai</h2>
-            </div>
-            <div class="distance-item">
-              <h1>thành phố có tất cả</h1>
-            </div>
-            <div class="distance-item">
-              <p>
-                Mumbai không chỉ là trung tâm tài chính – kinh tế, kinh đô điện
-                ảnh – thời trang của Ấn Độ, mà đây còn là thành phố cảng vừa
-                hiện đại nhưng vẫn mang nhiều nét cổ kính với những công trình
-                kiến trúc, quán bar, nhà hàng, viện bảo tàng và các cửa hàng
-                thời trang hấp dẫn…
-              </p>
-            </div>
-            <div class="distance-item">
-              <a href="#9">tìm hiểu thêm</a>
-            </div>
-          </article>
-        </div>
+
+        <article class="mumbai-city-intro">
+          <div class="distance-item">
+            <h2>mumbai</h2>
+          </div>
+          <div class="distance-item">
+            <h1>thành phố có tất cả</h1>
+          </div>
+          <div class="distance-item">
+            <p>
+              Mumbai không chỉ là trung tâm tài chính – kinh tế, kinh đô điện
+              ảnh – thời trang của Ấn Độ, mà đây còn là thành phố cảng vừa hiện
+              đại nhưng vẫn mang nhiều nét cổ kính với những công trình kiến
+              trúc, quán bar, nhà hàng, viện bảo tàng và các cửa hàng thời trang
+              hấp dẫn…
+            </p>
+          </div>
+          <div class="distance-item">
+            <a href="#9">tìm hiểu thêm</a>
+          </div>
+        </article>
+
         <div class="banner-price">
           <p>ưu đãi 30.000.000 cho 5người/3ngày</p>
           <a href="#10">đặt ngay</a>
+        </div>
+      </section>
+      <!-- end section .main-mumbai -->
+      <!-- experience - trải nghiệm -->
+      <section class="experience">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <article class="videos-demo">
+                <div class="videos">
+                  <video
+                    src="https://stravelhtml.vercel.app/videos/vid-1.mp4"
+                    muted
+                    autoplay
+                    loop
+                  ></video>
+                  <video
+                    src="https://stravelhtml.vercel.app/videos/vid-2.mp4"
+                    muted
+                    autoplay
+                    loop
+                  ></video>
+                  <video
+                    src="https://stravelhtml.vercel.app/videos/vid-3.mp4"
+                    muted
+                    autoplay
+                    loop
+                  ></video>
+                </div>
+                <div class="choice-videos">
+                  <label>
+                    <input
+                      type="radio"
+                      name="choicevideo"
+                      value="1"
+                      id="idvideo1"
+                      checked
+                      hidden
+                    />
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="choicevideo"
+                      value="2"
+                      id="idvideo2"
+                      hidden
+                    />
+                  </label>
+                  <label
+                    ><input
+                      type="radio"
+                      name="choicevideo"
+                      value="3"
+                      id="idvideo3"
+                      hidden
+                  /></label>
+                </div>
+              </article>
+              <!-- end .videos-demo -->
+            </div>
+            <!-- end .col-12 -->
+            <div class="col-12 col-md-6">
+              <article class="reason-stravel">
+                <p>tại sao nên chọn stravel</p>
+                <h3>trải nghiệm bậc nhất</h3>
+                <p>
+                  chúng tôi hợp tác với những địa điểm nghỉ dưỡng có trải nghiệm
+                  bậc nhất để đem lại một kỳ nghỉ tuyệt vời cho bạn cùng người
+                  thân
+                </p>
+                <a href="#11">tìm hiểu thêm về stravel</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end .experience -->
+      <section class="best-travel">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col">
+              <div class="content-best-travel">
+                <p>những điểm đến ở mumbai</p>
+                <h2>những điểm du lịch bậc nhất</h2>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <article>
+                <div class="image">
+                  <img
+                    src="https://stravelhtml.vercel.app/mumbai/images/des-1.jpg"
+                    alt="Ấn độ môn"
+                  />
+                </div>
+                <h3>ấn độ môn</h3>
+                <div class="info-address">
+                  <p>
+                    được xây dựng vào năm 1931, còn có tên gọi khác là “bia kỷ
+                    niệm chiến sĩ Ấn Độ”
+                  </p>
+                  <div class="more">
+                    <a href="#12">đọc thêm</a>
+                    <span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- end .col -->
+            <div class="col-12 col-sm-6 col-md-4">
+              <article>
+                <div class="image">
+                  <img
+                    src="https://stravelhtml.vercel.app/mumbai/images/des-2.jpg"
+                    alt="Ấn độ môn"
+                  />
+                </div>
+                <h3>Tòa nhà hình trứng</h3>
+                <div class="info-address">
+                  <p>
+                    nghệ thuật kiến trúc thị giác kết hợp với cách sản xuất, sử
+                    dụng và tái tạo năng lượng thông minh
+                  </p>
+                  <div class="more">
+                    <a href="#12">đọc thêm</a>
+                    <span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- end .col -->
+            <div class="col-12 col-sm-6 col-md-4">
+              <article>
+                <div class="image">
+                  <img
+                    src="https://stravelhtml.vercel.app/mumbai/images/des-3.jpg"
+                    alt="Ấn độ môn"
+                  />
+                </div>
+                <h3>Vườn quốc gia Sanjay Gandhi</h3>
+                <div class="info-address">
+                  <p>
+                    bao gồm loài bướm đêm Atlas – bướm đêm lớn nhất thế giới,
+                    cây hoa Karvi 7 năm nở hoa một lần…
+                  </p>
+                  <div class="more">
+                    <a href="#12">đọc thêm</a>
+                    <span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- end .col -->
+            <div class="col-12 col-sm-6 col-md-4">
+              <article>
+                <div class="image">
+                  <img
+                    src="https://stravelhtml.vercel.app/mumbai/images/des-4.jpg"
+                    alt="Ấn độ môn"
+                  />
+                </div>
+                <h3>Trung tâm triễn lãm Jehanggir</h3>
+                <div class="info-address">
+                  <p>
+                    khu vực triển lãm hàng đầu ở Mumbai dành cho nền mỹ thuật Ấn
+                    Độ đương đại
+                  </p>
+                  <div class="more">
+                    <a href="#12">đọc thêm</a>
+                    <span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- end .col -->
+            <div class="col-12 col-sm-6 col-md-4">
+              <article>
+                <div class="image">
+                  <img
+                    src="https://stravelhtml.vercel.app/mumbai/images/des-5.jpg"
+                    alt="Ấn độ môn"
+                  />
+                </div>
+                <h3>Hang động Elephanta</h3>
+                <div class="info-address">
+                  <p>
+                    lưu giữ nhiều kiến trúc chạm khắc tinh xảo và chúng đã xuất
+                    hiện ở đây từ thế kỷ thứ 5 đến thứ 8
+                  </p>
+                  <div class="more">
+                    <a href="#12">đọc thêm</a>
+                    <span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- end .col -->
+            <div class="col-12 col-sm-6 col-md-4">
+              <article>
+                <div class="image">
+                  <img
+                    src="https://stravelhtml.vercel.app/mumbai/images/des-6.jpg"
+                    alt="Ấn độ môn"
+                  />
+                </div>
+                <h3>Lonavala và Khandala</h3>
+                <div class="info-address">
+                  <p>
+                    khu nghỉ dưỡng rất nổi tiếng, nằm giữa đường cao tốc Mumbai
+                    – Pune.
+                  </p>
+                  <div class="more">
+                    <a href="#12">đọc thêm</a>
+                    <span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- end .col -->
+            <div class="col-12 col-sm-6 col-md-4">
+              <article>
+                <div class="image">
+                  <img
+                    src="https://stravelhtml.vercel.app/mumbai/images/des-7.jpg"
+                    alt="Ấn độ môn"
+                  />
+                </div>
+                <h3>Thành phố Pune</h3>
+                <div class="info-address">
+                  <p>
+                    Giáo dục, nghệ thuật và âm nhạc là trọng tâm tại thành phố
+                    có nền văn hóa phong phú lâu đời này
+                  </p>
+                  <div class="more">
+                    <a href="#12">đọc thêm</a>
+                    <span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- end .col -->
+            <div class="col-12 col-sm-6 col-md-4">
+              <article>
+                <div class="image">
+                  <img
+                    src="https://stravelhtml.vercel.app/mumbai/images/des-8.jpg"
+                    alt="Ấn độ môn"
+                  />
+                </div>
+                <h3>Thành phố Nashik</h3>
+                <div class="info-address">
+                  <p>
+                    là trung tâm hành hương lớn của người Hindu. Nashik có sự
+                    pha trộn của nét cổ xưa và hiện đại
+                  </p>
+                  <div class="more">
+                    <a href="#12">đọc thêm</a>
+                    <span></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- end .col -->
+          </div>
         </div>
       </section>
     </main>

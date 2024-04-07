@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: #aaaaaa29;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -13,6 +13,10 @@ header {
   left: 0;
   width: 100%;
   z-index: 99;
+}
+
+main {
+  overflow: auto;
 }
 .nav-items {
   position: relative;
@@ -267,11 +271,221 @@ body:has(#idcheck:checked) .main-mumbai .banner-price {
   background-color: rgba(255, 166, 0, 0.268);
 }
 
-/* @media screen and (min-width: 576px) {
-  .row {
-    column-gap: 5rem;
+/* -------section-experience--------------- */
+
+.experience {
+  margin-top: 20rem;
+}
+
+.experience .videos-demo .videos {
+  position: relative;
+}
+
+.experience .videos-demo .videos video {
+  display: none;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.experience .videos-demo .choice-videos {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.experience .videos-demo .choice-videos label {
+  display: inline-block;
+  margin-inline: 5px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid orange;
+  /* background-color: orange; */
+  border-radius: 50%;
+}
+
+.choice-videos label:has(input[type="radio"]:checked) {
+  background-color: orange;
+}
+.videos-demo:has(#idvideo1:checked) .videos video:first-of-type {
+  display: block;
+}
+
+.videos-demo:has(#idvideo2:checked) .videos video:nth-of-type(2) {
+  display: block;
+}
+.videos-demo:has(#idvideo3:checked) .videos video:last-of-type {
+  display: block;
+}
+
+/* -----------article-reason-stravel----------- */
+.reason-stravel p:first-of-type {
+  text-transform: capitalize;
+  color: orange;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.reason-stravel h3 {
+  text-transform: capitalize;
+  font-size: 3.5rem;
+  line-height: 6rem;
+}
+
+.reason-stravel p:last-of-type {
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.711);
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+
+.reason-stravel a {
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  color: white;
+  border: 2px solid orange;
+  background-color: orange;
+  padding: 1rem 1rem;
+  margin-block: 2rem;
+  border-radius: 99px;
+}
+
+.reason-stravel a:hover {
+  color: orange;
+  background-color: rgba(255, 166, 0, 0.268);
+}
+
+/* ----------- best-travel --------- */
+
+.best-travel .content-best-travel {
+  text-align: center;
+}
+.best-travel .content-best-travel p {
+  text-transform: capitalize;
+  color: orange;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+.best-travel .content-best-travel h2 {
+  text-transform: capitalize;
+  color: black;
+  font-size: 3.3rem;
+  line-height: 5rem;
+}
+
+.best-travel article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+
+body:has(#idcheck:checked) .best-travel article {
+  background-color: #222222;
+}
+
+body:has(#idcheck:checked) .best-travel article h3 {
+  color: white;
+}
+
+body:has(#idcheck:checked) .best-travel article .info-address p {
+  color: #aaa;
+}
+
+.best-travel article .image {
+  height: 20rem;
+  overflow: hidden;
+}
+
+.best-travel article .image img {
+  max-width: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+  /* height: 100%; */
+}
+
+.best-travel article:hover .image img {
+  transform: scale(1.15);
+}
+
+.best-travel article .info-address {
+  padding: 1.5rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 999;
+}
+
+.best-travel article h3 {
+  margin-top: 1.5rem;
+  padding-inline: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2rem;
+  line-height: 5rem;
+  flex: 1;
+}
+
+.best-travel article .info-address p {
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.711);
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+}
+
+.best-travel article .info-address .more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: end;
+  margin-right: 10px;
+}
+
+.best-travel article .info-address .more a {
+  text-transform: capitalize;
+  color: orange;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  transition: translate 0.3s ease-in-out;
+}
+
+.best-travel article .info-address .more span {
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-color: transparent orange orange transparent;
+  border-width: 3px;
+  transform: rotate(-45deg);
+}
+.best-travel article .info-address .more a:hover {
+  translate: -10px 0;
+}
+
+@media screen and (min-width: 576px) {
+  .best-travel article .image {
+    width: 100%;
+    height: 18rem;
   }
-} */
+  .best-travel article .image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .best-travel article h3 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .switch-toggler {
