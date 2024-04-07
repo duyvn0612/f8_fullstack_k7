@@ -112,7 +112,7 @@ a {
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  /* padding: 0 15px; */
+  padding: 0 20px;
 }
 
 .row {
@@ -131,6 +131,7 @@ a {
   flex-basis: calc(100% / 12 * var(--column-number));
   max-width: calc(100% / 12 * var(--column-number));
   padding: 0 calc(var(--column-space) / 2);
+  margin-bottom: 10px;
 }
 
 [class*="offset-"] {
