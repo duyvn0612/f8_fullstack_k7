@@ -78,6 +78,9 @@ a {
       width: 2.2rem;
       height: 2.2rem;
     }
+    span {
+      font-size: 2rem;
+    }
 
     &:hover {
       background-color: #ebebeb;
@@ -144,7 +147,7 @@ a {
     .nav-link {
       font-size: 1.6rem;
       position: relative;
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: 600;
       color: $textColor;
       padding: 1.5rem 0;
@@ -244,7 +247,7 @@ a {
     }
     .nav {
       position: absolute;
-      top: 100%;
+      top: 100% !important;
       display: block !important;
       flex-direction: column;
       background-color: #ddeaf1a4;
@@ -280,7 +283,8 @@ a {
     position: relative;
     padding: 0 !important;
     .heading {
-      margin: 0 auto;
+      margin-top: 3rem;
+      text-align: center;
     }
 
     .nav {
@@ -288,7 +292,6 @@ a {
       flex-direction: row;
       justify-content: stretch;
       overflow-x: scroll;
-      // column-gap: 2rem;
       .nav-item {
         font-size: 1.8rem;
         column-gap: 10px;
@@ -318,11 +321,108 @@ a {
   }
 }
 
-@include screenXXL() {
+@include screenTablet {
+  .wrapper-inner {
+    padding: 12px;
+    display: block;
+  }
+  .sidebar {
+    position: relative;
+    padding: 0 !important;
+    .logo-link {
+      width: 100px;
+    }
+    .heading {
+      margin-top: 2rem;
+      font-size: 3.5rem;
+      text-align: center;
+    }
+
+    .nav {
+      margin: 20px;
+      flex-direction: row;
+      justify-content: stretch;
+      column-gap: 20px;
+      overflow-x: scroll;
+      .nav-item {
+        font-size: 1.8rem;
+        column-gap: 10px;
+
+        span {
+          display: block;
+          min-width: 120px;
+          color: #000000c2;
+        }
+      }
+    }
+
+    .chat-btn {
+      position: absolute;
+      margin: 0;
+      display: flex;
+      align-items: start;
+      transform: none;
+      top: 0;
+      left: 100%;
+      transform: translateX(-100%);
+      bottom: 0;
+      height: 40px;
+      p {
+        display: none;
+      }
+    }
+  }
+  // end sidebar
+
+  .header {
+    justify-content: center;
+    align-items: center;
+    .search-form {
+      margin: 0;
+    }
+    .nav {
+      display: flex !important;
+      position: absolute;
+      top: -12px;
+      column-gap: 10px !important;
+      .nav-link {
+        margin: 0 3rem;
+        font-size: 1.9rem !important;
+        color: #000000c2;
+      }
+    }
+  }
+
+  .main {
+    .wide {
+      grid-column: span 4;
+    }
+
+    .tall {
+      grid-column: span 2;
+    }
+  }
+}
+
+@include screenTabletPro() {
+  .wrapper-inner {
+    padding-inline: 1.5rem;
+  }
   .header {
     position: relative;
     .nav {
-      display: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      top: 65%;
+      // bottom: 0;
+      column-gap: 6rem;
+      .nav-link {
+        font-size: 2.2rem;
+        color: #000000bb;
+      }
     }
   }
 
@@ -332,5 +432,12 @@ a {
 
   .sidebar {
     padding-left: 30px;
+    .nav {
+      margin-bottom: 0;
+    }
+  }
+
+  .main {
+    margin-top: 20px;
   }
 }

@@ -10,7 +10,7 @@
   }
 }
 
-@mixin screenXL {
+@mixin screenTabletPro {
   @media screen and (max-width: 1199px) {
     @content;
   }
