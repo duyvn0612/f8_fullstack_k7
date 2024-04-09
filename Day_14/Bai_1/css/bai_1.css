@@ -545,6 +545,14 @@ body:has(#idcheck:checked) .best-travel article .info-address p {
   .main-mumbai .banner-price a {
     flex: 1;
   }
+
+  .reason-stravel {
+    margin-top: 20px;
+  }
+
+  .reason-stravel p:last-of-type {
+    width: 85%;
+  }
 }
 
 @media screen and (min-width: 992px) {
