@@ -141,8 +141,12 @@ table {
   align-items: center;
 }
 
-.row-gap {
+.row-gap-product {
   row-gap: 96px;
+}
+
+.row-gap-function {
+  row-gap: 38.83px;
 }
 
 .margin-0-auto {
@@ -226,6 +230,107 @@ table {
   height: 14px;
   border-radius: 50%;
   background: #e05000;
+}
+
+.foo-greenchop {
+  background-color: #f2ffec;
+  padding-block: 63.92px 26.67px;
+  margin-top: 106.5px;
+  position: relative;
+}
+.foo-greenchop::after {
+  content: "";
+  position: absolute;
+  top: 290px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 975px;
+  height: 1px;
+  background-color: #a3a3a3;
+}
+.foo-greenchop .foo-greenchop-top article h2 {
+  color: #46b20f;
+  font-size: 16.667px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21.667px;
+  margin-bottom: 13px;
+}
+.foo-greenchop .foo-greenchop-top article a {
+  color: #2c2c2c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.417px;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.foo-greenchop .foo-greenchop-top article a span {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.foo-greenchop .foo-greenchop-top article a:hover {
+  color: #46b20f;
+}
+.foo-greenchop .foo-greenchop-top article .wrapper-item-foo:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.foo-greenchop .foo-greenchop-top article.foo-item-1 {
+  padding-left: 100.83px;
+}
+.foo-greenchop .foo-greenchop-top article.foo-item-1 .wrapper-item-foo:last-child {
+  margin-top: 24.56px;
+  color: #2c2c2c;
+}
+.foo-greenchop .foo-greenchop-top article.foo-item-1 .wrapper-item-foo:last-child p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.417px;
+}
+.foo-greenchop .foo-greenchop-top article.foo-item-1 .wrapper-item-foo:last-child p span {
+  font-size: 13.333px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.417px;
+}
+.foo-greenchop .foo-greenchop-top article.foo-item-2 {
+  padding-left: 100px;
+}
+.foo-greenchop .foo-greenchop-top article.foo-item-4 {
+  padding-right: 90px;
+}
+.foo-greenchop .foo-greenchop-bottom {
+  margin-top: 96.67px;
+}
+.foo-greenchop .foo-greenchop-bottom article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foo-greenchop .foo-greenchop-bottom article .social-network {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.foo-greenchop .foo-greenchop-bottom article .social-network a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #dcffca;
+}
+.foo-greenchop .foo-greenchop-bottom article .social-network a:hover {
+  background-color: white;
 }
 
 .hero {
@@ -584,6 +689,19 @@ table {
 
 .protect-greenchop {
   margin-top: 100px;
+  padding-bottom: 125px;
+  position: relative;
+}
+.protect-greenchop::after {
+  content: "";
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  height: 360.833px;
+  position: absolute;
+  left: 0;
+  top: 326.69px;
+  background-color: #fff0e7;
 }
 .protect-greenchop .protect-content {
   color: #2c2c2c;
@@ -607,7 +725,8 @@ table {
   max-width: 45%;
 }
 .protect-greenchop article {
-  background-color: #ffffff;
+  border-radius: 8.333px;
+  background: #fff;
   width: 345.833px;
   height: 359.167px;
 }
@@ -645,6 +764,111 @@ table {
   font-weight: 400;
   line-height: 20.417px;
   padding-inline: 27.5px 86.56px;
+}
+
+.function-greenchop {
+  margin-top: 133.31px;
+}
+.function-greenchop article {
+  display: flex;
+  gap: 15.833px;
+  color: #2c2c2c;
+}
+.function-greenchop article.function-item-1 {
+  padding-left: 108.33px;
+}
+.function-greenchop article.function-item-2 {
+  padding-inline: 52.5px;
+}
+.function-greenchop article.function-item-3 {
+  padding-right: 108.33px;
+}
+.function-greenchop article .wrapper-item-function:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6.667px;
+}
+.function-greenchop article .wrapper-item-function:last-child h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.667px;
+}
+.function-greenchop article .wrapper-item-function:last-child p {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.feedback-greenchop {
+  margin-top: 133px;
+}
+.feedback-greenchop article.feedback-item-2 {
+  margin-top: 55px;
+}
+.feedback-greenchop article.feedback-item-2 h2 {
+  color: #2c2c2c;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.667px;
+}
+.feedback-greenchop article.feedback-item-2 .form-feedback {
+  margin-top: 26px;
+}
+.feedback-greenchop article.feedback-item-2 .form-feedback .wrapper-item-feedback {
+  margin-top: 22.67px;
+}
+.feedback-greenchop article.feedback-item-2 .form-feedback .wrapper-item-feedback:first-child input {
+  display: inline-flex;
+  padding: 13.333px 397.667px 13.333px 13.333px;
+  align-items: center;
+  gap: 8.333px;
+  border-radius: 6.667px;
+  border: 0.833px solid #a3a3a3;
+}
+.feedback-greenchop article.feedback-item-2 .form-feedback .wrapper-item-feedback:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+.feedback-greenchop article.feedback-item-2 .form-feedback .wrapper-item-feedback:nth-child(2) input {
+  display: flex;
+  width: 286.667px;
+  padding: 13.333px 176.667px 13.333px 13.333px;
+  align-items: center;
+  gap: 8.333px;
+  border-radius: 6.667px;
+  border: 0.833px solid #a3a3a3;
+}
+.feedback-greenchop article.feedback-item-2 .form-feedback .wrapper-item-feedback:nth-child(3) textarea {
+  width: 100%;
+  display: inline-flex;
+  padding: 13.333px 0px 0px 13.333px;
+  align-items: center;
+  gap: 8.333px;
+  border-radius: 6.667px;
+  border: 0.833px solid #a3a3a3;
+}
+.feedback-greenchop article.feedback-item-2 .form-feedback .wrapper-item-feedback:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.feedback-greenchop article.feedback-item-2 .form-feedback .wrapper-item-feedback:last-child button {
+  display: flex;
+  padding: 13.333px 64.165px;
+  justify-content: center;
+  align-items: center;
+  gap: 8.333px;
+  border-radius: 6.667px;
+  background: #46b20f;
+  color: #fff;
+  text-align: center;
+  font-size: 16.667px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 html {
