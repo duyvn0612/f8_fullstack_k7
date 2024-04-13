@@ -1,0 +1,105 @@
+@use "../../partials/variables";
+.product-greenchop {
+  margin-top: 214px;
+  .product-content {
+    h2 {
+      color: variables.$content;
+      text-align: center;
+      font-size: 31.667px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 41.649px;
+      margin-bottom: 50.02px;
+    }
+  }
+  article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 269.316px;
+      height: 269.316px;
+      border-radius: 50%;
+      background-color: #ffba94;
+    }
+    &.art-product-item-2,
+    &.art-product-item-5 {
+      &::after {
+        background-color: #c5ffa8;
+      }
+    }
+    .wrapper-item-product {
+      &:first-child {
+        margin-top: 114.64px;
+        img {
+          width: 240.117px;
+          height: 241.148px;
+        }
+      }
+      &:nth-child(2) {
+        margin-top: 17px;
+        h3 {
+          text-align: center;
+          //   padding-inline: 70px;
+          //   width: 183.333px;
+          //   height: 56.667px;
+          //   padding: 0px 44.333px 0.667px 44px;
+          font-size: 23.333px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          //   box-shadow: 0px 3.333px 3.333px 0px rgba(0, 0, 0, 0.25);
+        }
+      }
+      &:nth-child(3) {
+        margin-block: 12.81px 16.67px;
+      }
+      &:nth-child(4) {
+        // margin-inline: 29.5px;
+        text-align: center;
+        p {
+          color: variables.$content;
+          font-size: 16.667px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 21.667px;
+          &:first-child {
+            color: #656565;
+          }
+          span {
+            color: variables.$content;
+            font-size: 23.333px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 26.667px;
+          }
+        }
+      }
+      &:last-child {
+        margin-top: 31px;
+        button {
+          display: inline-flex;
+          padding: 13.333px 11.667px;
+          justify-content: center;
+          align-items: center;
+          gap: 8.333px;
+          border-radius: 6.667px;
+          background: #46b20f;
+          color: white;
+          text-align: center;
+          font-size: 16.667px;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

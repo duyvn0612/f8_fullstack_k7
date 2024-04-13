@@ -1,0 +1,73 @@
+@use "../../partials/variables";
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 708.333px;
+  .hero-content {
+    color: variables.$content;
+    // width: 514px;
+    .wrapper-item-hero:last-child {
+      margin-top: 2rem;
+    }
+    h3 {
+      width: 90%;
+      font-size: 36.667px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 50px;
+    }
+    h2 {
+      width: 65%;
+      font-size: 43.333px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 52px;
+    }
+    p {
+      width: 78%;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+
+  .hero-image {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    transform: translateX(-227.6px);
+  }
+
+  .hero-image-content {
+    display: inline-block;
+    position: absolute;
+    width: 676.141px;
+    z-index: 1;
+    top: 55px;
+    right: 34.17px;
+    transform-origin: bottom;
+    transform: rotate(90deg);
+    h1 {
+      //   display: inline;
+      font-size: 166.667px;
+      color: #22600024;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 166.667px;
+    }
+  }
+
+  .hero-overlay {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    width: 776px;
+    height: 708px;
+    border-top-left-radius: 16.7px;
+    border-bottom-left-radius: 16.7px;
+    background-color: #dcffca;
+  }
+}
