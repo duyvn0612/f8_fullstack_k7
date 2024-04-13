@@ -1,11 +1,5 @@
-@mixin screenMobile {
-  @media screen and (max-width: 575px) {
-    @content;
-  }
-}
-
-@mixin screenTablet {
-  @media screen and (max-width: 767px) {
+@mixin screenXXL {
+  @media screen and (max-width: 1399px) {
     @content;
   }
 }
@@ -16,8 +10,14 @@
   }
 }
 
-@mixin screenXXL {
-  @media screen and (max-width: 1399px) {
+@mixin screenTablet {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin screenMobile {
+  @media screen and (max-width: 575px) {
     @content;
   }
 }
