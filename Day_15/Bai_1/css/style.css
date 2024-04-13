@@ -313,107 +313,6 @@ a {
   border-radius: 16px;
 }
 
-@media screen and (max-width: 575px) {
-  .wrapper-inner {
-    padding: 12px;
-    display: block;
-  }
-  .main .wide {
-    grid-column: span 2;
-  }
-  .main .tall {
-    grid-column: span 2;
-  }
-  .header {
-    position: relative;
-    flex-direction: row;
-    column-gap: 30px;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-  }
-  .header .search-form,
-  .header .actions {
-    margin: 0;
-    padding: 20px 0;
-  }
-  .header .search-form {
-    order: 1;
-    flex: 99;
-  }
-  .header .actions {
-    justify-content: center;
-    order: 2;
-  }
-  .header .nav {
-    position: absolute;
-    top: 100% !important;
-    display: block !important;
-    flex-direction: column;
-    background-color: rgba(221, 234, 241, 0.6431372549);
-    border-radius: 16px;
-    width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition-property: clip-path;
-    transition: 0.4s linear;
-  }
-  .header .nav .nav-link {
-    display: block;
-    text-align: center;
-    font-size: 2rem;
-  }
-  .header .nav .nav-link::after {
-    display: none;
-  }
-  .header:has(#idtoggle:checked) .nav {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-  .header .toggle-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    order: 3;
-    margin-right: 10px;
-  }
-  .sidebar {
-    position: relative;
-    padding: 0 !important;
-  }
-  .sidebar .heading {
-    margin-top: 3rem;
-    text-align: center;
-  }
-  .sidebar .nav {
-    margin: 20px;
-    flex-direction: row;
-    justify-content: stretch;
-    overflow-x: scroll;
-  }
-  .sidebar .nav .nav-item {
-    font-size: 1.8rem;
-    column-gap: 10px;
-  }
-  .sidebar .nav .nav-item span {
-    display: block;
-    min-width: 120px;
-    color: rgba(0, 0, 0, 0.7607843137);
-  }
-  .sidebar .chat-btn {
-    position: absolute;
-    margin: 0;
-    display: flex;
-    align-items: start;
-    transform: none;
-    top: 0;
-    left: 100%;
-    transform: translateX(-100%);
-    bottom: 0;
-    height: 40px;
-  }
-  .sidebar .chat-btn p {
-    display: none;
-  }
-}
 @media screen and (max-width: 767px) {
   .wrapper-inner {
     padding: 12px;
@@ -518,6 +417,107 @@ a {
   }
   .main {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .wrapper-inner {
+    padding: 12px;
+    display: block;
+  }
+  .main .wide {
+    grid-column: span 2;
+  }
+  .main .tall {
+    grid-column: span 2;
+  }
+  .header {
+    position: relative;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .header .search-form,
+  .header .actions {
+    margin: 0;
+    padding: 20px 0;
+  }
+  .header .search-form {
+    order: 1;
+    flex: 99;
+  }
+  .header .actions {
+    justify-content: center;
+    order: 2;
+  }
+  .header .nav {
+    position: absolute;
+    top: 100% !important;
+    display: block !important;
+    flex-direction: column;
+    background-color: rgba(221, 234, 241, 0.6431372549);
+    border-radius: 16px;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition-property: clip-path;
+    transition: 0.4s linear;
+  }
+  .header .nav .nav-link {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .header .nav .nav-link::after {
+    display: none;
+  }
+  .header:has(#idtoggle:checked) .nav {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .toggle-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 3;
+    margin-right: 10px;
+  }
+  .sidebar {
+    position: relative;
+    padding: 0 !important;
+  }
+  .sidebar .heading {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .sidebar .nav {
+    margin: 20px;
+    flex-direction: row;
+    justify-content: stretch;
+    overflow-x: scroll;
+  }
+  .sidebar .nav .nav-item {
+    font-size: 1.8rem;
+    column-gap: 10px;
+  }
+  .sidebar .nav .nav-item span {
+    display: block;
+    min-width: 120px;
+    color: rgba(0, 0, 0, 0.7607843137);
+  }
+  .sidebar .chat-btn {
+    position: absolute;
+    margin: 0;
+    display: flex;
+    align-items: start;
+    transform: none;
+    top: 0;
+    left: 100%;
+    transform: translateX(-100%);
+    bottom: 0;
+    height: 40px;
+  }
+  .sidebar .chat-btn p {
+    display: none;
   }
 }
 

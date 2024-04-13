@@ -207,120 +207,6 @@ a {
   }
 }
 
-@include screenMobile() {
-  .wrapper-inner {
-    padding: 12px;
-    display: block;
-  }
-
-  .main {
-    .wide {
-      grid-column: span 2;
-    }
-
-    .tall {
-      grid-column: span 2;
-    }
-  }
-
-  .header {
-    position: relative;
-    flex-direction: row;
-    column-gap: 30px;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    .search-form,
-    .actions {
-      margin: 0;
-      padding: 20px 0;
-    }
-
-    .search-form {
-      order: 1;
-      flex: 99;
-    }
-
-    .actions {
-      justify-content: center;
-      order: 2;
-    }
-    .nav {
-      position: absolute;
-      top: 100% !important;
-      display: block !important;
-      flex-direction: column;
-      background-color: #ddeaf1a4;
-      border-radius: 16px;
-      width: 100%;
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      transition-property: clip-path;
-      transition: 0.4s linear;
-      .nav-link {
-        display: block;
-        text-align: center;
-        font-size: 2rem;
-        &::after {
-          display: none;
-        }
-      }
-    }
-
-    &:has(#idtoggle:checked) .nav {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-
-    .toggle-nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      order: 3;
-      margin-right: 10px;
-    }
-  }
-  // -----------end header--------------
-  .sidebar {
-    position: relative;
-    padding: 0 !important;
-    .heading {
-      margin-top: 3rem;
-      text-align: center;
-    }
-
-    .nav {
-      margin: 20px;
-      flex-direction: row;
-      justify-content: stretch;
-      overflow-x: scroll;
-      .nav-item {
-        font-size: 1.8rem;
-        column-gap: 10px;
-        span {
-          display: block;
-          min-width: 120px;
-          color: #000000c2;
-        }
-      }
-    }
-
-    .chat-btn {
-      position: absolute;
-      margin: 0;
-      display: flex;
-      align-items: start;
-      transform: none;
-      top: 0;
-      left: 100%;
-      transform: translateX(-100%);
-      bottom: 0;
-      height: 40px;
-      p {
-        display: none;
-      }
-    }
-  }
-}
-
 @include screenTablet {
   .wrapper-inner {
     padding: 12px;
@@ -439,5 +325,119 @@ a {
 
   .main {
     margin-top: 20px;
+  }
+}
+
+@include screenMobile() {
+  .wrapper-inner {
+    padding: 12px;
+    display: block;
+  }
+
+  .main {
+    .wide {
+      grid-column: span 2;
+    }
+
+    .tall {
+      grid-column: span 2;
+    }
+  }
+
+  .header {
+    position: relative;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    .search-form,
+    .actions {
+      margin: 0;
+      padding: 20px 0;
+    }
+
+    .search-form {
+      order: 1;
+      flex: 99;
+    }
+
+    .actions {
+      justify-content: center;
+      order: 2;
+    }
+    .nav {
+      position: absolute;
+      top: 100% !important;
+      display: block !important;
+      flex-direction: column;
+      background-color: #ddeaf1a4;
+      border-radius: 16px;
+      width: 100%;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition-property: clip-path;
+      transition: 0.4s linear;
+      .nav-link {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    &:has(#idtoggle:checked) .nav {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .toggle-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      order: 3;
+      margin-right: 10px;
+    }
+  }
+  // -----------end header--------------
+  .sidebar {
+    position: relative;
+    padding: 0 !important;
+    .heading {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .nav {
+      margin: 20px;
+      flex-direction: row;
+      justify-content: stretch;
+      overflow-x: scroll;
+      .nav-item {
+        font-size: 1.8rem;
+        column-gap: 10px;
+        span {
+          display: block;
+          min-width: 120px;
+          color: #000000c2;
+        }
+      }
+    }
+
+    .chat-btn {
+      position: absolute;
+      margin: 0;
+      display: flex;
+      align-items: start;
+      transform: none;
+      top: 0;
+      left: 100%;
+      transform: translateX(-100%);
+      bottom: 0;
+      height: 40px;
+      p {
+        display: none;
+      }
+    }
   }
 }
