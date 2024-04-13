@@ -1,0 +1,96 @@
+@use "../../partials/variables";
+.news {
+  margin-top: 130px;
+  color: variables.$content;
+  .news-content {
+    color: variables.$content;
+    h2 {
+      text-align: center;
+      font-size: 31.667px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 41.649px;
+    }
+    p {
+      margin: 23px auto 28.83px;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20.417px;
+      width: 56%;
+    }
+  }
+
+  article {
+    .wrapper-item-news {
+      margin-top: 16.27px;
+      &:first-child {
+        max-height: 273.333px;
+      }
+      &:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          color: #46b20f;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .time {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          column-gap: 10px;
+          p {
+            color: #a3a3a3;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+      &:nth-child(3) {
+        p {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 26.667px; /* 133.333% */
+        }
+      }
+      &:last-child {
+        p {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20.417px;
+        }
+      }
+    }
+  }
+  .btn-more {
+    margin-top: 79.67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      display: flex;
+      cursor: pointer;
+      padding: 11.667px 21.667px;
+      justify-content: center;
+      align-items: center;
+      gap: 3.333px;
+      border-radius: 6.667px;
+      border: 0.833px solid #46b20f;
+      background-color: transparent;
+      transition: background-color 0.2s linear;
+      &:hover {
+        background-color: #46b20f;
+        color: white;
+      }
+    }
+  }
+}

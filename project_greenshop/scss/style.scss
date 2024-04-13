@@ -1,0 +1,43 @@
+//Import
+
+@use "./partials/variables";
+// @forward "./partials/variables";
+
+@use "./partials/reset";
+@use "./partials/mixin";
+@use "./partials/base";
+
+// Components
+@use "./components/header";
+@use "./components/footer";
+
+//Pages
+
+// 1. Home
+@use "./pages/home/index" as home;
+
+//2. Products
+
+@use "./pages/products/index" as products;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}

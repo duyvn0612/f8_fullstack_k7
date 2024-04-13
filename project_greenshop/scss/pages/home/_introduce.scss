@@ -1,0 +1,115 @@
+@use "../../partials/variables";
+.introduce {
+  margin-top: 100px;
+  .introduce-content {
+    margin: 0 auto 115px;
+    text-align: center;
+    color: variables.$content;
+    .wrapper-item-introduce {
+      &:last-child {
+        margin-top: 24.33px;
+      }
+    }
+    h2 {
+      font-size: 31.667px;
+      font-style: normal;
+      font-weight: 800;
+      width: 558px;
+      line-height: 41.649px;
+    }
+    p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20.417px;
+      width: 643.333px;
+    }
+  }
+  article {
+    padding-top: 33.33px;
+    padding-left: 33.33px;
+    box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
+
+    h3 {
+      color: variables.$content;
+      font-size: 43.333px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+    }
+    p {
+      color: variables.$content;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30.833px;
+    }
+    .wrapper-item-introduce {
+      &:first-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 83.3px;
+        height: 83.3px;
+        border-radius: 10px;
+        background-color: #fff0e7;
+      }
+      &:nth-child(2),
+      &:last-child {
+        margin-top: 23.33px;
+      }
+    }
+    &.introduce-item-2 {
+      margin: 0 auto;
+      width: 343px;
+      height: 393px;
+      .wrapper-item-introduce {
+        &:first-child {
+          background-color: #f2ffec;
+        }
+      }
+    }
+    &.introduce-item-1 {
+      position: relative;
+      margin-left: auto;
+      margin-top: 27.5px;
+      width: 294px;
+      height: 338px;
+      background-color: white;
+      // transform: translateX(10.155px);
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 235px;
+        height: 235px;
+        top: -118px;
+        left: -118px;
+        border-radius: 50%;
+        background-color: #dcffca;
+      }
+    }
+    &.introduce-item-3 {
+      position: relative;
+      margin-right: auto;
+      margin-top: 27.5px;
+      width: 294px;
+      height: 338px;
+      background-color: white;
+      // transform: translateX(-10.155px);
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 235px;
+        height: 235px;
+        bottom: 0;
+        right: 0;
+        transform-origin: top left;
+        transform: translate(112.67px, 141.7px);
+        border-radius: 50%;
+        background-color: #ffd5bd;
+      }
+    }
+  }
+}
