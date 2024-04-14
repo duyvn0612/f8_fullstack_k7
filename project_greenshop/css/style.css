@@ -141,6 +141,10 @@ table {
   align-items: center;
 }
 
+.align-items-stretch {
+  align-items: stretch;
+}
+
 .row-gap-product {
   row-gap: 96px;
 }
@@ -560,6 +564,7 @@ table {
 .introduce article.introduce-item-1 {
   position: relative;
   margin-left: auto;
+  margin-right: -10.16px;
   margin-top: 27.5px;
   width: 294px;
   height: 338px;
@@ -579,6 +584,7 @@ table {
 .introduce article.introduce-item-3 {
   position: relative;
   margin-right: auto;
+  margin-left: -10.16px;
   margin-top: 27.5px;
   width: 294px;
   height: 338px;
@@ -728,7 +734,7 @@ table {
   border-radius: 8.333px;
   background: #fff;
   width: 345.833px;
-  height: 359.167px;
+  height: 100%;
 }
 .protect-greenchop article.protect-item-1 {
   margin-left: auto;
