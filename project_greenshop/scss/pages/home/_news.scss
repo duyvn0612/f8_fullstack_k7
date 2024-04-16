@@ -1,4 +1,6 @@
 @use "../../partials/variables";
+@use "../../partials/mixin";
+
 .news {
   margin-top: 130px;
   color: variables.$content;
@@ -23,6 +25,8 @@
   }
 
   article {
+    width: 383px;
+    height: 100%;
     .wrapper-item-news {
       margin-top: 16.27px;
       &:first-child {
@@ -80,6 +84,7 @@
       display: flex;
       cursor: pointer;
       padding: 11.667px 21.667px;
+      font-weight: 500;
       justify-content: center;
       align-items: center;
       gap: 3.333px;
@@ -90,6 +95,26 @@
       &:hover {
         background-color: #46b20f;
         color: white;
+      }
+    }
+  }
+}
+
+@include mixin.screenLG() {
+  .news {
+    .news-content {
+      p {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@include mixin.screenMobile() {
+  .news {
+    .news-content {
+      p {
+        width: 85%;
       }
     }
   }

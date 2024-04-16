@@ -1,3 +1,4 @@
+@use "../../partials/mixin";
 .feedback-greenchop {
   margin-top: 133px;
   article {
@@ -17,7 +18,10 @@
           &:first-child {
             input {
               display: inline-flex;
-              padding: 13.333px 397.667px 13.333px 13.333px;
+              // padding: 13.333px 397.667px 13.333px 13.333px;
+              width: 100%;
+              padding-left: 13.333px;
+              padding-block: 13.333px;
               align-items: center;
               gap: 8.333px;
               border-radius: 6.667px;
@@ -29,8 +33,9 @@
             justify-content: space-between;
             input {
               display: flex;
-              width: 286.667px;
-              padding: 13.333px 176.667px 13.333px 13.333px;
+              width: 49%;
+              padding-left: 13.333px;
+              padding-block: 13.333px;
               align-items: center;
               gap: 8.333px;
               border-radius: 6.667px;
@@ -65,6 +70,48 @@
               font-style: normal;
               font-weight: 700;
               line-height: normal;
+              transition: background-color 0.2s linear;
+              &:hover {
+                background-color: #ff6916;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mixin.screenXL() {
+  .feedback-greenchop {
+    article {
+      &.feedback-item-1 {
+        text-align: center;
+      }
+      &.feedback-item-2 {
+        text-align: center;
+        padding-inline: 13rem;
+      }
+    }
+  }
+}
+@include mixin.screenMD() {
+  .feedback-greenchop {
+    article {
+      &.feedback-item-2 {
+        padding-inline: 2rem;
+        h2 {
+          font-size: 1.8rem;
+        }
+        .form-feedback {
+          .wrapper-item-feedback {
+            &:nth-child(2) {
+              display: flex;
+              flex-wrap: wrap;
+              row-gap: 22.67px;
+              input {
+                width: 100%;
+              }
             }
           }
         }
