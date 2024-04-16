@@ -18,13 +18,14 @@
 
 //2. Products
 
-@use "./pages/products/index" as products;
+// @use "./pages/products/index" as products;
 
 html {
   font-size: 62.5%;
 }
 
 body {
+  position: relative;
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
 }
@@ -40,4 +41,27 @@ select {
 
 button {
   cursor: pointer;
+}
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  background-color: transparent;
+}
+
+@include mixin.screenLG() {
+  main {
+    padding: 0 10px;
+  }
+  body {
+    &:has(#idtoggler:checked) {
+      .overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
 }

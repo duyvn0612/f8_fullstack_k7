@@ -1,3 +1,4 @@
+@use "../../partials/mixin";
 .function-greenchop {
   margin-top: 133.31px;
   article {
@@ -30,6 +31,34 @@
           font-style: normal;
           font-weight: 500;
           line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+@include mixin.screenLG() {
+  .function-greenchop {
+    margin-top: 2rem;
+    padding-inline: 3rem;
+    article {
+      &.function-item-1,
+      &.function-item-2,
+      &.function-item-3 {
+        padding: 0;
+      }
+    }
+    .wrapper-item-function {
+      &:first-child {
+        img {
+          min-width: 35px;
+        }
+      }
+      &:last-child {
+        padding-right: 2rem;
+        p {
+          font-size: 1.6rem;
+          // text-align: justify;
         }
       }
     }

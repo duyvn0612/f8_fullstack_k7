@@ -2,22 +2,49 @@
   align-items: center;
 }
 
+.justify-content-center {
+  justify-content: center;
+}
+
 .align-items-stretch {
   align-items: stretch;
 }
 
 .row-gap-product {
-  row-gap: 96px;
+  row-gap: 9.6rem;
+}
+
+.row-gap-introduce {
+  row-gap: 6rem;
 }
 
 .row-gap-function {
   row-gap: 38.83px;
 }
 
+.gap-news {
+  gap: 23.33px;
+}
+
+.gap-protect {
+  gap: 25px;
+}
+
+.row-gap-foo-top {
+  row-gap: 25px;
+}
 .margin-0-auto {
   margin: 0 auto;
 }
 
 .reset-col-space {
   padding: 0;
+}
+
+.reset-col-space-mg {
+  margin: 0;
+}
+
+.position-relative {
+  position: relative;
 }
