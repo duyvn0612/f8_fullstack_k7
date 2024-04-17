@@ -229,7 +229,13 @@
     .header-content {
       .navbar {
         .menu-item {
-          width: 65vw;
+          width: 70vw;
+          .wrapper-item {
+            .wrapper-item-left {
+              column-gap: 2rem;
+              padding-left: 2rem;
+            }
+          }
         }
       }
     }

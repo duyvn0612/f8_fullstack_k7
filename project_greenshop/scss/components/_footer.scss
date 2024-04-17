@@ -172,6 +172,7 @@
 }
 @include mixin.screenMobile() {
   .foo-greenchop {
+    padding-block: 30.92px 26.67px;
     .foo-greenchop-top {
       padding-inline: 0;
     }

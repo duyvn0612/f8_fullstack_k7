@@ -376,7 +376,11 @@ img {
 }
 @media screen and (max-width: 575px) {
   .header-nav .header-content .navbar .menu-item {
-    width: 65vw;
+    width: 70vw;
+  }
+  .header-nav .header-content .navbar .menu-item .wrapper-item .wrapper-item-left {
+    column-gap: 2rem;
+    padding-left: 2rem;
   }
 }
 .foo-greenchop {
@@ -527,6 +531,9 @@ img {
   }
 }
 @media screen and (max-width: 575px) {
+  .foo-greenchop {
+    padding-block: 30.92px 26.67px;
+  }
   .foo-greenchop .foo-greenchop-top {
     padding-inline: 0;
   }
