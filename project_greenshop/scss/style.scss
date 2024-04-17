@@ -46,10 +46,10 @@ button {
 .overlay {
   opacity: 0;
   visibility: hidden;
-  position: absolute;
+  position: fixed;
   inset: 0;
   z-index: 5;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.366);
 }
 
 @include mixin.screenLG() {
