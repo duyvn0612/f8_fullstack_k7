@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: red;
+      }
+      input[type="number"] {
+        display: block;
+        margin-bottom: 1rem;
+      }
+      form h2:first-child {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <h2>Bài 1: Hoán vị hai số a và b</h2>
+      <label
+        >Nhập số a:
+        <input type="number" name="nba" id="idNumber_a" />
+      </label>
+      <label
+        >Nhập số b:
+        <input type="number" name="nba" id="idNumber_b" />
+      </label>
+      <label
+        ><input type="button" name="btnSwap" id="idRunSwap" value="Run Swap"
+      /></label>
+      <h2>SWAP:</h2>
+      <h2 style="padding-left: 2rem">a = <span id="idText_a"></span></h2>
+      <h2 style="padding-left: 2rem">b = <span id="idText_b"></span></h2>
+    </form>
+    <!-- Bài 1: Hoán vị hai số a và b -->
+    <form action="#">
+      <h2>Bài 2: Thực hiện phép tính: S = 10 + 20 + 5^10 / 2</h2>
+      <h2 style="padding-left: 2rem">Kết quả S = <span id="text_S"></span></h2>
+    </form>
+
+    <!-- end Bài 2 -->
+    <form action="#">
+      <h2>Bài 3: Tìm số lớn nhất</h2>
+      <label
+        >Nhập số a:
+        <input type="number" id="idNumber_ab3" />
+      </label>
+      <label
+        >Nhập số b:
+        <input type="number" id="idNumber_bb3" />
+      </label>
+      <label
+        >Nhập số c:
+        <input type="number" id="idNumber_cb3" />
+      </label>
+      <label
+        ><input type="button" name="btnMax" id="idRunMax" value="Run Max"
+      /></label>
+      <h2 style="padding-left: 2rem">
+        Số lớn nhất: <span id="idMaxNumber"></span>
+      </h2>
+    </form>
+    <!-- end Bài 3 -->
+    <form action="#">
+      <h2>Bài 4: Kiểm tra số cùng dấu</h2>
+      <label
+        >Nhập số a:
+        <input type="number" name="nba" id="idNumber_ab4" />
+      </label>
+      <label
+        >Nhập số b:
+        <input type="number" name="nba" id="idNumber_bb4" />
+      </label>
+      <label
+        ><input
+          type="button"
+          name="btnTest"
+          id="idRunTestDifferent"
+          value="Run"
+      /></label>
+      <h2 style="padding-left: 2rem">
+        Kết quả: <span id="idResultDifferent"></span>
+      </h2>
+    </form>
+    <!-- end Bai 4 -->
+    <form action="#">
+      <h2>Bài 5: Sắp xếp 3 số</h2>
+      <label
+        >Nhập số a:
+        <input type="number" id="idNumber_ab5" />
+      </label>
+      <label
+        >Nhập số b:
+        <input type="number" id="idNumber_bb5" />
+      </label>
+      <label
+        >Nhập số c:
+        <input type="number" id="idNumber_cb5" />
+      </label>
+      <label
+        ><input type="button" name="btnSort" id="idRunSort" value="Run Sort"
+      /></label>
+      <h2 style="padding-left: 2rem">
+        Kết quả 3 số có thứ tự tăng dần: <span id="idResultSort"></span>
+      </h2>
+    </form>
+    <!-- end Bài 3 -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
