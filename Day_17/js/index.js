@@ -69,7 +69,8 @@ function sort(a, b, c) {
     a = a.valueAsNumber;
     b = b.valueAsNumber;
     c = c.valueAsNumber;
-    const arr = [a, b, c];
+    const arr = [];
+    arr.push(a, b, c);
     for (let i = 0; i < arr.length; i++) {
       for (let j = i + 1; j <= arr.length; j++) {
         if (arr[i] > arr[j]) {
