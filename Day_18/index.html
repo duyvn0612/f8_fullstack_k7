@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 18</title>
+  </head>
+  <body>
+    <section class="ex-one">
+      <h2>Bài 1: Tính tiền taxi</h2>
+      <ul>
+        <li><p>Tính tiền cước taxi dựa vào các điều kiện sau</p></li>
+        <li><p>Số km ≤ 1 giá 15000đ</p></li>
+        <li><p>1 < số km ≤ 5 giá 13500đ</p></li>
+        <li><p>Số km > 5 giá 11000đ</p></li>
+        <li><p>Nếu số km > 120 km sẽ được giảm 10% trên tổng số tiền</p></li>
+      </ul>
+      <form action="#">
+        <label>
+          Nhập vào số Km:
+          <input type="number" name="kmNumber" id="idKmNumber" />
+          <p>Tiền cước taxi: <span id="idResultTaxi"></span></p>
+          <input id="idBtnCalc" type="button" value="Kết Quả" />
+        </label>
+      </form>
+    </section>
+    <!-- end .ex-one -->
+    <section class="ex-two">
+      <h2>Bài 2: Tính tiền điện</h2>
+      <form action="#">
+        <label>
+          Nhập vào số điện:
+          <input type="number" name="eNumber" id="idENumber" />
+        </label>
+        <p>Tiền điện phải trả: <span id="idResultEMoney"></span></p>
+        <input id="idBtnCalcEMoney" type="button" value="Kết Quả" />
+      </form>
+    </section>
+    <!-- end .ex-two -->
+    <section class="ex-three">
+      <h2>Bài 3: Tính giá trị biểu thức</h2>
+      <p>
+        Cho trước số nguyên n. Tính giá trị biểu thức sau <br />
+
+        S= 1*2 + 2*3 + 3*4 + ... + n*(n+1)
+      </p>
+      <form action="#">
+        <label> Nhập vào số nguyên n: </label>
+        <input type="number" name="nNumber" id="idnNumber" />
+      </form>
+      <p>Giá trị biểu thức: <span id="idResultS"></span></p>
+      <input id="idBtnCalcS" type="button" value="Kết Quả" />
+    </section>
+    <!-- end .ex-three -->
+    <section class="ex-four">
+      <h2>Bài 4: Viết hàm kiểm tra số nguyên tố</h2>
+      <form action="#">
+        <label> Nhập vào số nguyên n: </label>
+        <input type="number" name="primeNumber" id="idPrimeNumber" />
+      </form>
+      <p>Kết quả: <span id="idResultPrime"></span></p>
+      <input id="idBtnPrime" type="button" value="Kết Quả" />
+    </section>
+    <!-- end .ex-four -->
+    <section class="ex-five">
+      <h2>Bài 5: Vẽ tam giác số</h2>
+      <form action="#">
+        <label> Nhập vào n số dòng: </label>
+        <input type="number" name="triangleNumber" id="idTriangleNumber" />
+      </form>
+      <p><span id="idResultTriangle"></span></p>
+      <input id="idBtnTriangle" type="button" value="Kết Quả" />
+    </section>
+    <!-- end .ex-five -->
+    <script src="js/bai_1.js"></script>
+    <script src="js/bai_2.js"></script>
+    <script src="js/bai_3.js"></script>
+    <script src="js/bai_4.js"></script>
+    <script src="js/bai_5.js"></script>
+  </body>
+</html>
