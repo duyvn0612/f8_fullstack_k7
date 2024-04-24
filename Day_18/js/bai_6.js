@@ -1,8 +1,11 @@
 var btnCreateChess = document.getElementById("idBtnCreateChess");
 var drawChess = document.getElementById("idDrawChess");
-var count = 0,
-  count1 = 0;
+
 function createChess() {
+  var count = 0,
+    count1 = 0;
+  drawChess.replaceChildren();
+  drawChess.style.border = "1px solid black";
   for (let i = 0; i < 8; i++) {
     console.log(count1++);
     for (let j = 0; j < 8; j++) {
@@ -33,5 +36,6 @@ function createChess() {
 }
 
 btnCreateChess.addEventListener("click", () => {
+  //   drawChess.remove();
   createChess();
 });

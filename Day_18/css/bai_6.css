@@ -1,5 +1,4 @@
 .ex-six #idDrawChess {
-  border: 1px solid black;
   width: 240px;
   display: flex;
   flex-wrap: wrap;
