@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day 18</title>
+    <link rel="stylesheet" href="css/bai_6.css" />
+    <style>
+      .ex-six span {
+        width: 20px;
+        height: 20px;
+        background-color: black;
+      }
+    </style>
   </head>
   <body>
     <section class="ex-one">
@@ -67,15 +75,22 @@
       <form action="#">
         <label> Nhập vào n số dòng: </label>
         <input type="number" name="triangleNumber" id="idTriangleNumber" />
+        <p><span id="idResultTriangle"></span></p>
+        <input id="idBtnTriangle" type="button" value="Kết Quả" />
       </form>
-      <p><span id="idResultTriangle"></span></p>
-      <input id="idBtnTriangle" type="button" value="Kết Quả" />
     </section>
     <!-- end .ex-five -->
+    <section class="ex-six">
+      <h2>Bài 6: Vẽ bàn cờ vua</h2>
+      <div id="idDrawChess"></div>
+      <input id="idBtnCreateChess" type="button" value="Kết Quả" />
+    </section>
+    <!-- end .ex-six -->
     <script src="js/bai_1.js"></script>
     <script src="js/bai_2.js"></script>
     <script src="js/bai_3.js"></script>
     <script src="js/bai_4.js"></script>
     <script src="js/bai_5.js"></script>
+    <script src="js/bai_6.js"></script>
   </body>
 </html>
