@@ -1,0 +1,10 @@
+.ex-seven .drawMultiplicationTable {
+  display: flex;
+  column-gap: 20px;
+}
+.ex-seven .drawMultiplicationTable div {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=bai_7.css.map */

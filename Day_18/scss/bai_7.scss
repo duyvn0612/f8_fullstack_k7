@@ -1,0 +1,11 @@
+.ex-seven {
+  .drawMultiplicationTable {
+    display: flex;
+    column-gap: 20px;
+    // flex-direction: column;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
