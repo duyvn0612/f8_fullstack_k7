@@ -1,0 +1,17 @@
+.ex-01 {
+  .container-ex01 {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //   font-size: 20px;
+      color: red;
+    }
+  }
+}
