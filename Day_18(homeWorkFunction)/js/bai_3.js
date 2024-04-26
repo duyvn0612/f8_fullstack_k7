@@ -134,10 +134,13 @@ function convertText(n) {
     default:
       break;
   }
-  // console.log(arr);
-  // console.log(arrNumberToText[1]);
 }
 
 btnResultConvert.addEventListener("click", () => {
-  convertText(numberEx3.valueAsNumber);
+  console.log(numberEx3.valueAsNumber);
+  if (!isNaN(numberEx3.valueAsNumber)) {
+    convertText(numberEx3.valueAsNumber);
+  } else {
+    alert("Nhập lại !!");
+  }
 });
