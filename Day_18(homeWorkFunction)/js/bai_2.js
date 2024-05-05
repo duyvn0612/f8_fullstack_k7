@@ -7,12 +7,6 @@ function reverse_Number(n) {
     var count = 0;
     var total = 0;
     var len = String(n).length;
-<<<<<<< HEAD
-    var arrNumber = String(n).split("", len);
-    var reverseStr = String(n).split("").reverse().join("");
-    console.log(reverseStr);
-=======
->>>>>>> 626bdc0e4f985df6e653876a80754302695afe4c
     for (let i = len - 1; i >= 0; i--) {
       total += (n % 10) * 10 ** i;
       n = Math.floor(n / 10);
