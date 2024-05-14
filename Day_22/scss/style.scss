@@ -1,0 +1,35 @@
+.container {
+  width: 1200px;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  .wrapper-content {
+    display: flex;
+    gap: 2rem;
+    padding-block: 2rem;
+    border-bottom: 2px solid #ddd;
+    .content {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      h2,
+      p {
+        margin: 0;
+        text-align: justify;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    &:nth-child(2n + 1) {
+      img {
+        order: 1;
+      }
+      .content {
+        order: 0;
+      }
+    }
+  }
+}
