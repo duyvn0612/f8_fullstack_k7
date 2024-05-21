@@ -16,5 +16,7 @@ const customers = [
   { name: "Nguyễn Văn B", age: 2, address: "Hai Phong" },
   { name: "Nguyễn Văn C", age: 12, address: "TP.HCM" },
 ];
-
+console.log("Mảng ban đầu:");
+console.log(customers);
+console.log("Mảng sau khi sắp xếp và thêm thuộc tính:");
 console.log(createCustomers(customers));
