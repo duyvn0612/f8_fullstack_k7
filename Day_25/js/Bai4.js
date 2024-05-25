@@ -16,7 +16,7 @@ Array.prototype.reduce2 = function (callback, initialValue) {
   }
   return prevValue;
 };
-
+// test reduce2
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 var size = 4;
 var chuckArr = numbers.reduce2(

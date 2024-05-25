@@ -56,46 +56,26 @@ var array = [
   },
 ];
 
-//1. 123
-//2. 456
-
-function buildHierarchy(categories, parentId = 0) {
-  return categories
-    .filter((category) => category.parent === parentId)
-    .reduce((acc, category) => {
-      // const children = buildHierarchy(categories, category.id);
-      // // console.log(children);
-      // if (children.length) {
-      //   acc.push({ ...category, children });
-      // } else {
-      //   acc.push({ ...category });
-      // }
-      console.log(category);
-      return acc;
+function convertNested(arr, parentId = 0) {
+  return arr
+    .filter(function (item) {
+      if (item.parent === parentId) {
+        delete item["parent"];
+        return item;
+      }
+    })
+    .reduce(function (prevV, item) {
+      var children = convertNested(arr, item.id);
+      if (children.length) {
+        item.children = children;
+        prevV.push(item);
+        // prevV.push({ ...item, children });
+        // console.log(children);
+      } else {
+        prevV.push(item);
+        // prevV.push({ ...item });
+      }
+      return prevV;
     }, []);
 }
-
-// const categories = buildHierarchy(array);
-// console.log(categories);
-function convertNested(arr, parentId = 0) {
-  var resultParent = arr.filter(function (item) {
-    if (item.parent === parentId) {
-      delete item["parent"];
-      return item;
-    }
-  });
-  // console.log(resultParent);
-  var result = resultParent.reduce(function (prevV, item) {
-    var children = convertNested(arr, item.id);
-    if (children.length) {
-      prevV.push({ ...item, children });
-      // console.log(children);
-    } else {
-      prevV.push({ ...item });
-    }
-    return prevV;
-  }, []);
-  return result;
-}
-const categories = convertNested(array);
-console.log(categories);
+console.log(convertNested(array));
