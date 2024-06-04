@@ -1,0 +1,140 @@
+.head-dantri {
+  padding-top: 2rem;
+}
+.head-dantri .form-login-register {
+  margin: 0 auto;
+  width: 465px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.head-dantri .form-login-register .close-btn {
+  font-size: 2.5rem;
+  float: right;
+}
+.head-dantri .form-login-register .close-btn::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.head-dantri .form-login-register .logo-form {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-dantri .form-login-register .logo-form img {
+  width: 132px;
+}
+.head-dantri .form-login-register .rdo-login-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+.head-dantri .form-login-register .rdo-login-register label {
+  width: 50%;
+  text-align: center;
+  padding-block: 0.7rem;
+  background-color: #eeeeee;
+  color: #858585;
+  cursor: pointer;
+}
+.head-dantri .form-login-register .rdo-login-register label span {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.head-dantri .form-login-register .rdo-login-register label:has(input[type=radio]:checked) {
+  background-color: green;
+  color: white;
+}
+.head-dantri .form-login-register .social-network {
+  padding-top: 1rem;
+}
+.head-dantri .form-login-register .social-network p {
+  text-align: center;
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+.head-dantri .form-login-register .social-network .social-network-btn {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.head-dantri .form-login-register .social-network .social-network-btn button {
+  width: 42%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  padding: 0.3rem 1.5rem;
+  border-radius: 5px;
+  background-color: #e2e8f0;
+}
+.head-dantri .form-login-register .info-login-inp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+.head-dantri .form-login-register .info-login-inp p:first-of-type {
+  text-align: center;
+}
+.head-dantri .form-login-register .info-login-inp p:last-of-type {
+  width: 90%;
+  font-style: italic;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.632);
+}
+.head-dantri .form-login-register .info-login-inp label {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.head-dantri .form-login-register .info-login-inp label input {
+  height: 2.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.134);
+  border-radius: 5px;
+  color: 2rem;
+  padding-left: 1rem;
+}
+.head-dantri .form-login-register .info-login-inp label input::placeholder {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.4274509804);
+}
+.head-dantri .form-login-register .info-login-inp button {
+  width: 90%;
+  padding-block: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+}
+.head-dantri .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5rem;
+}
+.head-dantri .navbar .logo-dantri img {
+  width: 132px;
+}
+.head-dantri .navbar .navbar-action .btn-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  column-gap: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.526);
+}
+.head-dantri .navbar .navbar-action .btn-login span {
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */
