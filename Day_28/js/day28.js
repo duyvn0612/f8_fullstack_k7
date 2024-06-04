@@ -10,6 +10,12 @@ var deleteContents = document.querySelectorAll(
 var taskList = [];
 var newTaskList = [];
 
+function convertHTML(arr = []) {
+  return arr.map(function (item) {
+    return `<p><span class = "content">${item}</span><span class = "icon-action"><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></span></p>`;
+  });
+}
+
 function deleteItemInArr(arr = [], value) {
   return arr.filter(function (_value, index) {
     return value === _value ? false : true;
@@ -21,10 +27,7 @@ formTaskToday.addEventListener("submit", function (e) {
 
   if (taskInp.value !== "") {
     taskList.push(taskInp.value);
-    // newTaskList = convertHTML(taskList);
-    newTaskList = taskList.map(function (item) {
-      return `<p><span class = "content">${item}</span><span class = "icon-action"><i class="fa-solid fa-pen-to-square edit"></i><i class="fa-solid fa-trash delete"></i></span></p>`;
-    });
+    newTaskList = convertHTML(taskList);
     taskInp.value = "";
   }
   todoList.innerHTML = newTaskList.join("");
@@ -45,10 +48,13 @@ formTaskToday.addEventListener("submit", function (e) {
       .querySelector(".todo-list p .icon-action .delete")
       .addEventListener("click", function () {
         var valueHTML = deleteContent.querySelector(".todo-list p .content");
-        console.log(deleteContent);
+        console.log(deleteContent.outerHTML);
         taskList = deleteItemInArr(taskList, valueHTML.textContent);
-        newTaskList = deleteItemInArr(newTaskList, deleteContent);
+        newTaskList = convertHTML(taskList);
         todoList.removeChild(deleteContent);
+        console.log(taskList);
+        console.log(newTaskList);
       });
   });
+  // edit content
 });
