@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+}
+.carousel {
+  position: relative;
+  overflow: hidden;
+  .carousel-inner {
+    display: flex;
+    transition: translate 0.3s ease;
+    user-select: none;
+    // pointer-events: none;
+    &.transition-none {
+      transition: none;
+    }
+  }
+  .carousel-nav {
+    span {
+      position: absolute;
+      top: 50%;
+      font-size: 2rem;
+      color: rgba(0, 0, 0, 0.641);
+      padding: 0.7rem;
+      background-color: rgba(240, 255, 255, 0.304);
+      cursor: pointer;
+      transform: translateY(-50%);
+      &.prev {
+        left: 0.4rem;
+      }
+      &.next {
+        right: 0.4rem;
+      }
+    }
+  }
+  .carousel-action {
+    display: flex;
+    column-gap: 8px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    label {
+      position: relative;
+      display: block;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      border: 1px solid orange;
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: "";
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 50%;
+        background-color: orange;
+        display: none;
+      }
+      &:has(input:checked) {
+        &::after {
+          display: block;
+        }
+      }
+    }
+  }
+}
