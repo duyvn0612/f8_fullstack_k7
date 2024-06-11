@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 30</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border: none;
+        border-radius: 10px;
+        height: 2.5rem;
+        padding-inline: 2rem;
+        background-color: red;
+        color: white;
+        font-size: 20px;
+      }
+      button:hover {
+        background-color: green;
+      }
+      .notification {
+        margin: 1rem auto;
+        font-size: 18px;
+        color: green;
+        text-align: center;
+        display: none;
+      }
+      .notification.action-red {
+        display: block;
+        color: red;
+      }
+      .notification.action-green {
+        display: block;
+        color: green;
+      }
+      .result {
+        margin: 1rem auto;
+        width: 90%;
+
+        border: 1px solid green;
+        border-radius: 12px;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        text-align: center;
+        display: none;
+      }
+      .result.action {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bạn muốn làm gì? Hãy nói gì đó...</h1>
+    <button>Bấm vào đây để nói</button>
+    <p class="notification"></p>
+    <p class="result"></p>
+    <script src="js/day30.js"></script>
+  </body>
+</html>
