@@ -45,7 +45,9 @@ function handlerSpeakers() {
     for (var key of Object.keys(utilities)) {
       checkResult = String(speechResult).indexOf(key);
       if (checkResult !== -1) {
-        queryStr = String(speechResult).slice(key.length);
+        // console.log(checkResult);
+        queryStr = String(speechResult).slice(checkResult + key.length);
+        console.log(queryStr);
         setTimeout(function () {
           result.textContent = `Đã thực hiện xong.`;
           window.open(`${utilities[key]}${queryStr}`, "_blank");
@@ -58,7 +60,7 @@ function handlerSpeakers() {
         result.textContent = `Không thực hiện được yêu cầu`;
       }, 500);
     }
-    console.log(speechResult);
+    // console.log(speechResult);
   };
   recognition.onspeechend = function () {
     notification.classList.replace("action-red", "action-green");
