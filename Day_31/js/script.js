@@ -49,7 +49,6 @@ function handlerMouseUp() {
     rateAudio = 100;
     audio.currentTime = audio.duration;
     positionLastSpanDrag = progressWidth;
-    // audio.pause();
   }
   if (flagCheckTimeUpdate === false) {
     audio.currentTime = (rateAudio / 100) * audio.duration;
