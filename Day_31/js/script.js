@@ -45,15 +45,15 @@ function handlerMouseUp() {
   if (positionLastSpanDrag > progressWidth) {
     positionLastSpanDrag = progressWidth;
   }
-  // if (rateAudio >= 100) {
-  //   rateAudio = 100;
-  //   audio.currentTime = audio.duration;
-  //   positionLastSpanDrag = progressWidth;
-  //   audio.pause();
-  // }
+  if (audio.currentTime === audio.duration) {
+    rateAudio = 100;
+    audio.currentTime = audio.duration;
+    positionLastSpanDrag = progressWidth;
+    // audio.pause();
+  }
   if (flagCheckTimeUpdate === false) {
-    flagCheckTimeUpdate = true;
     audio.currentTime = (rateAudio / 100) * audio.duration;
+    flagCheckTimeUpdate = true;
   }
   positionSpanDragUp = positionLastSpanDrag;
   // console.log(`positionSpanDragUp mouseup: ${positionSpanDragUp}`);
