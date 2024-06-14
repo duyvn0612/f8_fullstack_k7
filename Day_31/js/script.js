@@ -111,10 +111,11 @@ function getTime(time) {
 // 278.282449
 window.addEventListener("load", function () {
   totalTime.innerText = getTime(audio.duration);
+
   // event ended hết nhạc
   audio.addEventListener("ended", function () {
     playerAudio.classList.replace("fa-pause", "fa-play");
-    console.log(audio.currentTime, audio.duration, flagCheckTimeUpdate);
+    // console.log(audio.currentTime, audio.duration, flagCheckTimeUpdate);
   });
   // event play
   audio.addEventListener("play", function () {
@@ -127,6 +128,7 @@ window.addEventListener("load", function () {
   // event timeupdate
   audio.addEventListener("timeupdate", function (e) {
     if (flagCheckTimeUpdate) {
+      // console.log(getTime(audio.duration));
       currentTime.innerText = getTime(audio.currentTime);
       rateAudio = (audio.currentTime / audio.duration) * 100;
       progressBar.style.width = `${rateAudio}%`;
