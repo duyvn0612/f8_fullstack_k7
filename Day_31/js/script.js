@@ -19,8 +19,10 @@ function handlerProgressDown(e) {
   positionSpanDragDown = e.clientX;
   var rate = (offsetX / progressWidth) * 100;
   rateAudio = rate;
-  audio.currentTime = (rateAudio / 100) * audio.duration;
+  // audio.currentTime = (rateAudio / 100) * audio.duration;
   progressBar.style.width = `${rate}%`;
+  // console.log(`ratedown: ${rateAudio}`);
+  // console.log("down");
   document.addEventListener("mousemove", handlerDrag);
 }
 
@@ -36,7 +38,7 @@ function handlerDrag(e) {
     rate = 100;
   }
   rateAudio = rate;
-  console.log(`rate: ${rate}`);
+  // console.log(`rate: ${rate}`);
   currentTime.innerText = `${getTime((rateAudio / 100) * audio.duration)}`;
   progressBar.style.width = `${rate}%`;
 }
@@ -53,6 +55,8 @@ function handlerMouseUp() {
   if (flagCheckTimeUpdate === false) {
     audio.currentTime = (rateAudio / 100) * audio.duration;
     flagCheckTimeUpdate = true;
+    // console.log(`rateup: ${rateAudio}`);
+    // console.log("up");
   }
   positionSpanDragUp = positionLastSpanDrag;
   // console.log(`positionSpanDragUp mouseup: ${positionSpanDragUp}`);
