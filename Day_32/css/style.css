@@ -1,0 +1,46 @@
+h2 {
+  text-transform: uppercase;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+input {
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+.tbl-product {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tbl-product thead tr th:nth-child(1) {
+  width: 5%;
+}
+.tbl-product thead tr th:nth-child(3) {
+  width: 10%;
+}
+.tbl-product thead tr th:last-child {
+  width: 10%;
+}
+.tbl-product tbody tr td:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.tbl-product tbody tr td:last-child input {
+  width: 95%;
+}
+
+.tbl-cart {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/*# sourceMappingURL=style.css.map */
