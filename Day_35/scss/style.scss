@@ -89,6 +89,15 @@ input {
         color: #fff;
         font-size: 16px;
         background-color: #000;
+        &:nth-child(1) {
+          font-weight: 700;
+        }
+        &:nth-child(2) {
+          text-decoration: underline;
+        }
+        &:nth-child(3) {
+          font-style: italic;
+        }
       }
     }
   }

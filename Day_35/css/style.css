@@ -95,6 +95,15 @@ input {
   font-size: 16px;
   background-color: #000;
 }
+.doc-editor .toolbar .edit-text button:nth-child(1) {
+  font-weight: 700;
+}
+.doc-editor .toolbar .edit-text button:nth-child(2) {
+  text-decoration: underline;
+}
+.doc-editor .toolbar .edit-text button:nth-child(3) {
+  font-style: italic;
+}
 .doc-editor .write-text {
   margin-top: 2rem;
   padding: 1rem;
