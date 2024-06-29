@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"
+      integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="doc-editor">
+      <h2>Doc Editor</h2>
+      <hr />
+      <div class="toolbar">
+        <div class="save-file">
+          <div class="dropbox">
+            <button id="btn-file">File</button>
+            <ul class="dropdown">
+              <li id="new">New</li>
+              <li id="txt">Save as TXT</li>
+              <li id="pdf">Save as PDF</li>
+            </ul>
+          </div>
+
+          <input type="text" value="untitled" id="name-file" />
+        </div>
+        <div class="edit-text">
+          <button id="btn-bold">b</button>
+          <button id="btn-underlined">u</button>
+          <button id="btn-italic">i</button>
+          <input type="color" name="color" id="inp-color" />
+        </div>
+      </div>
+      <div class="write-text" contenteditable="true"></div>
+      <div class="check-word">
+        <p>Số ký tự: 0</p>
+        <p>Số từ: 0</p>
+      </div>
+    </div>
+    <script src="js/js.js"></script>
+  </body>
+</html>

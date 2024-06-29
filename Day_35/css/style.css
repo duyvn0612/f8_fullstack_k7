@@ -1,0 +1,115 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+.doc-editor {
+  padding: 2rem 15rem;
+}
+.doc-editor .toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 1rem;
+}
+.doc-editor .toolbar .save-file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.doc-editor .toolbar .save-file .dropbox {
+  position: relative;
+  height: 100%;
+}
+.doc-editor .toolbar .save-file .dropbox #btn-file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.1rem;
+  background-color: #0d6efd;
+}
+.doc-editor .toolbar .save-file .dropbox #btn-file::after {
+  content: "▼";
+  font-size: 11px;
+}
+.doc-editor .toolbar .save-file .dropbox .dropdown {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.53);
+  width: 10rem;
+  overflow: hidden;
+  display: none;
+}
+.doc-editor .toolbar .save-file .dropbox .dropdown li {
+  cursor: pointer;
+  padding: 10px 10px;
+}
+.doc-editor .toolbar .save-file .dropbox .dropdown li:hover {
+  background-color: aliceblue;
+}
+.doc-editor .toolbar .save-file .dropbox .dropdown.show-dropbox {
+  display: block;
+}
+.doc-editor .toolbar .save-file #name-file {
+  height: 100%;
+  font-size: 16px;
+}
+.doc-editor .toolbar .edit-text {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+.doc-editor .toolbar .edit-text button,
+.doc-editor .toolbar .edit-text input {
+  width: 3rem;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.doc-editor .toolbar .edit-text button {
+  color: #fff;
+  font-size: 16px;
+  background-color: #000;
+}
+.doc-editor .write-text {
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 16px;
+  width: 100%;
+  min-height: 20rem;
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+.doc-editor .check-word {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
