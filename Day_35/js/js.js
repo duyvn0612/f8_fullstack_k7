@@ -71,16 +71,23 @@ document.addEventListener("click", function () {
 });
 
 document.addEventListener("keydown", function (e) {
-  //   console.log(e.key);
+  console.log(e.key);
   if (dropDown.classList.contains("show-dropbox") && e.key === "Escape") {
     dropDown.classList.remove("show-dropbox");
+  }
+  if (e.key === "Control" && e.key === "u") {
+    execCommand("underline");
+  }
+  if (e.key === "Control" && e.key === "i") {
+    execCommand("italic");
+  }
+  if (e.key === "Control" && e.key === "b") {
+    execCommand("bold");
   }
 });
 
 //
-writeText.addEventListener("input", function (e) {
-  // console.log(e);
-  // console.dir(writeText);
+writeText.addEventListener("input", function () {
   var text = writeText.innerText.trim();
   var countCharacter = String(text).split(/\s+/).join("").length;
   var countWord = String(text)
@@ -90,4 +97,8 @@ writeText.addEventListener("input", function (e) {
     }).length;
   document.querySelector("#countChar").innerText = +countCharacter;
   document.querySelector("#countWord").innerText = +countWord;
+});
+
+nameFile.addEventListener("focus", function (e) {
+  nameFile.select();
 });
