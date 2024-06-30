@@ -42,20 +42,25 @@ var createPDF = function () {
   };
   html2pdf().set(opt).from(writeText).save();
 };
+
+var createTXT = function () {
+  var blob = new Blob([writeText.innerText], { type: "text/plain" });
+  var aEl = document.createElement("a");
+  aEl.download = `${nameFile.value}.txt`;
+  aEl.href = window.URL.createObjectURL(blob);
+  aEl.target = "_blank";
+  aEl.style.display = "none";
+  document.body.appendChild(aEl);
+  aEl.click();
+  document.body.removeChild(aEl);
+};
+// down load pdf, txt
 dropDown.addEventListener("click", function (e) {
   if (e.target.nodeName === "LI" && e.target.id === "pdf") {
     createPDF();
   }
   if (e.target.nodeName === "LI" && e.target.id === "txt") {
-    var blob = new Blob([writeText.innerText], { type: "text/plain" });
-    var aEl = document.createElement("a");
-    aEl.download = `${nameFile.value}.txt`;
-    aEl.href = window.URL.createObjectURL(blob);
-    aEl.target = "_blank";
-    aEl.style.display = "none";
-    document.body.appendChild(aEl);
-    aEl.click();
-    document.body.removeChild(aEl);
+    createTXT();
   }
 });
 
@@ -70,4 +75,19 @@ document.addEventListener("keydown", function (e) {
   if (dropDown.classList.contains("show-dropbox") && e.key === "Escape") {
     dropDown.classList.remove("show-dropbox");
   }
+});
+
+//
+writeText.addEventListener("input", function (e) {
+  // console.log(e);
+  // console.dir(writeText);
+  var text = writeText.innerText.trim();
+  var countCharacter = String(text).split(/\s+/).join("").length;
+  var countWord = String(text)
+    .split(/\s+/)
+    .filter(function (w) {
+      return w.length > 0;
+    }).length;
+  document.querySelector("#countChar").innerText = +countCharacter;
+  document.querySelector("#countWord").innerText = +countWord;
 });
