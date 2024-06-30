@@ -18,9 +18,11 @@ input {
   padding: 2rem 15rem;
   .toolbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
     margin-top: 1rem;
+    gap: 1rem;
     .save-file {
       display: flex;
       justify-content: center;

@@ -24,9 +24,11 @@ input {
 }
 .doc-editor .toolbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
   margin-top: 1rem;
+  gap: 1rem;
 }
 .doc-editor .toolbar .save-file {
   display: flex;

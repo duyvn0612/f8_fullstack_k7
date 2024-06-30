@@ -56,6 +56,12 @@ var createTXT = function () {
 };
 // down load pdf, txt
 dropDown.addEventListener("click", function (e) {
+  if (e.target.nodeName === "LI" && e.target.id === "new") {
+    writeText.textContent = "";
+    document.querySelector("#countChar").innerText = 0;
+    document.querySelector("#countWord").innerText = 0;
+    nameFile.value = "untitled";
+  }
   if (e.target.nodeName === "LI" && e.target.id === "pdf") {
     createPDF();
   }
