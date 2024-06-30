@@ -2,6 +2,7 @@ var toolBar = document.querySelector(".toolbar");
 var dropDown = document.querySelector(".dropdown");
 var writeText = document.querySelector(".write-text");
 var inpColor = document.querySelector("#inp-color");
+var nameFile = document.querySelector("#name-file");
 var showDropDown = function () {
   dropDown.classList.toggle("show-dropbox");
 };
@@ -30,10 +31,32 @@ toolBar.addEventListener("click", function (e) {
     execCommand("italic");
   }
 });
-// var html2pdf = html2pdf();
-// console.log(html2pdf);
+
+var createPDF = function () {
+  var opt = {
+    margin: 1,
+    filename: nameFile.value,
+    image: { type: "jpeg", quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+  };
+  html2pdf().set(opt).from(writeText).save();
+};
 dropDown.addEventListener("click", function (e) {
-  console.log(e.target.id);
+  if (e.target.nodeName === "LI" && e.target.id === "pdf") {
+    createPDF();
+  }
+  if (e.target.nodeName === "LI" && e.target.id === "txt") {
+    var blob = new Blob([writeText.innerText], { type: "text/plain" });
+    var aEl = document.createElement("a");
+    aEl.download = `${nameFile.value}.txt`;
+    aEl.href = window.URL.createObjectURL(blob);
+    aEl.target = "_blank";
+    aEl.style.display = "none";
+    document.body.appendChild(aEl);
+    aEl.click();
+    document.body.removeChild(aEl);
+  }
 });
 
 document.addEventListener("click", function () {
