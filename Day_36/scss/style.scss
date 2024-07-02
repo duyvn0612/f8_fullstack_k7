@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.timer {
+  height: 100vh;
+  background-color: #03bdf0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .counter-timer {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    color: #fff;
+    background-color: #ff9100;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  #btn-get-link {
+    padding: 0.8rem 1.8rem;
+    border-radius: 99px;
+    border: #fff 1px solid;
+    color: #fff;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    background-color: transparent;
+    cursor: pointer;
+    &:disabled {
+      background-color: #b6b6b6;
+      color: gray;
+      cursor: not-allowed;
+    }
+  }
+}
