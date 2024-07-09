@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smatyx Todos App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay">
+        <form class="form-add-todos">
+          <input
+            type="text"
+            name="nameTodo"
+            class="inp-add-todos"
+            placeholder="Add Todos"
+            required
+          />
+          <div class="btn-save-cancel">
+            <button type="submit">Save</button>
+            <button type="button" class="btn-cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+      <div class="todo-app">
+        <h1 class="title">
+          <span class="text-gradient">Smatyx</span>
+          Todos App
+        </h1>
+        <div class="search-add-todo">
+          <div class="search-todo">
+            <input
+              type="search"
+              name="search"
+              class="inp-search"
+              placeholder="Search Todos"
+            />
+            <button class="btn-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <!-- End .search-todo -->
+          <div class="add-todo">
+            <button type="button" class="btn-add-todos">Add Todos</button>
+          </div>
+          <!-- End .add-todo -->
+        </div>
+        <!-- End .search-add-todo -->
+        <div class="list-todos"></div>
+        <!-- End .list-todos -->
+        <button class="btn-toggle-completed">
+          Completed Todos <span id="quantity-completed">0</span>
+          <i class="fa-regular fa-circle-right"></i>
+        </button>
+        <div class="list-todos-completed"></div>
+      </div>
+      <!-- End .todo-app -->
+    </div>
+    <script
+      src="https://kit.fontawesome.com/331f6e8450.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
