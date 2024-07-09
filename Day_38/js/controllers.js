@@ -1,4 +1,4 @@
-const urlApi = "http://fyl9py-3000.csb.app";
+const urlApi = "http://localhost:3000";
 
 export const getTodos = async () => {
   const res = await fetch(urlApi + "/todos");
