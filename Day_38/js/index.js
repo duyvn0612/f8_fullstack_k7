@@ -113,3 +113,10 @@ btnToggleCompleted.addEventListener("click", () => {
   btnToggleCompleted.classList.toggle("toggle-btn");
   listTodosCompleted.classList.toggle("show-list-completed");
 });
+const inpSearch = document.querySelector(".inp-search");
+const handlerSearch = (e) => {
+  var keyword = e.target.value;
+  console.log(keyword);
+  getTodos(keyword);
+};
+inpSearch.addEventListener("input", handlerSearch);

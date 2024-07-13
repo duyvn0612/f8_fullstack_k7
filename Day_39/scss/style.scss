@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.users {
+  padding-inline: 6rem;
+  .user {
+    display: flex;
+    // flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 1rem;
+    color: #fff;
+    background: linear-gradient(135deg, #ebadb6 0%, #aceae1 100%);
+    border-radius: 7px;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    padding: 1rem;
+    margin-block: 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    .info {
+      // width: 555px;
+      width: 100%;
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        text-align: justify;
+        span {
+          font-weight: bold;
+        }
+      }
+      .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3 {
+          font-size: 1.3rem;
+        }
+        .logo-contacts {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          a {
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #ddd;
+            transition: color 0.3s ease;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+    .img-user {
+      img {
+        max-width: 500px;
+        height: 100%;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
+
+.loader {
+  width: 8rem;
+  height: 0.2rem;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: 50%;
+  translate: -50% 0;
+  display: none;
+  &.show {
+    display: block;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background: #0071e2;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    animation: moving 1s ease-in-out infinite;
+  }
+
+  @keyframes moving {
+    50% {
+      width: 100%;
+    }
+
+    100% {
+      width: 0;
+      right: 0;
+      left: unset;
+    }
+  }
+}

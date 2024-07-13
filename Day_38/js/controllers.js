@@ -1,9 +1,17 @@
 const urlApi = "http://localhost:3000";
 
-export const getTodos = async () => {
-  const res = await fetch(urlApi + "/todos");
+const query = {};
+
+export const getTodos = async (keyword) => {
+  let searchParams = "";
+  if (keyword) {
+    searchParams = "?q=" + keyword;
+  }
+  // const searchParams = new URLSearchParams(query).toString();
+
+  const res = await fetch(`${urlApi}/todos${searchParams}`);
   const todos = await res.json();
-  console.log(todos);
+  // console.log(todos);
   renderTodos(todos);
 };
 
