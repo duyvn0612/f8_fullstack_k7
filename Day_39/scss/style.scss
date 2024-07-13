@@ -70,7 +70,7 @@
 }
 
 .loader {
-  width: 8rem;
+  width: 6rem;
   height: 0.2rem;
   border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.2);
@@ -84,7 +84,7 @@
   &::before {
     content: "";
     position: absolute;
-    background: #0071e2;
+    background: linear-gradient(135deg, #ebadb6 0%, #aceae1 100%);
     top: 0;
     left: 0;
     width: 0%;
