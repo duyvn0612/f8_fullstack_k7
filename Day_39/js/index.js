@@ -1,21 +1,23 @@
 import { getUsers, isGoPage, params } from "./utils.js";
 const loader = document.querySelector(".loader");
-
+let isResponse = false;
 window.addEventListener(
   "scroll",
   () => {
     const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
     // console.log(Math.ceil(scrollTop + clientHeight), scrollHeight);
     if (
+      isResponse &&
       Math.ceil(scrollTop + clientHeight) >= scrollHeight &&
       isGoPage(params._page)
     ) {
+      isResponse = false;
       params._page++;
       showLoader();
       setTimeout(async () => {
-        getUsers(params);
+        isResponse = await getUsers(params);
         removeLoader();
-      }, 400);
+      }, 300);
     }
   },
   { passive: true }
@@ -29,4 +31,4 @@ const showLoader = () => {
   loader.classList.add("show");
 };
 
-getUsers(params);
+isResponse = getUsers(params);

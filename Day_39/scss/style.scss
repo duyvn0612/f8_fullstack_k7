@@ -70,8 +70,8 @@
 }
 
 .loader {
-  width: 6rem;
-  height: 0.2rem;
+  width: 8rem;
+  height: 0.3rem;
   border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.2);
   position: relative;
@@ -84,7 +84,7 @@
   &::before {
     content: "";
     position: absolute;
-    background: linear-gradient(135deg, #ebadb6 0%, #aceae1 100%);
+    background: blueviolet;
     top: 0;
     left: 0;
     width: 0%;

@@ -1,6 +1,7 @@
 const urlApi = "https://85cs8t-3000.csb.app";
 // const urlApi = "http://localhost:3000";
 let totalPage = 0;
+// export let isResponse = false;
 export const params = {
   _limit: 5,
   _page: 1,
@@ -17,6 +18,8 @@ export const getUsers = async (params = {}) => {
     const totalCount = res.headers.get("x-total-count");
     totalPage = Math.ceil(totalCount / params._limit);
     renderUsers(users);
+    return res.ok;
+    console.log(isResponse);
   } catch (error) {
     console.log(error.message);
     alert("Có lỗi xảy ra !");
